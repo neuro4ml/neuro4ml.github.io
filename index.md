@@ -1,3 +1,8 @@
+---
+layout: post
+title: Neuroscience for machine learners
+---
+
 # About
 
 This is a freely available online course on neuroscience for people with a machine learning background.
@@ -20,10 +25,55 @@ We hope you enjoy the course!
 
 # Week by week
 
+The course is still under development, links to materials will be added as and when they become available. Contents may change.
+
 ## Week 0 - Introduction and motivation
 
-* Videos (link to be made)
-* Exercises (link to be made) (launch in colab button)
+* Why neuroscience? (not recorded yet)
+* Course outline (not recorded yet)
+* History of neuroscience and machine learning (not recorded yet)
+* Challenges for machine learning and neuroscience (not recorded yet)
+* No exercises this week
+
+## Week 1 - Neurons
+
+* Structure (not recorded yet)
+* Function (not recorded yet)
+* Exercises (not released yet)
+
+## Week 2 - Synapses and networks
+
+* Synapses (not recorded yet)
+* Networks (not recorded yet)
+* Exercises (not released yet)
+
+## Week 3 - Brain structure
+
+* Exercises (not released yet)
+
+## Week 4 - Learning rules
+
+* Exercises (not released yet)
+
+## Week 5 - Spiking neural networks
+
+* Exercises (not released yet)
+
+## Week 6 - Understand neural networks
+
+* Exercises (not released yet)
+
+## Week 7 - Various topics
+
+* Exercises (not released yet)
+
+## Week 8 - Neuromorphic computing
+
+* Exercises (not released yet)
+
+## Week 9 - Open issues
+
+* No exercises this week
 
 # Authors
 
