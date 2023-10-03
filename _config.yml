@@ -2,6 +2,6 @@ remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 title: Neuroscience for machine learners
-description: A freely available short course on neuroscience for people with a machine learning background.
+description: A freely available short course on neuroscience for people with a machine learning background. Designed by Dan Goodman and Marcus Ghosh.
 show_downloads: false
-logo: logo-colour.svg
+logo: logo-colour.png
