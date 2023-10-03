@@ -14,9 +14,9 @@ We hope you enjoy the course!
 
 # Quick links
 
-* YouTube channel
-* Exercises
-* Discord server
+* [YouTube channel](https://www.youtube.com/playlist?list=PL09WqqDbQWHErc8xOyWdKpNEk78Jjk0EL)
+* [Exercises](https://github.com/neuro4ml/exercises)
+* [Discord server](https://discord.gg/5U8SmJARcR)
 
 # Week by week
 
