@@ -32,7 +32,7 @@ The course is still under development, links to materials will be added as and w
 
 * [Why neuroscience?](https://youtu.be/jhnuVDh2XKA)
 * [Course outline](https://youtu.be/qOxdIKWLc8k)
-* History of neuroscience and machine learning (not recorded yet)
+* [History of neuroscience and machine learning](https://youtu.be/DqD5a3AfEP8)
 * Challenges for machine learning and neuroscience (not recorded yet)
 * No exercises this week
 
