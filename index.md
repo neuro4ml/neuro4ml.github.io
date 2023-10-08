@@ -31,7 +31,7 @@ The course is still under development, links to materials will be added as and w
 ## Week 0 - Introduction and motivation
 
 * [Why neuroscience?](https://youtu.be/jhnuVDh2XKA)
-* Course outline (not recorded yet)
+* [Course outline](https://youtu.be/qOxdIKWLc8k)
 * History of neuroscience and machine learning (not recorded yet)
 * Challenges for machine learning and neuroscience (not recorded yet)
 * No exercises this week
