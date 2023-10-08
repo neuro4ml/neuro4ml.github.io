@@ -30,10 +30,10 @@ The course is still under development, links to materials will be added as and w
 
 ## Week 0 - Introduction and motivation
 
-* [Why neuroscience?](https://youtu.be/jhnuVDh2XKA)
-* [Course outline](https://youtu.be/qOxdIKWLc8k)
-* [History of neuroscience and machine learning](https://youtu.be/DqD5a3AfEP8)
-* Challenges for machine learning and neuroscience (not recorded yet)
+0. [Why neuroscience?](https://youtu.be/jhnuVDh2XKA) ([slides](materials/w0/W0-V0-why-neuroscience.pptx))
+1. [Course outline](https://youtu.be/qOxdIKWLc8k) ([slides](materials/w0/W0-V1-course-outline.pptx))
+2. [History of neuroscience and machine learning](https://youtu.be/DqD5a3AfEP8) ([slides](materials/w0/W0-V2-history.pptx))
+3. [Challenges for machine learning and neuroscience](https://youtu.be/dNiLUIfp79Y) ([slides](materials/w0/W0-V3-challenges.pptx))
 * No exercises this week
 
 ## Week 1 - Neurons
