@@ -40,7 +40,7 @@ The course is still under development, links to materials will be added as and w
 
 * Structure (not recorded yet)
 * Function (not recorded yet)
-* Exercises (not released yet)
+* [Exercises]() [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w1-neurons/w1-neurons.ipynb) (testing version, not finalised yet)
 
 ## Week 2 - Synapses and networks
 
