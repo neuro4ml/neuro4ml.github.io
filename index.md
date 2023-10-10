@@ -35,6 +35,7 @@ The course is still under development, links to materials will be added as and w
 * [History of neuroscience and machine learning](https://youtu.be/DqD5a3AfEP8) ([slides](materials/w0/W0-V2-history.pptx))
 * [Challenges for machine learning and neuroscience](https://youtu.be/dNiLUIfp79Y) ([slides](materials/w0/W0-V3-challenges.pptx))
 * No exercises this week
+* [Reading material](materials/w0/reading.md)
 
 ## Week 1 - Neurons
 
