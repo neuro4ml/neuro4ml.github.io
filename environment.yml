@@ -1,0 +1,17 @@
+name: neuro4ml
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.9
+  - matplotlib
+  - jupyter
+  - notebook
+  - ipykernel
+  - ipywidgets
+  - ipympl
+  - pytorch
+  - cpuonly
+  - pip
+  - pip:
+    - brian2
