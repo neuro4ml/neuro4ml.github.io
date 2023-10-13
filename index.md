@@ -44,7 +44,7 @@ The course is still under development, links to materials will be added as and w
 * [Abstract neuron models](https://youtu.be/GX1SIWfhGKc) ([slides](materials/w1/W1-V2-abstract-models.pptx))
 * [Biophysical neuron models](https://youtu.be/9zD430EQga8) ([slides](materials/w1/W1-V3-biophysical-models.pptx))
 * Code for figures: [Preview notebook](https://github.com/neuro4ml/neuro4ml.github.io/blob/main/materials/w1/w1-models.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/neuro4ml.github.io/blob/main/materials/w1/w1-models.ipynb)
-* Exercises: Intro video (soon) / [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w1-neurons/w1-neurons.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w1-neurons/w1-neurons.ipynb)
+* Exercises: [Intro video](https://youtu.be/ffGktH1jw-M) / [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w1-neurons/w1-neurons.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w1-neurons/w1-neurons.ipynb)
 * [Reading material](materials/w1/W1-reading.md)
 
 ## Week 2 - Synapses and networks
