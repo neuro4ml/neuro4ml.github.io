@@ -51,7 +51,7 @@ The course is still under development, links to materials will be added as and w
 
 * Synapses (not recorded yet)
 * Networks (not recorded yet)
-* Exercises (not released yet)
+* Exercises (beta version, not finalised): Intro video (not recorded yet) / [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w2-synapses-networks/w2-synapses-networks.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w2-synapses-networks/w2-synapses-networks.ipynb)
 
 ## Week 3 - Brain structure
 
