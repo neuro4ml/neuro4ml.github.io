@@ -3,6 +3,7 @@
 ## Why neuroscience?
 
 * [Interested in doing a PhD?](http://neural-reckoning.org/apply_phd.html)
+* [AI and neuroscience: the virtuous circle from Deep Mind podcast](https://www.youtube.com/watch?v=ExrXs7PCQpU)
 
 ## History of neuroscience and machine learning
 
