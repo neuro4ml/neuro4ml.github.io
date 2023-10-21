@@ -49,9 +49,13 @@ The course is still under development, links to materials will be added as and w
 
 ## Week 2 - Synapses and networks
 
-* Synapses (not recorded yet)
-* Networks (not recorded yet)
-* Exercises (beta version, not finalised): Intro video (not recorded yet) / [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w2-synapses-networks/w2-synapses-networks.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w2-synapses-networks/w2-synapses-networks.ipynb)
+* [Synapses 1](https://youtu.be/6PhC2VFEuHQ) ([slides](materials/w2/W2-V0-synapses-1.pptx))
+* [Synapses 2](https://youtu.be/SI3FalfSZVI) ([slides](materials/w2/W2-V1-synapses-2.pptx))
+* [Networks](https://youtu.be/YjXSh14rV08) ([slides](materials/w2/W2-V2-networks.pptx))
+* [Synapse models](https://youtu.be/AiExcSomrvc) ([slides](materials/w2/W2-V3-synapse-models.pptx))
+* [Network models](https://youtu.be/iH8lgzVOVMc) ([slides](materials/w2/W2-V4-network-models.pptx))
+* Exercises: Intro video (not recorded yet) / [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w2-synapses-networks/w2-synapses-networks.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w2-synapses-networks/w2-synapses-networks.ipynb)
+* [Reading material](materials/w2/W2-reading.md)
 
 ## Week 3 - Brain structure
 
