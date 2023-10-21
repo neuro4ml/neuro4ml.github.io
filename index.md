@@ -55,7 +55,7 @@ The course is still under development, links to materials will be added as and w
 * [Synapse models](https://youtu.be/AiExcSomrvc) ([slides](materials/w2/W2-V3-synapse-models.pptx))
 * [Network models](https://youtu.be/iH8lgzVOVMc) ([slides](materials/w2/W2-V4-network-models.pptx))
 * Code for figures: [Preview notebook](https://github.com/neuro4ml/neuro4ml.github.io/blob/main/materials/w2/w2-figures.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/neuro4ml.github.io/blob/main/materials/w2/w2-figures.ipynb)
-* Exercises: Intro video (not recorded yet) / [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w2-synapses-networks/w2-synapses-networks.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w2-synapses-networks/w2-synapses-networks.ipynb)
+* Exercises: [Intro video](https://youtu.be/LnduQ3HYKwo) / [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w2-synapses-networks/w2-synapses-networks.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w2-synapses-networks/w2-synapses-networks.ipynb)
 * [Reading material](materials/w2/W2-reading.md)
 
 ## Week 3 - Brain structure
