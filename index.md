@@ -86,14 +86,23 @@ The course is still under development, links to materials will be added as and w
 
 * No exercises this week
 
-# Reading list
+# Accessibility
 
-There is no required reading for this course, only optional. I will be curating a list of papers that are meant to be about inspiring creativity and joy in this field. For the moment though, you can check out:
+The Powerpoint slides contain (in the speaker notes) a complete transcript of everything we say.
+
+Youtube automatic captions are of reasonable quality, and after the course is complete we will update them with manual transcripts. For the moment, the Powerpoint slides and automatic captions can be used.
+
+# Extended reading list
+
+There is no required reading for this course, only optional. We will be curating a list of papers that are meant to be about inspiring creativity and joy in this field. For the moment though, you can check out:
 
 * [Twitter thread on papers like this](https://twitter.com/neuralreckoning/status/1710278556649922890)
 * [Mastodon thread on papers like this](https://neuromatch.social/@neuralreckoning/111188192533819216)
 * [List of free resources on computational neuroscience](http://neural-reckoning.org/comp-neuro-resources.html)
 
-# Authors
+# Credits
 
-The course is designed by [Dan Goodman](https://neural-reckoning.org/dan_goodman.html) and [Marcus Ghosh](https://neural-reckoning.org/marcus_ghosh.html).
+* [Dan Goodman](https://neural-reckoning.org/dan_goodman.html): course design
+* [Marcus Ghosh](https://neural-reckoning.org/marcus_ghosh.html): course design
+* [Swathi Anil](https://scholar.google.de/citations?user=iVhLIZsAAAAJ&hl=en): beta testing, feedback, teaching assistant
+* [Greta Horvathova](http://neural-reckoning.org/greta_horvathova.html): beta testing, feedback, teaching assistant
