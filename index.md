@@ -60,7 +60,10 @@ The course is still under development, links to materials will be added as and w
 
 ## Week 3 - Brain structure
 
-* Exercises (not released yet)
+* [Connectome](https://youtu.be/LANmSbhbdBA) ([slides](materials/w3/W3-V0-connectome.pptx))
+* [Humans](https://youtu.be/Mf9Qco49p4Q) ([slides](materials/w3/W3-V1-humans.pptx))
+* No exercises this week (will be included in next week's material)
+* [Reading material](materials/w3/W3-reading.md)
 
 ## Week 4 - Learning rules
 
