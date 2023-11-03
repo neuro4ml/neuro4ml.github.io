@@ -62,7 +62,7 @@ The course is still under development, links to materials will be added as and w
 
 * [Connectome](https://youtu.be/LANmSbhbdBA) ([slides](materials/w3/W3-V0-connectome.pptx))
 * [Humans](https://youtu.be/Mf9Qco49p4Q) ([slides](materials/w3/W3-V1-humans.pptx))
-* Exercises: Intro video (to be recorded) / [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w3-brain-structure/w3-exercise.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w3-brain-structure/w3-exercise.ipynb)
+* Exercises: [Intro video](https://youtu.be/XjCB8n921UQ) / [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w3-brain-structure/w3-exercise.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w3-brain-structure/w3-exercise.ipynb)
 * [Reading material](materials/w3/W3-reading.md)
 
 ## Week 4 - Learning rules
