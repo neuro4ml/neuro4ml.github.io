@@ -67,7 +67,12 @@ The course is still under development, links to materials will be added as and w
 
 ## Week 4 - Learning rules
 
-* Exercises (not released yet)
+* [Types of learning](https://youtu.be/JeXwbbU2rlQ) ([slides](materials/w4/W4-V0-types-of-learning.pptx))
+* [Rate-based models](https://youtu.be/UIPn7COOYcg) ([slides](materials/w4/W4-V1-rate-based-models.pptx))
+* [STDP](https://youtu.be/fvzzwHKlMzk) ([slides](materials/w4/W4-V2-STDP.pptx))
+* Code for figures: [Preview notebook](https://github.com/neuro4ml/neuro4ml.github.io/blob/main/materials/w4/w4-figures.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/neuro4ml.github.io/blob/main/materials/w4/w4-figures.ipynb)
+* Exercises (outline only): [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w4-learning/w4-learning-exercise.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w4-learning/w4-learning-exercise.ipynb)
+* [Reading material](materials/w4/W4-reading.md)
 
 ## Week 5 - Spiking neural networks
 
