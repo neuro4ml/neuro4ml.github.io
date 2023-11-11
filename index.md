@@ -76,7 +76,7 @@ The course is still under development, links to materials will be added as and w
 
 ## Week 5 - Spiking neural networks
 
-* Exercises (not released yet)
+* Exercises: Intro video not yet recorded / [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w5-snn/w5-snn-exercise.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w5-snn/w5-snn-exercise.ipynb)
 
 ## Week 6 - Understand neural networks
 
