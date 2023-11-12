@@ -79,6 +79,7 @@ The course is still under development, links to materials will be added as and w
 * [Spiking is not differentiable](https://youtu.be/0fNiTc-0t2k) ([slides](materials/w5/W5-V0-spiking-is-not-differentiable.pptx))
 * [Training SNNs with limited gradients](https://youtu.be/XnNcOLASZX0) ([slides](materials/w5/W5-V1-limited-gradients.pptx))
 * Exercises: Intro video not yet recorded / [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w5-snn/w5-snn-exercise.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w5-snn/w5-snn-exercise.ipynb)
+* [Reading material](materials/w5/W5-reading.md)
 
 ## Week 6 - Understand neural networks
 
