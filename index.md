@@ -93,7 +93,9 @@ The course is still under development, links to materials will be added as and w
 
 ## Week 7 - Various topics
 
-* No exercises this week
+* [Decision making](https://youtu.be/n_05hOV2hS0) ([slides](materials/w7/W7-V0-decision-making.pptx))
+* Code for figures (coming soon)
+* No exercises this week (might be added in future)
 * [Reading material](materials/w7/W7-reading.md)
 
 ## Week 8 - Neuromorphic computing
