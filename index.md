@@ -93,9 +93,11 @@ The course is still under development, links to materials will be added as and w
 
 ## Week 7 - Various topics
 
+Only one video this week, more will be added in future.
+
 * [Decision making](https://youtu.be/n_05hOV2hS0) ([slides](materials/w7/W7-V0-decision-making.pptx))
-* Code for figures (coming soon)
-* No exercises this week (might be added in future)
+* Code for figures: [Preview notebook](https://github.com/neuro4ml/neuro4ml.github.io/blob/main/materials/w7/w7-figures.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/neuro4ml.github.io/blob/main/materials/w7/w7-figures.ipynb)
+* No exercises this week
 * [Reading material](materials/w7/W7-reading.md)
 
 ## Week 8 - Neuromorphic computing
