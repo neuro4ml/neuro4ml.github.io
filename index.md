@@ -93,7 +93,8 @@ The course is still under development, links to materials will be added as and w
 
 ## Week 7 - Various topics
 
-* Exercises (not released yet)
+* No exercises this week
+* [Reading material](materials/w7/W7-reading.md)
 
 ## Week 8 - Neuromorphic computing
 
