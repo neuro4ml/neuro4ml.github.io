@@ -102,7 +102,13 @@ Only one video this week, more will be added in future.
 
 ## Week 8 - Neuromorphic computing
 
+* [Introduction](https://youtu.be/21ACVZ56nhI) ([slides](materials/w8/W8-V0-intro.pptx))
+* [Computing](https://youtu.be/Y1v3wi-djD0) ([slides](materials/w8/W8-V1-computing.pptx))
+* [Sensing and applications](https://youtu.be/Uwht2Y6xLj4) ([slides](materials/w8/W8-V2-sensing-and-applications.pptx))
 * Exercises (not released yet)
+* [Reading material](materials/w8/W8-reading.md)
+
+This week's videos feature research by [Gabriel Béna](http://neural-reckoning.org/gabriel_bena.html) (although any errors you find are probably the result of Dan's interference).
 
 ## Week 9 - Open issues
 
@@ -126,5 +132,6 @@ There is no required reading for this course, only optional. We will be curating
 
 * [Dan Goodman](https://neural-reckoning.org/dan_goodman.html): course design
 * [Marcus Ghosh](https://neural-reckoning.org/marcus_ghosh.html): course design
+* [Gabriel Béna](http://neural-reckoning.org/gabriel_bena.html): research for week 8, neuromorphic computing
 * [Swathi Anil](https://scholar.google.de/citations?user=iVhLIZsAAAAJ&hl=en): beta testing, feedback, teaching assistant
 * [Greta Horvathova](http://neural-reckoning.org/greta_horvathova.html): beta testing, feedback, teaching assistant
