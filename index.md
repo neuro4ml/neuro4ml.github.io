@@ -105,7 +105,7 @@ Only one video this week, more will be added in future.
 * [Introduction](https://youtu.be/21ACVZ56nhI) ([slides](materials/w8/W8-V0-intro.pptx))
 * [Computing](https://youtu.be/Y1v3wi-djD0) ([slides](materials/w8/W8-V1-computing.pptx))
 * [Sensing and applications](https://youtu.be/Uwht2Y6xLj4) ([slides](materials/w8/W8-V2-sensing-and-applications.pptx))
-* Exercises (not released yet)
+* Exercises: [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w8-neuromorphic/w8-neuromorphic-exercise.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w8-neuromorphic/w8-neuromorphic-exercise.ipynb)
 * [Reading material](materials/w8/W8-reading.md)
 
 This week's videos feature research by [Gabriel Béna](http://neural-reckoning.org/gabriel_bena.html) (although any errors you find are probably the result of Dan's interference).
