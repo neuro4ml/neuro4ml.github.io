@@ -112,7 +112,11 @@ This week's videos feature research by [Gabriel Béna](http://neural-reckoning.o
 
 ## Week 9 - Open issues
 
-* No exercises this week
+* [Does neuroscience work?](https://youtu.be/CAzB5wwj4BY) ([slides](materials/w9/W9-V0-does-neuroscience-work.pptx))
+* [What are spikes for?](https://youtu.be/3Bfk1HoZekI) ([slides](materials/w9/W9-V1-what-are-spikes-for.pptx))
+* Code for figures: [Preview notebook](https://github.com/neuro4ml/neuro4ml.github.io/blob/main/materials/w9/w9-figures.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/neuro4ml.github.io/blob/main/materials/w9/w9-figures.ipynb)
+* Exercise this week is to resolve some of the open issues discussed. Good luck!
+* [Reading material](materials/w9/W9-reading.md)
 
 # Accessibility
 
