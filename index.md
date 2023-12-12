@@ -26,8 +26,6 @@ We hope you enjoy the course!
 
 # Week by week
 
-The course is still under development, links to materials will be added as and when they become available. Contents may change.
-
 ## Week 0 - Introduction and motivation
 
 * [Why neuroscience?](https://youtu.be/jhnuVDh2XKA) ([slides](materials/w0/W0-V0-why-neuroscience.pptx))
