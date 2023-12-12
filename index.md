@@ -137,3 +137,9 @@ There is no required reading for this course, only optional. We will be curating
 * [Gabriel Béna](http://neural-reckoning.org/gabriel_bena.html): research for week 8, neuromorphic computing
 * [Swathi Anil](https://scholar.google.de/citations?user=iVhLIZsAAAAJ&hl=en): beta testing, feedback, teaching assistant
 * [Greta Horvathova](http://neural-reckoning.org/greta_horvathova.html): beta testing, feedback, teaching assistant
+
+# Citing us
+
+Please cite us via our [Zenodo record](https://zenodo.org/records/10366802):
+
+    Goodman, Dan F. M., and Marcus Ghosh. ‘Neuroscience for Machine Learners’. 12 December 2023. https://doi.org/10.5281/zenodo.10366802.
