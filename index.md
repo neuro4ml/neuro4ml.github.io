@@ -86,7 +86,7 @@ We hope you enjoy the course!
 * [Observing](https://youtu.be/c8JCgX5JPBw) ([slides](materials/w6/W6-V0-observing.pptx))
 * [Analysing](https://youtu.be/eBTEdZx0oKk) ([slides](materials/w6/W6-V1-analysing.pptx))
 * [Manipulating](https://youtu.be/_V0PPQjYgeo) ([slides](materials/w6/W6-V2-manipulating.pptx))
-* Exercises: [Intro video](https://youtu.be/WdyDmFx_Dqw) / [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w6-understanding/w6-snn-exercise.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w6-understanding/w6-snn-exercise.ipynb)
+* Exercises: [Intro video](https://youtu.be/WdyDmFx_Dqw) / [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w6-understanding/w6-understanding-exercise.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w6-understanding/w6-understanding-exercise.ipynb)
 * [Reading material](materials/w6/W6-reading.md)
 
 ## Week 7 - Various topics
