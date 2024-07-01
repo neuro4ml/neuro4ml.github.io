@@ -1,6 +1,8 @@
 ---
-title: Neuroscience for machine learners
+title: Neuroscience for Machine Learners
 ---
+
+<p align='center'><img src='https://github.com/neuro4ml/neuro4ml-beta.github.io/blob/main/logo-colour.png?raw=True'/></p>
 
 # About
 
@@ -11,6 +13,11 @@ conceptions of both fields to incorporate elements of the other in the hope that
 creative thinking. Note that if this page is causing you scrolling issues on iPhone Safari, [click here](https://github.com/neuro4ml/neuro4ml.github.io/blob/main/index.md).
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jhnuVDh2XKA?si=Mo6bRo_nN_Uo28cv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+:::{iframe} https://www.youtube.com/watch?v=jhnuVDh2XKA&t
+:width: 100%
+Introduction to the course
+:::
 
 The course is given in person at the [Department for Electrical and Electronic Engineering, Imperial College London](https://www.imperial.ac.uk/electrical-engineering/), and made freely available online (although without the practical classes).
 
