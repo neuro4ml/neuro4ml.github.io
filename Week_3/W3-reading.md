@@ -1,4 +1,4 @@
-# Week 3 reading
+# Week 3 Reading Material
 
 ## Connectome
 * [White et al. (1986) "The structure of the nervous system of the nematode *Caenorhabditis elegans*"](https://doi.org/10.1098/rstb.1986.0056)

@@ -1,4 +1,4 @@
-# Week 2 reading
+# Week 2 Reading Material
 
 ## Synapses 1 
 

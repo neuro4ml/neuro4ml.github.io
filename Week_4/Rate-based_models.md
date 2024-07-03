@@ -1,1 +1,0 @@
-# Rate-based model
