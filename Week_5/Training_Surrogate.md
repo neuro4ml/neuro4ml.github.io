@@ -1,1 +1,0 @@
-# Training SNNs with surrogate gradients

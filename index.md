@@ -32,95 +32,150 @@ We hope you enjoy the course!
 
 # Week by week
 
-## Week 0 - Introduction and motivation
+## Week 0 - Introduction and Motivation
 
-* [Why neuroscience?](https://youtu.be/jhnuVDh2XKA) ([slides](Week_0/W0-V0-why-neuroscience.pptx))
-* [Course outline](https://youtu.be/qOxdIKWLc8k) ([slides](Week_0/W0-V1-course-outline.pptx))
-* [History of neuroscience and machine learning](https://youtu.be/DqD5a3AfEP8) ([slides](Week_0/W0-V2-history.pptx))
-* [Challenges for machine learning and neuroscience](https://youtu.be/dNiLUIfp79Y) ([slides](Week_0/W0-V3-challenges.pptx))
+* [Why neuroscience?](Week_0/1.%20Why_Neuroscience.md)
+
+* [Course outline](Week_0/2.%20Course_Outline.md)
+
+* [History of neuroscience and machine learning](Week_0/3.%20History.md)
+
+* [Challenges for machine learning and neuroscience](Week_0/4.%20Challenges.md)
+
 * No exercises this week
-* [Reading material](w0/reading.md)
+
+* [Reading material](Week_0/5.%20Reading.md)
+
 
 ## Week 1 - Neurons
 
-* [Neuron structure](https://youtu.be/WMRUZT9NljM) ([slides](Week_1/W1-V0-structure.pptx))
-* [Neuron function](https://youtu.be/sYjx3VSaAME) ([slides](Week_1/W1-V1-function.pptx))
-* [Abstract neuron models](https://youtu.be/GX1SIWfhGKc) ([slides](Week_1/W1-V2-abstract-models.pptx))
-* [Biophysical neuron models](https://youtu.be/9zD430EQga8) ([slides](Week_1/W1-V3-biophysical-models.pptx))
-* Code for figures: [Preview notebook](https://github.com/neuro4ml/neuro4ml.github.io/blob/main/materials/w1/w1-models.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/neuro4ml.github.io/blob/main/materials/w1/w1-models.ipynb)
-* Exercises: [Intro video](https://youtu.be/ffGktH1jw-M) / [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w1-neurons/w1-neurons.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w1-neurons/w1-neurons.ipynb)
-* [Reading material](Week_1/W1-reading.md)
+* [Neuron structure](Week_1/1.%20Neuron_Structure.md)
 
-## Week 2 - Synapses and networks
+* [Neuron function](Week_1/2.%20Neuron_Function.md)
 
-* [Synapses 1](https://youtu.be/6PhC2VFEuHQ) ([slides](Week_2/W2-V0-synapses-1.pptx))
-* [Synapses 2](https://youtu.be/SI3FalfSZVI) ([slides](Week_2/W2-V1-synapses-2.pptx))
-* [Networks](https://youtu.be/YjXSh14rV08) ([slides](Week_2/W2-V2-networks.pptx))
-* [Synapse models](https://youtu.be/AiExcSomrvc) ([slides](Week_2/W2-V3-synapse-models.pptx))
-* [Network models](https://youtu.be/iH8lgzVOVMc) ([slides](Week_2/W2-V4-network-models.pptx))
-* Code for figures: [Preview notebook](https://github.com/neuro4ml/neuro4ml.github.io/blob/main/materials/w2/w2-figures.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/neuro4ml.github.io/blob/main/materials/w2/w2-figures.ipynb)
-* Exercises: [Intro video](https://youtu.be/LnduQ3HYKwo) / [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w2-synapses-networks/w2-synapses-networks.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w2-synapses-networks/w2-synapses-networks.ipynb)
-* [Reading material](Week_2/W2-reading.md)
+* [Abstract neuron models](Week_1/3.%20Abstract_Models.md)
 
-## Week 3 - Brain structure
+* [Biophysical neuron models](Week_1/4.%20Biophysical_Models.md)
 
-* [Connectome](https://youtu.be/LANmSbhbdBA) ([slides](Week_3/W3-V0-connectome.pptx))
-* [Humans](https://youtu.be/Mf9Qco49p4Q) ([slides](Week_3/W3-V1-humans.pptx))
-* Exercises: [Intro video](https://youtu.be/XjCB8n921UQ) / [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w3-brain-structure/w3-exercise.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w3-brain-structure/w3-exercise.ipynb)
-* [Reading material](Week_3/W3-reading.md)
+* [Code for Figures](Week_1/5.%20w1-models.ipynb)
 
-## Week 4 - Learning rules
+* [Exercises](Week_1/6.%20w1-exercises.md)
 
-* [Types of learning](https://youtu.be/JeXwbbU2rlQ) ([slides](Week_4/W4-V0-types-of-learning.pptx))
-* [Rate-based models](https://youtu.be/UIPn7COOYcg) ([slides](Week_4/W4-V1-rate-based-models.pptx))
-* [STDP](https://youtu.be/fvzzwHKlMzk) ([slides](Week_4/W4-V2-STDP.pptx))
-* Code for figures: [Preview notebook](https://github.com/neuro4ml/neuro4ml.github.io/blob/main/materials/w4/w4-figures.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/neuro4ml.github.io/blob/main/materials/w4/w4-figures.ipynb)
-* Exercises (outline only): [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w4-learning/w4-learning-exercise.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w4-learning/w4-learning-exercise.ipynb)
-* [Reading material](Week_4/W4-reading.md)
+* [Reading Material](Week_1/7.%20w1-reading.md)
 
-## Week 5 - Spiking neural networks
 
-* [Spiking is not differentiable](https://youtu.be/0fNiTc-0t2k) ([slides](Week_5/W5-V0-spiking-is-not-differentiable.pptx))
-* [Training SNNs with limited gradients](https://youtu.be/XnNcOLASZX0) ([slides](Week_5/W5-V1-limited-gradients.pptx))
-* [Training SNNs with surrogate gradients](https://youtu.be/m_F3lM_aNmg) ([slides](Week_5/W5-V2-surrogate-gradients.pptx))
-* Training SNNs with approximate gradients (not finished yet, coming soon)
-* Exercises: Intro video not yet recorded / [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w5-snn/w5-snn-exercise.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w5-snn/w5-snn-exercise.ipynb)
-* [Reading material](Week_5/W5-reading.md)
+## Week 2 - Synapses and Networks
 
-## Week 6 - Understanding neural networks
+* [Synapses 1](Week_2/1.%20Synapses1.md)
 
-* [Observing](https://youtu.be/c8JCgX5JPBw) ([slides](Week_6/W6-V0-observing.pptx))
-* [Analysing](https://youtu.be/eBTEdZx0oKk) ([slides](Week_6/W6-V1-analysing.pptx))
-* [Manipulating](https://youtu.be/_V0PPQjYgeo) ([slides](Week_6/W6-V2-manipulating.pptx))
-* Exercises: [Intro video](https://youtu.be/WdyDmFx_Dqw) / [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w6-understanding/w6-understanding-exercise.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w6-understanding/w6-understanding-exercise.ipynb)
-* [Reading material](Week_6/W6-reading.md)
+* [Synapses 2](Week_2/2.%20Synapses2.md)
 
-## Week 7 - Various topics
+* [Networks](Week_2/3.%20Networks.md)
+
+* [Synapse Models](Week_2/4.%20Synapse_Models.md)
+
+* [Network Models](Week_2/3.%20Networks.md)
+
+* [Code for Figure](Week_2/6.%20w2-figures.ipynb)
+
+* [Exercises](Week_2/7.%20w2-exercises.md)
+
+* [Reading Material](Week_2/8.%20w2-reading.md)
+
+
+## Week 3 - Brain Structure
+
+* [Connectome](Week_3/1.%20Connectome.md)
+
+* [Humans](Week_3/2.%20Humans.md)
+
+* [Exercises](Week_3/3.%20w3-exercises.md)
+
+* [Reading Material](Week_3/4.%20w3-reading.md)
+
+
+## Week 4 - Learning Rules
+
+* [Types of Learning](Week_4/1.%20Types_Of_Learning.md)
+
+* [Rate-based Models](Week_4/2.%20Rate-based_models.md)
+
+* [STDP](Week_4/3.%20STDP.md)
+
+* [Code for Figures](Week_4/4.%20w4-figures.ipynb)
+
+* [Exercises](Week_4/5.%20w4-exercises.md)
+
+* [Reading Material](Week_4/W4-reading.md)
+
+## Week 5 - Spiking Neural Networks
+
+* [Spiking is Not Differentiable](Week_5/1.%20Spiking.md)
+
+* [Training SNNs with Limited Gradients](Week_5/2.%20Training_Limited.md)
+
+* [Training SNNs with Surrogate Gradients](Week_5/3.%20Training_Surrogate.md)
+
+* [Training SNNs with Approximate Gradients](Week_5/4.%20Training_Approximate.md)
+
+* [Exercises](Week_5/5.%20w5-exercises.md)
+
+* [Reading Material](Week_5/6.%20w5-reading.md)
+
+
+## Week 6 - Understanding Neural Networks
+
+* [Observing](Week_6/1.%20Observing.md)
+
+* [Analysing](Week_6/2.%20Analysing.md)
+
+* [Manipulating](Week_6/3.%20Manipulating.md)
+
+* [Exercises](Week_6/4.%20w6-exercises.md)
+
+* [Reading Material](Week_6/5.%20w6-reading.md)
+
+
+## Week 7 - Various Topics
 
 Only one video this week, more will be added in future.
 
-* [Decision making](https://youtu.be/n_05hOV2hS0) ([slides](Week_7/W7-V0-decision-making.pptx))
-* Code for figures: [Preview notebook](https://github.com/neuro4ml/neuro4ml.github.io/blob/main/materials/w7/w7-figures.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/neuro4ml.github.io/blob/main/materials/w7/w7-figures.ipynb)
+* [Decision Making](Week_7/1.%20Decision_Making.md)
+
+* [Code for Figure](Week_7/2.%20w7-figures.ipynb)
+
 * No exercises this week
-* [Reading material](Week_7/W7-reading.md)
 
-## Week 8 - Neuromorphic computing
+* [Reading Material](Week_7/W7-reading.md)
 
-* [Introduction](https://youtu.be/21ACVZ56nhI) ([slides](Week_8/W8-V0-intro.pptx))
-* [Computing](https://youtu.be/Y1v3wi-djD0) ([slides](Week_8/W8-V1-computing.pptx))
-* [Sensing and applications](https://youtu.be/Uwht2Y6xLj4) ([slides](Week_8/W8-V2-sensing-and-applications.pptx))
-* Exercises: [Preview notebook](https://github.com/neuro4ml/exercises/blob/main/w8-neuromorphic/w8-neuromorphic-exercise.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/exercises/blob/main/w8-neuromorphic/w8-neuromorphic-exercise.ipynb)
-* [Reading material](Week_8/W8-reading.md)
+
+## Week 8 - Neuromorphic Computing
+
+* [Introduction](Week_8/1.%20Introduction.md)
+
+* [Computing](Week_8/2.%20Computing.md)
+
+* [Sensing and applications](Week_8/3.%20Sensing_and_applications.md)
+
+* [Exercises](Week_8/4.%20w8-exercises.md)
+
+* [Reading Material](Week_8/5.%20w8-reading.md)
 
 This week's videos feature research by [Gabriel Béna](http://neural-reckoning.org/gabriel_bena.html) (although any errors you find are probably the result of Dan's interference).
 
+
 ## Week 9 - Open issues
 
-* [Does neuroscience work?](https://youtu.be/CAzB5wwj4BY) ([slides](Week_9/W9-V0-does-neuroscience-work.pptx))
-* [What are spikes for?](https://youtu.be/3Bfk1HoZekI) ([slides](Week_9/W9-V1-what-are-spikes-for.pptx))
-* Code for figures: [Preview notebook](https://github.com/neuro4ml/neuro4ml.github.io/blob/main/materials/w9/w9-figures.ipynb) / [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neuro4ml/neuro4ml.github.io/blob/main/materials/w9/w9-figures.ipynb)
-* Exercise this week is to resolve some of the open issues discussed. Good luck!
-* [Reading material](Week_9/W9-reading.md)
+* [Does Neuroscience Work?](Week_9/1.%20Does_Work.md)
+
+* [What are spikes for?](Week_9/2.%20Spikes_For.md)
+
+* [Code for Figures](Week_9/3.%20w9-figures.ipynb)
+
+* [Exercises](Week_9/4.%20w9_exercises.md)
+
+* [Reading Material](Week_9/5.%20w9-reading.md)
+
 
 # Accessibility
 

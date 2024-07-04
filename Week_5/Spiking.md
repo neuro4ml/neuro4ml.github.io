@@ -1,1 +1,0 @@
-# Spiking is not differentiable
