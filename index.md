@@ -1,5 +1,5 @@
 ---
-title: Neuroscience for Machine Learners
+title: Neuroscience for machine learners
 ---
 
 <p align='center'><img src='https://github.com/neuro4ml/neuro4ml-beta.github.io/blob/main/logo-colour.png?raw=True'/></p>
@@ -10,7 +10,7 @@ This is a freely available online course on neuroscience for people with a machi
 The aim is to bring together these two fields that have a shared goal in understanding intelligent processes.
 Rather than pushing for "neuroscience-inspired" ideas in machine learning, the idea is to broaden the
 conceptions of both fields to incorporate elements of the other in the hope that this will lead to new,
-creative thinking. Note that if this page is causing you scrolling issues on iPhone Safari, [click here](https://github.com/neuro4ml/neuro4ml.github.io/blob/main/index.md).
+creative thinking.
 
 
 ```{iframe} https://www.youtube.com/embed/jhnuVDh2XKA?si=Mo6bRo_nN_Uo28cv

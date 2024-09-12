@@ -2,18 +2,16 @@
 version: 1
 project:
   id: 043fbecc-3479-4dd1-b94c-4b6465320cd2
-  title: Neuroscience for Machine Learners
+  title: Neuroscience for machine learners
   description: A freely available short course on neuroscience for people with a machine learning background. Designed by Dan Goodman and Marcus Ghosh.
   # keywords: []
   authors: 
     - name: Dan Goodman
-      email: d.goodman@imperial.ac.uk
-      url: https://neural-reckoning.org/dan_goodman.html
+      orcid: https://orcid.org/0000-0003-1007-6474
+      url: https://neural-reckoning.org
       twitter: neuralreckoning
-      phone: +44 (0)20 7594 6264
     - name: Marcus Ghosh
       orcid: https://orcid.org/0000-0002-2428-4605
-      email: m.ghosh@imperial.ac.uk
       url: https://neural-reckoning.org/marcus_ghosh.html
       twitter: marcusghosh
   github: https://github.com/neuro4ml/neuro4ml-beta.github.io
