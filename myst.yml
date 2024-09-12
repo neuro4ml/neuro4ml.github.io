@@ -21,7 +21,7 @@ project:
     - file: index.md
     - title: Week 0 - Introduction and motivation
       children:
-        - file: Week_0\1-Why_Neuroscience.md
+        - file: Week_0/1-Why_Neuroscience.md
         - file: Week_0\2. Course_Outline.md
         - file: Week_0\3. History.md
         - file: Week_0\4. Challenges.md
