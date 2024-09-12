@@ -23,76 +23,76 @@ project:
       children:
         - file: Week_0/1-Why_Neuroscience.md
         - file: Week_0/2. Course_Outline.md
-        - file: Week_0\3. History.md
-        - file: Week_0\4. Challenges.md
-        - file: Week_0\5. Reading.md
+        - file: Week_0/3. History.md
+        - file: Week_0/4. Challenges.md
+        - file: Week_0/5. Reading.md
     - title: Week 1 - Neurons
       children:
-        - file: Week_1\1. Neuron_Structure.md
-        - file: Week_1\2. Neuron_Function.md
-        - file: Week_1\3. Abstract_Models.md
-        - file: Week_1\4. Biophysical_Models.md
-        - file: Week_1\5. w1-models.ipynb
-        - file: Week_1\6. w1-exercises.md
-        - file: Week_1\7. W1-reading.md
+        - file: Week_1/1. Neuron_Structure.md
+        - file: Week_1/2. Neuron_Function.md
+        - file: Week_1/3. Abstract_Models.md
+        - file: Week_1/4. Biophysical_Models.md
+        - file: Week_1/5. w1-models.ipynb
+        - file: Week_1/6. w1-exercises.md
+        - file: Week_1/7. W1-reading.md
     - title: Week 2 - Synapses and networks
       children:
-        - file: Week_2\1. Synapses1.md
-        - file: Week_2\2. Synapses2.md
-        - file: Week_2\3. Networks.md
-        - file: Week_2\4. Synapse_Models.md
-        - file: Week_2\5. Network_Models.md
-        - file: Week_2\6. w2-figures.ipynb
-        - file: Week_2\7. w2-exercises.md
-        - file: Week_2\8. w2-reading.md
+        - file: Week_2/1. Synapses1.md
+        - file: Week_2/2. Synapses2.md
+        - file: Week_2/3. Networks.md
+        - file: Week_2/4. Synapse_Models.md
+        - file: Week_2/5. Network_Models.md
+        - file: Week_2/6. w2-figures.ipynb
+        - file: Week_2/7. w2-exercises.md
+        - file: Week_2/8. w2-reading.md
     - title: Week 3 - Brain structure
       children:
-        - file: Week_3\1. Connectome.md
-        - file: Week_3\2. Humans.md
-        - file: Week_3\3. w3-exercises.md
-        - file: Week_3\4. w3-reading.md
+        - file: Week_3/1. Connectome.md
+        - file: Week_3/2. Humans.md
+        - file: Week_3/3. w3-exercises.md
+        - file: Week_3/4. w3-reading.md
     - title: Week 4 - Learning rules
       children:
-        - file: Week_4\1. Types_Of_Learning.md
-        - file: Week_4\2. Rate-based_models.md
-        - file: Week_4\3. STDP.md
-        - file: Week_4\4. w4-figures.ipynb
-        - file: Week_4\5. w4-exercises.md
-        - file: Week_4\6. W4-reading.md
+        - file: Week_4/1. Types_Of_Learning.md
+        - file: Week_4/2. Rate-based_models.md
+        - file: Week_4/3. STDP.md
+        - file: Week_4/4. w4-figures.ipynb
+        - file: Week_4/5. w4-exercises.md
+        - file: Week_4/6. W4-reading.md
     - title: Week 5 - Spiking neural networks
       children:
-        - file: Week_5\1. Spiking.md
-        - file: Week_5\2. Training_Limited.md
-        - file: Week_5\3. Training_Surrogate.md
-        - file: Week_5\4. Training_Approximate.md
-        - file: Week_5\5. w5-exercises.md
-        - file: Week_5\6. w5-reading.md
+        - file: Week_5/1. Spiking.md
+        - file: Week_5/2. Training_Limited.md
+        - file: Week_5/3. Training_Surrogate.md
+        - file: Week_5/4. Training_Approximate.md
+        - file: Week_5/5. w5-exercises.md
+        - file: Week_5/6. w5-reading.md
     - title: Week 6 - Understanding neural networks
       children:
-        - file: Week_6\1. Observing.md
-        - file: Week_6\2. Analysing.md
-        - file: Week_6\3. Manipulating.md
-        - file: Week_6\4. w6-exercises.md
-        - file: Week_6\5. w6-reading.md
+        - file: Week_6/1. Observing.md
+        - file: Week_6/2. Analysing.md
+        - file: Week_6/3. Manipulating.md
+        - file: Week_6/4. w6-exercises.md
+        - file: Week_6/5. w6-reading.md
     - title: Week 7 - Various topics
       children:
-        - file: Week_7\1. Decision_Making.md
-        - file: Week_7\2. w7-figures.ipynb
-        - file: Week_7\3. w7-reading.md
+        - file: Week_7/1. Decision_Making.md
+        - file: Week_7/2. w7-figures.ipynb
+        - file: Week_7/3. w7-reading.md
     - title: Week 8 - Neuromorphic computing
       children:
-        - file: Week_8\1. Introduction.md
-        - file: Week_8\2. Computing.md
-        - file: Week_8\3. Sensing_and_applications.md
-        - file: Week_8\4. w8-exercises.md
-        - file: Week_8\5. w8-reading.md
+        - file: Week_8/1. Introduction.md
+        - file: Week_8/2. Computing.md
+        - file: Week_8/3. Sensing_and_applications.md
+        - file: Week_8/4. w8-exercises.md
+        - file: Week_8/5. w8-reading.md
     - title: Week 9 - Open issues
       children:
-        - file: Week_9\1. Does_Work.md
-        - file: Week_9\2. Spikes_For.md
-        - file: Week_9\3. w9-figures.ipynb
-        - file: Week_9\4. w9_exercises.md
-        - file: Week_9\5. w9-reading.md
+        - file: Week_9/1. Does_Work.md
+        - file: Week_9/2. Spikes_For.md
+        - file: Week_9/3. w9-figures.ipynb
+        - file: Week_9/4. w9_exercises.md
+        - file: Week_9/5. w9-reading.md
     
 site:
   template: book-theme
