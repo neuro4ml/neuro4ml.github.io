@@ -1,6 +1,6 @@
-# Why Neuroscience?
+# Why neuroscience?
 
-[Download the slides here](W0-V0-why-neuroscience.pptx)
+[Download the slides here](slides/W0-V0-why-neuroscience.pptx)
 
 :::{iframe} https://www.youtube.com/embed/jhnuVDh2XKA
 :width: 100%
@@ -12,11 +12,9 @@
 
 Welcome to **Neuroscience for Machine Learners!**
 
-As the name suggests, this course is intended for people with a background in machine learning who want to learn a bit about neuroscience. It runs in person at [Imperial College London](https://ror.org/041kmwe10), as well as being freely available online.
+As the name suggests, this course is intended for people with a background in machine learning who want to learn a bit about neuroscience. It runs in person at Imperial College London, as well as being freely available online.
 
-:::{attention} Note!
-So let’s start  by talking about why you should be interested in neuroscience.
-:::
+So let’s start by talking about why you should be interested in neuroscience.
 
 ## Neuroscience ❤️ Machine Learning
 
@@ -25,52 +23,42 @@ One reason is that machine learning and neuroscience have had a really rich hist
 * From the [neuron to the perceptron](#n2p)
 * Or from the [retina to the convolutional neural network](#r2cnn).
 
-```{figure} neuron2perceptron.png
+```{figure} figures/neuron2perceptron.png
 :label: n2p
 :alt: Neuron to Perceptron
 :align: center
-
-Neuron to Perceptron
 ```
 
-```{figure} retina2cnn.png
+```{figure} figures/retina2cnn.png
 :label: r2cnn
 :alt: Retina to Convolutional Neural Network
 :align: center
-
-Retina to Convolutional Neural Network
 ```
 
 In recent years they have started to drift apart, but that could change and knowing a bit of neuroscience could help with that. After all, the human brain can still easily solve some [tasks](#braintask) that we can't yet solve with machine learning.
 
-```{figure} braintask.png
+```{figure} figures/braintask.png
 :label: braintask
 :alt:Brain Task
 :align: center
-
-Example of Task Where Brain Performs Significantly Better Than Machine Learning
 ```
-:::{hint} Linker
 So how does it do that?
-:::
 
-## Learning From Natural Systems
+## Energy efficient brain mechanisms
 
 Honestly, we don't know yet, but we do know some pretty crazy and fascinating stuff about the mechanisms the brain uses.
 
 Like the incredibly energy efficient way that brain cells signal to each other that is neither fully digital nor fully analogue. Some of the things the brain does are probably not relevant to machine learning, but some of them probably are since they're solving many of the same problems.
 
-```{figure} brainsignal.png
+```{figure} figures/brainsignal.png
 :label: brainsignal
 :alt:Brain Cell Signalling
 :align: center
-
-Diagram & Graph Showing Brain Cell Signalling Process
 ```
 
-**Knowing about different approaches to intelligence taken by natural and artificial systems and their different constraints can help enrich our thinking about both.**
+Knowing about different approaches to intelligence taken by natural and artificial systems and their different constraints can help enrich our thinking about both.
 
-## Our Approach
+## Course philosophy
 
 So that's the approach we'll be taking in this course:
 
@@ -80,13 +68,6 @@ Instead, we'll focus on what we do know about the brain, and use those ideas pla
 
 And if, along the way, you discover that you actually do want to understand how the brain works, then this course can be a first step in that journey too.
 
-:::{seealso} For more
-:class: dropdown
-Interested in doing a PhD? [See here](http://neural-reckoning.org/apply_phd.html) 
-
-[AI and neuroscience: the virtuous circle from Deep Mind podcast](https://www.youtube.com/watch?v=ExrXs7PCQpU)
-:::
-
-:::{seealso} That's it!
-In the next section, we’ll talk the course outline.
+:::{seealso}
+Interested in doing a PhD? [See here](http://neural-reckoning.org/apply_phd.html).
 :::
