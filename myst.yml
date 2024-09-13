@@ -93,7 +93,21 @@ project:
         - file: Week_9/3. w9-figures.ipynb
         - file: Week_9/4. w9_exercises.md
         - file: Week_9/5. w9-reading.md
-    
+  abbreviations:
+    CNN: Convolutional Neural Network
+    ANN: Artificial Neural Network
+    ReLU: Rectified Linear Unit
+    LIF: Leaky Integrate-and-Fire
+    ODE: Ordinary Differential Equation
+    FMRI: Functional Magnetic Resonance Imaging
+    STDP: Spike-Timing-Dependent Plasticity
+    BPTT: Backpropagation Through Time
+    2AFC: Two-Alternative Forced Choice
+    FPGA: Field Programmable Gate Array
+    AER: Address Event Representation)
+  math:
+    '\argmax': '\operatorname{argmax}'
+
 site:
   template: book-theme
   options:
