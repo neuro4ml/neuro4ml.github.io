@@ -42,6 +42,7 @@ In recent years they have started to drift apart, but that could change and know
 :alt:Brain Task
 :align: center
 ```
+
 So how does it do that?
 
 ## Energy efficient brain mechanisms
