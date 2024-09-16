@@ -23,7 +23,7 @@ But first, **how do neuroscientists map biological circuits?**
 
 Biological circuit mapping is essentially done by dissecting an animal's brain, slicing it very thinly, staining it, viewing it under a microscope and then analyzing the images. Historically this was all done by hand, like the drawing from Cajal in 1894 [shown below](#dissecting), but everything from the data acquisition to the analysis is now being automated.
 
-```{figure} figures/NetworksPicture1.png
+```{figure} figures/NetworksPicture1.jpg
 :label: dissecting
 :width: 100%
 :align: center

@@ -68,7 +68,7 @@ First, the authors obtained the microprocessors connectome – i.e. a map descri
 
 While they find some interesting results, it's difficult to see how you could go straight from a networks structure to understanding it's function. And the authors highlight the fact that we don't have algorithms which can do this.
 
-```{figure} figures/conn.png
+```{figure} figures/conn.jpg
 :label: microconn
 :alt: Microprocessor Connectome
 :align: center

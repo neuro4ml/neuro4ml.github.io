@@ -23,13 +23,13 @@ One reason is that machine learning and neuroscience have had a really rich hist
 * From the [neuron to the perceptron](#n2p)
 * Or from the [retina to the convolutional neural network](#r2cnn).
 
-```{figure} figures/neuron2perceptron.png
+```{figure} figures/neuron2perceptron.jpg
 :label: n2p
 :alt: Neuron to Perceptron
 :align: center
 ```
 
-```{figure} figures/retina2cnn.png
+```{figure} figures/retina2cnn.jpg
 :label: r2cnn
 :alt: Retina to Convolutional Neural Network
 :align: center

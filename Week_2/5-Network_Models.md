@@ -51,7 +51,7 @@ Implementing logical AND (See [paper](https://doi.org/10.48550/arXiv.1907.13223)
 
 Finally, by combining these you can approximate any function to as much accuracy as you want by just dividing into smaller and smaller hypercubes.
 
-```{figure} figures/network-modelsPicture3.png
+```{figure} figures/network-modelsPicture3.jpg
 :label: hypercube
 :width: 400px
 :align: center

@@ -28,7 +28,7 @@ The solution to prevent this, is to insulate the axon using a fatty substance ca
 
 These nodes of Ranvier are rich in voltage-gated channels. These effectively boost the signal as it travels along the axon and generate 'saltatory' or jumping conduction. 
 
-```{figure} figures/Picture1.png
+```{figure} figures/Picture1.jpg
 :label: Fig1
 :alt: Image of an Axon
 :width: 100%

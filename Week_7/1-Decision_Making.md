@@ -248,7 +248,7 @@ Probabilistic Interpretation of Model
 
 And finally, perhaps the best thing about this theory is that having come up with the model based on fitting behavioural observations and then finding a rigorous probabilistic interpretation, electrophysiological [experiments](#electrophys) find traces of these evidence accumulation processes across multiple different brain regions in multiple species.
 
-```{figure} figures/electro.png
+```{figure} figures/electro.jpg
 :label: electrophys
 :alt: Experimental Evidence of Accumulation Processes Across Multiple Brain Regions and Species
 :align: center
