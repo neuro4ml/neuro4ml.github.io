@@ -156,7 +156,7 @@ We can do the same thing but where both groups of neurons are correlated with ot
 
 ## STDP finds the start of spike sequences
 
-The next model combines the ideas from these two previous papers to learn to respond to repeated sequences of spikes. We have the same setup with a group of neurons connected via STDP synapses to a single output neuron. In this case, the input is random, uncorrelated spikes that have repeated patterns repeated at random times. The [blue dots](dotted-graph) are the uncorrelated spikes, and the [red dots](dotted-graph) are the repeated patterns.
+The next model combines the ideas from these two previous papers to learn to respond to repeated sequences of spikes. We have the same setup with a group of neurons connected via STDP synapses to a single output neuron. In this case, the input is random, uncorrelated spikes that have repeated patterns repeated at random times. The [blue dots](#dotted-graph) are the uncorrelated spikes, and the [red dots](#dotted-graph) are the repeated patterns.
 
 ```{figure} figures/stdpPicture9.png
 :label: dotted-graph
@@ -164,7 +164,7 @@ The next model combines the ideas from these two previous papers to learn to res
 :width: 400px
 ```
 
-What happens [here](output-neuron-traces) is that the output neuron initially fires at random times, but eventually learns to fire only when the spike pattern is present. In fact, it learns to fire at the start of spike pattern
+What happens [here](#output-neuron-traces) is that the output neuron initially fires at random times, but eventually learns to fire only when the spike pattern is present. In fact, it learns to fire at the start of spike pattern
 
 ```{figure} figures/stdpPicture10.png
 :label: output-neuron-traces
@@ -183,7 +183,7 @@ A [later study](https://www.cell.com/neuron/fulltext/S0896-6273(10)00285-0) foun
 
 ## STDP learns spatial maps
 
-In week 2’s [network models](spatial-structure), we saw the example of a spatial map in the barrel cortex of the rat. As a reminder, that’s the system that processes inputs from the rat’s whiskers. What we saw is that these neurons have a preference for motion in a particular direction, and that preference has a spatial structure.
+In week 2’s [network models](#spatial-structure), we saw the example of a spatial map in the barrel cortex of the rat. As a reminder, that’s the system that processes inputs from the rat’s whiskers. What we saw is that these neurons have a preference for motion in a particular direction, and that preference has a spatial structure.
 
 ```{figure} figures/stdpPicture12.png
 :align: center

@@ -101,7 +101,7 @@ Just to give you a quick comparison between the two, the [graph below](#Synapses
 ```
 :::{seealso} For more!
 :class: dropdown 
-This [paper](https://dl.acm.org/doi/10.5555/3042817.3043055) provides more empirical and theoretical results which suggest that DropConnect may be advantageous.
+{cite:t}`Wan2013` provides more empirical and theoretical results which suggest that DropConnect may be advantageous.
 :::
 
 :::{seealso} That's it!

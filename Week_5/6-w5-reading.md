@@ -24,7 +24,7 @@
 * [SPyTorch tutorial (including video)](https://github.com/fzenke/spytorch)
 * [Spiking Heidelberg Digits dataset](https://zenkelab.org/resources/spiking-heidelberg-datasets-shd/)
 * [Lillicrap and Santoro (2019) "Backpropagation through time and the brain"](https://doi.org/10.1016/j.conb.2019.01.011)
-* [Rossbroich et al. (2022) "Fluctuation-driven initialization for spiking neural network training"](https://iopscience.iop.org/article/10.1088/2634-4386/ac97bb/meta)
+* {cite:t}`Rossbroich_2022`
 * [Perez-Nieves et al. (2023) "Spiking Network Initialisation and Firing Rate Collapse"](https://arxiv.org/abs/2305.08879)
 * [Perez-Nieves et al. (2021) "Neural heterogeneity promotes robust learning"](https://doi.org/10.1038/s41467-021-26022-3)
 

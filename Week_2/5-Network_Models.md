@@ -318,7 +318,7 @@ And it has a lot of noise.
 :align: center
 ```
 
-We’ve seen [this curve](prev-graph), but that’s an average over ten thousand repetitions.
+We’ve seen [this curve](#prev-graph), but that’s an average over ten thousand repetitions.
 
 ```{figure} #spike-timing-tuning-graph
 :label: prev-graph
@@ -326,7 +326,7 @@ We’ve seen [this curve](prev-graph), but that’s an average over ten thousand
 :align: center
 ```
 
-On a single trial it [looks like this](single-trial). Unlikely we could make a very accurate estimate from that.
+On a single trial it [looks like this](#single-trial). Unlikely we could make a very accurate estimate from that.
 
 ```{figure} figures/network-modelsPicture19.png
 :label: single-trial
@@ -340,10 +340,10 @@ By switching to a population and using a population level decoder we get a syste
 
 We can’t cover everything about networks here, so to finish off we just want to highlight two interesting things you might want to read up on further.
 
-Cortical neurons receive thousands of tiny inputs per second, so why don’t they all fire very regularly like on the [left of this figure](balance-exitation/inhibitation)?
+Cortical neurons receive thousands of tiny inputs per second, so why don’t they all fire very regularly like on the [left of this figure](#balance-exitation/inhibitation)?
 
 One possible answer is that there is a balance of excitation and inhibition, and if excitatory and inhibitory inputs are balanced and randomly interspersed, a neuron can fire very irregularly.
-You can see the effect of that [on the right](balance-exitation/inhibitation).
+You can see the effect of that [on the right](#balance-exitation/inhibitation).
 
 You actually see both types of behaviour in the brain, and having a range of such behaviours might be important. In [this paper](https://www.sciencedirect.com/science/article/abs/pii/S0378595517301594?via%3Dihub) Dan looks at different mechanisms that can contribute to that in the early auditory system.
 
@@ -357,7 +357,7 @@ More generally, some of the possible roles that have been suggested for balanced
 
 Another fascinating thing is central pattern generators. These are small networks that seem to just emit the same pattern of spikes on repeat forever. They’re thought to be involved in coordinating movements, basically providing a regular signal that can be transformed into stereotypical sequences that we need to move our muscles in standard patterns.
 
-Some of the circuits for this can be very simple, like [this one](circuit) shown schematically here in the lobster stomatogastric ganglion. This one is particularly interesting because it was found in modelling studies that there were many different parameters for this circuit that give the same output. And then later it was found experimentally that this is also the case in real lobsters: different individuals can have widely different neural properties in this circuit and still it functions in the same way.
+Some of the circuits for this can be very simple, like [this one](#circuit) shown schematically here in the lobster stomatogastric ganglion. This one is particularly interesting because it was found in modelling studies that there were many different parameters for this circuit that give the same output. And then later it was found experimentally that this is also the case in real lobsters: different individuals can have widely different neural properties in this circuit and still it functions in the same way.
 WE’ve put more reading on this topic and the others in this section in the reading list.
 
 ```{figure} figures/network-modelsPicture21.png

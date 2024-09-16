@@ -67,7 +67,7 @@ Conductance change over time of synaptic dynamics circuits (See [paper](https://
 Then we get to digital approaches. The simplest of these is just to use a standard CPU, for example a reduced instruct set processor like an ARM. The clever part is in connecting these together.
 This approach tends to be very flexible in terms of what you can simulate, but less power efficient than more customised approaches.
 
-```{figure} figures/omputingPicture4.png
+```{figure} figures/computingPicture4.png
 :align: center
 :width: 200px
 ```
@@ -154,7 +154,7 @@ Let's finish this section with a quick look at some of the products available to
 We’ll start with the analogue, subthreshold systems that run in realtime.
 The first is ROLLS and DYNAPs, now commercialised by SynSense. The basic ROLLS chip has 256 adaptive exponential integrate and fire neurons per chip, with 64k synapses with short term plasticity, and 64k using the SDSP learning rule. That goes up to thousands of neurons in DYNAPs and a spike routing architecture.
 
-```{figure} figures/ComputingPicture8.png
+```{figure} figures/ComputingPicture8.jpg
 :label: rolls-&-dynaps
 :align: center
 :width: 350px
@@ -173,7 +173,7 @@ There’s the HICANN chip with 512 adaptive exponential integrate-and-fire neuro
 
 BrainScaleS consists of 352 of those chips, so 180k neurons and 40 million synapses per wafer.
 
-```{figure} figures/ComputingPicture10&11combined.png
+```{figure} figures/ComputingPicture10&11combined.jpg
 :label: BrainScaleS
 :align: center
 :width: 100%
@@ -182,7 +182,7 @@ BrainScaleS consists of 352 of those chips, so 180k neurons and 40 million synap
 Next we have the digital designs, starting with CPU-based.
 SpiNNaker was originally designed by Steve Furber in Manchester, the same Steve Furber who designed the BBC Micro and the ARM 32-bit RISC chip. Given that background, it’s perhaps unsurprising that SpiNNaker works by combining a very large number of ARM chips, connected by a clever, high capacity event routing system. Because it uses general purpose CPUs it’s very customisable, although that does come at a relatively high energy cost. The first SpiNNaker system was scaled up to a million cores, 7 terabytes of RAM and could simulate a billion neurons in real time, about 1% of the human brain. Unfortunately, it did also draw about 100 kW of power. It’s being followed up by SpiNNaker 2, commercialised by SpiNNcloud, which aims to build a system 100 times larger, in other words able to simulate as many neurons as the human brain.
 
-```{figure} figures/ComputingPicture12&13.png
+```{figure} figures/ComputingPicture12&13.jpg
 :label: SpiNNaker-pic
 :align: center
 :width: 100%
