@@ -1,0 +1,26 @@
+@inproceedings{Wan2013,
+author = {Wan, Li and Zeiler, Matthew and Zhang, Sixin and LeCun, Yann and Fergus, Rob},
+title = {Regularization of neural networks using dropconnect},
+year = {2013},
+publisher = {JMLR.org},
+abstract = {We introduce DropConnect, a generalization of Dropout (Hinton et al., 2012), for regularizing large fully-connected layers within neural networks. When training with Dropout, a randomly selected subset of activations are set to zero within each layer. DropConnect instead sets a randomly selected subset of weights within the network to zero. Each unit thus receives input from a random subset of units in the previous layer. We derive a bound on the generalization performance of both Dropout and DropConnect. We then evaluate DropConnect on a range of datasets, comparing to Dropout, and show state-of-the-art results on several image recognition benchmarks by aggregating multiple DropConnect-trained models.},
+booktitle = {Proceedings of the 30th International Conference on International Conference on Machine Learning - Volume 28},
+pages = {III–1058–III–1066},
+location = {Atlanta, GA, USA},
+series = {ICML'13}
+},
+
+@article{Rossbroich_2022,
+doi = {10.1088/2634-4386/ac97bb},
+url = {https://dx.doi.org/10.1088/2634-4386/ac97bb},
+year = {2022},
+month = {dec},
+publisher = {IOP Publishing},
+volume = {2},
+number = {4},
+pages = {044016},
+author = {Julian Rossbroich and Julia Gygax and Friedemann Zenke},
+title = {Fluctuation-driven initialization for spiking neural network training},
+journal = {Neuromorphic Computing and Engineering },
+abstract = {Spiking neural networks (SNNs) underlie low-power, fault-tolerant information processing in the brain and could constitute a power-efficient alternative to conventional deep neural networks when implemented on suitable neuromorphic hardware accelerators. However, instantiating SNNs that solve complex computational tasks in-silico remains a significant challenge. Surrogate gradient (SG) techniques have emerged as a standard solution for training SNNs end-to-end. Still, their success depends on synaptic weight initialization, similar to conventional artificial neural networks (ANNs). Yet, unlike in the case of ANNs, it remains elusive what constitutes a good initial state for an SNN. Here, we develop a general initialization strategy for SNNs inspired by the fluctuation-driven regime commonly observed in the brain. Specifically, we derive practical solutions for data-dependent weight initialization that ensure fluctuation-driven firing in the widely used leaky integrate-and-fire neurons. We empirically show that SNNs initialized following our strategy exhibit superior learning performance when trained with SGs. These findings generalize across several datasets and SNN architectures, including fully connected, deep convolutional, recurrent, and more biologically plausible SNNs obeying Dale’s law. Thus fluctuation-driven initialization provides a practical, versatile, and easy-to-implement strategy for improving SNN training performance on diverse tasks in neuromorphic engineering and computational neuroscience.}
+}
