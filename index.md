@@ -23,6 +23,10 @@ Course contents are shown on the navigation pane on the left, or on the ≡ icon
 
 We hope you enjoy the course!
 
+```{danger} Work in progress
+The text version of the course has been transcribed by two amazing students (Gurjan Samra and Alex Seferidis), but I (Dan Goodman) have not yet had time to proof read the transcribed version. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
+```
+
 # Quick links
 
 * [YouTube channel](https://www.youtube.com/playlist?list=PL09WqqDbQWHErc8xOyWdKpNEk78Jjk0EL)
