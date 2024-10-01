@@ -7,6 +7,10 @@
 :::
 ---
 
+```{danger} Work in progress
+The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
+```
+
 ## Introduction
 
 In this section we're going to talk in a bit more detail about neuromorphic computing. That is, nonstandard computational architectures that mimic some aspect of the way the brain works. That doesn’t have to mean spiking, but a lot of recent approaches do use spiking activity in some form. There have been a lot of approaches to designing neuromorphic computing devices. One review paper included 2,700 references, 66 pages out of an 88 page paper. So there’s no way we can cover everything that has been tried. Instead, we're going to give an overview of some of the most common features, highlighting a few examples, and suggest you go take a look at the extensive literature if you want to know more!
