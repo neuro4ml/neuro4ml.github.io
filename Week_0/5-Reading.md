@@ -1,4 +1,4 @@
-# Reading material
+# 📖 Reading material
 
 ## Why neuroscience?
 

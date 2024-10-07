@@ -1,4 +1,4 @@
-# Week 8 Reading Material
+# 📖 Reading material
 
 ## Reviews (relevant to all videos)
 
