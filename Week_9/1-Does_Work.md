@@ -1,4 +1,4 @@
-# Does Neuroscience Work?
+# Does neuroscience work?
 
 [Download the slides here](slildes/W9-V0-does-neuroscience-work.pptx)
 
@@ -19,7 +19,7 @@ This week we're going to cover what we consider to be open issues in neuroscienc
 In this section, we're  going to discuss the question does neuroscience work and how could we know?
 :::
 
-## More Data
+## More data
 
 Through most of the course, we've shown you how neuroscientists are collecting increasingly large datasets – of neuron morphology and activity, and we've discussed what we can learn from these datasets.
 
@@ -43,7 +43,7 @@ This is the question tackled by this [paper entitled "Could a neuroscientist und
 
 Which was inspired by [an earlier paper, called "could a biologist fix a radio"](https://doi.org/10.1016/S1535-6108(02)00133-2). 
 
-In [this paper](https://doi.org/10.1371/journal.pcbi.1005268), the authors take an [old microprocessor](#micropro) which runs three video games, and try to understand how it works by applying methods from neuroscience.
+In {cite:t}`https://doi.org/10.1371/journal.pcbi.1005268`, the authors take an [old microprocessor](#micropro) which runs three video games, and try to understand how it works by applying methods from neuroscience.
 
 ```{figure} figures/micro.png
 :label: micropro
@@ -134,11 +134,9 @@ It's tempting to label these transistors as "Donkey Kong" or "Space Invaders" tr
 
 But this is misleading here, as the transistors are not specific to single games, and instead implement simple functions (like full adders) which may be involved in other games we haven't considered or even these games if we looked beyond booting.
 
-:::{hint} Linker
 So what would work?
-:::
 
-## What Would Work?
+## What would work?
 
 One suggestion from the authors is that they could have better designed their experiments to isolate individual behaviors or computations. For example, if you just recorded and manipulated the transistors while the player tried to move left – you could try to figure out how the microprocessor transforms a left controller input into a leftward movement on screen.
 

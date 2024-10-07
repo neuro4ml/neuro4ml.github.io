@@ -1,4 +1,4 @@
-# Reading Material
+# Reading material
 
 ## Spiking is not differentiable
 

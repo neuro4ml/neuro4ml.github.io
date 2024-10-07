@@ -15,7 +15,7 @@ The text below has been transcribed by hand from the video above but has not yet
 In this section, we’ll focus on how to train spiking neural networks. But first though, in this video, we’ll see why this is difficult to do.
 :::
 
-## What We Want To Do
+## What we want to do
 
 What we’d like to do is to use the methods developed for artificial neural networks, because we know they work really well.
 
@@ -86,11 +86,9 @@ x \in \mathbb{R}^n \overset{f}{\rightarrow} y \in \mathbb{R}^m \overset{g}{\righ
 \text{Efficient: just matrix / vector multiplications}
 \end{gather}
 ```
-:::{hint} Linker
 So, can we just do this for a spiking neural network? It’s not quite so easy. Let’s see why.
-:::
 
-## Why We Can't Do It
+## Why we can't do it
 
 To see what goes wrong here, let’s start with a [recap](#LIFrecap) of the [leaky integrate-and-fire neuron](#LIF-section) we’ve seen before.
 
@@ -147,11 +145,9 @@ That's unproblematic for every part of these equations except for the Heaviside 
 
 That means the gradients are zero almost everywhere. Which means that gradient descent will never change any parameters, making it useless for spiking neural networks.
 
-:::{hint} Linker
 So, how do we solve this problem?
-:::
 
-## So What Can We Do?
+## So what can we do?
 
 Well there's a lot of different approaches that have been tried and that we'll talk about in the remaining sections this week. There's no ideal solution, so in this final part of this section we'll quickly talk about the general approaches people have tried and some of their different issues.
 

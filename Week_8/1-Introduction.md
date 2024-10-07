@@ -21,7 +21,7 @@ A lot of the research for this week’s videos was done by Gabriel Béna who is 
 In this section we'll introduce you to neuromorphic computing
 :::
 
-## Power Consumption
+## Power consumption
 
 Let’s start by talking about one of the major reasons why neuromorphic computing is capturing a lot of attention at the moment - Electrical power consumption.
 

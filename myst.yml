@@ -1,7 +1,6 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  id: 043fbecc-3479-4dd1-b94c-4b6465320cd2
   title: Neuroscience for machine learners
   description: A freely available short course on neuroscience for people with a machine learning background. Designed by Dan Goodman and Marcus Ghosh.
   # keywords: []
@@ -14,7 +13,7 @@ project:
       orcid: https://orcid.org/0000-0002-2428-4605
       url: https://neural-reckoning.org/marcus_ghosh.html
       twitter: marcusghosh
-  github: https://github.com/neuro4ml/neuro4ml-beta.github.io
+  github: https://github.com/neuro4ml/neuro4ml.github.io
   exclude:
     - README.md
   toc:

@@ -1,4 +1,4 @@
-# Rate-Based Models
+# Rate-based models
 
 [Download the slides here](slides/W4-V1-rate-based-models.pptx)
 
@@ -15,7 +15,7 @@ In this section we'll talk about rate-based Hebbian models of learning.
 The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
 ```
 
-## General Form
+## General form
 
 We'll only discuss learning of a synaptic weight $\color{#0f73bf}{w}$, in response to a pre-synaptic neuron firing spikes at a rate $\color{#b35f10}{r_{pre}}$, and a post-synaptic neuron firing at a rate $\color{#b80909}{r_{post}}$.
 
@@ -33,7 +33,7 @@ We model this with a [differential equation](#hebbian-rule-eq) saying that the w
 
 Different functions $F$ give you different models.
 
-## Simplest Possible Hebbian Rule
+## Simplest possible Hebbian rule
 
 That's quite abstract, so let's take a look at a concrete example.
 
@@ -68,7 +68,7 @@ Another solution is a softer bound which just reduces the rate of change of the 
 
 Another problem is that in this simple formulation, the weight will only grow, never get smaller, since both the pre- and post-synaptic firing rates are always positive. It is possible to fix this by adding another term, but let’s move on to another model.
 
-## Oja's Learning Rule
+## Oja's learning rule
 
 Oja’s learning rule was designed to solve the problem of the weights growing without bound.
 You take the standard [Hebbian rule](#hebbian-rule-eq) and subtract off a term proportionate to the product of the weight and the square of the postsynaptic firing rate.
@@ -107,7 +107,7 @@ With these assumptions, we can rewrite the learning rules [like this](#learning-
 \bold{\dot{w}} = \gamma (\bold{x} y - \bold{w} y^2) \text{ where } \gamma = \frac{1}{\tau_w}
 ```
 
-## Oja's Learning Rule Analysis
+## Oja's learning rule analysis
 
 Now let's get into the hairy mathematical analysis. You might want to work through this on a piece of paper. We start with the same setup up as [before](#single-vector), with a vector of inputs and a single output.
 The rate of change of the weight follows [this equation](#weigth-eq), and the output $y$ [this equation](#output-eq). Note that since $y$ is a scalar, the dot product of weight $\bold{w}$ and input $\bold{x}$, we can write $\bold{w}^T \bold{x}$ or $\bold{x}^T \bold{w}$.
@@ -180,7 +180,7 @@ Expanding the derivative out using the formula we calculated [above](#norm-eq), 
 
 In other words, we get weight normalisation from Oja’s rule.
 
-## BCM Rule
+## BCM rule
 
 We’ve seen that Oja’s rule keeps weights bounded and leads to the neuron learning principal components. Another approach is the BCM rule, named after Bienenstock, Cooper and Munro.
 Their aim was a model of the development of selectivity in the visual cortex, and so they set out to find a learning rule that maximises selectivity. They defined this as 1 minus the mean response of the network divided by the maximum. In other words, for high selectivity, overall, the network should respond very little, but for certain inputs it should have a very strong response.

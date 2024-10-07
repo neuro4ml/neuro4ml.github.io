@@ -19,7 +19,7 @@ In the [last section](#synapses-2) we covered how neurons signal and synapse wit
 In this section we will go through how neurons connect together to form networks and circuits.
 :::
 
-## Circuit Mapping
+## Circuit mapping
 
 To do this, we will go through two examples of networks found in biology.
 
@@ -35,7 +35,7 @@ Biological circuit mapping is essentially done by dissecting an animal's brain, 
 Cajal's drawing on the left and modern techniques on the right
 ```
 
-## The Cerebellum
+## The cerebellum
 
 The cerebellum is an area of the brain involved in coordinating movement, and is composed of circuits which look something like this diagram:
 
@@ -77,7 +77,7 @@ Model of network's function (See [paper](https://doi.org/10.1152%2Fjn.00449.2020
 [This paper](https://doi.org/10.1152%2Fjn.00449.2020) focuses on an interesting question, which is how the network can learn, when the connections conveying the error signal to the third layer are relatively weak (shown by thin red arrow).
 :::
 
-## Head Direction Cells
+## Head direction cells
 
 Around thirty years ago researchers were recording the activity of individual neurons in a rat brain, when they discovered cells which seemed to encode the animals heading direction, and so named them head direction cells. 
 
@@ -94,7 +94,7 @@ Graphs of firing rates of neurons (See [paper](https://doi.org/10.1523/JNEUROSCI
 This and later work would show that, as a population, neurons evenly tile the space of heading directions, and the activity of these cells depends on both visual and vestibular (balance) inputs.
 
 (ring-attractor)=
-## Ring Attractors
+## Ring attractors
 
 A team proposed an attractor model in 1995, which they drew as a series of rings, with the head direction cells in the outer ring, and visual and vestibular inputs in the inner rings.
 

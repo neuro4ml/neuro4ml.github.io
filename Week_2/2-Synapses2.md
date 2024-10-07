@@ -21,7 +21,7 @@ In this section, we're going to cover how synapses can adjust their strength and
 :::
 
 (hebbian)=
-## Hebbian Learning
+## Hebbian learning
 
 In general, we train artificial neural networks by adjusting their connection weights according to a learning rule, but what is the equivalent in biology?
 
@@ -33,7 +33,7 @@ At the time this was just a theory, but experimental evidence confirmed it arou
 This is often summarised as _'Cells that fire together wire together, and conversely Cells that fire out of sync lose their link'._
 Though this misses the fact that cell A must spike first to contribute to B's firing, therefore the relative timing matters. 
 
-## Spike-timing-dependent Plasticity
+## Spike-timing-dependent plasticity
 
 Let's consider a pair of neurons. In the [figure below](#Synapses2Picture1), panel A illustrates that if the pre-synaptic neuron's spike occurs before or after the post-synaptic neuron, their relationship is causal or acausal. Panel B shows how this synapse's strength (on the y-axis) will be adjusted depending on the difference in spike timing between the two neurons. If the relationship is casual, so 'pre' precedes 'post' the strength will be increased or potentiated (shown in green). While if it is acausal, so 'pre' tends to follow 'post', then the strength will be decreased (shown in red).
 
@@ -47,11 +47,9 @@ Spiking-timing-dependent plasticity (See [paper](https://doi.org/10.3389/fnsyn.2
 
 This is known as spike-timing-dependent plasticity, and it tends to induce long-term changes in synaptic strength via processes known as **long-term potentiation** (LTP) and **long term depression** (LTD).
 
-:::{hint} Linker
 So, what changes at the synapse to cause this change in weight?
-:::
 
-## Altering Synapses
+## Altering synapses
 
 If we think about the structure of the synapse, then we can see that there are many possibilities for changing the connection strength such as:
 
@@ -69,7 +67,7 @@ But these are long-term changes, and synaptic weights can also change on much qu
 Synapse
 ```
 
-## Short-term Plasticity
+## Short-term plasticity
 
 Short-term plasticity describes how synaptic strength dynamically changes with the level of presynaptic activity. Broadly, short-term facilitation is caused by the higher levels of calcium at the axon terminal after spiking, which increase the probability of neurotransmitter release. 
 

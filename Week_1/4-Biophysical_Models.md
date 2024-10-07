@@ -1,4 +1,4 @@
-# Biophysical Neuron Models
+# Biophysical neuron models
 
 [Download the slides here](slides/W1-V3-biophysical-models.pptx)
 
@@ -21,7 +21,7 @@ In this section, we’ll focus on models with more biological detail than before
 
 (hodkin-huxley-label)=
 
-## Hodgkin-Huxely Type Neuron
+## Hodgkin-Huxley type neuron
 
 We’ll start with the famous Hodgkin-Huxley neuron. You can see an action potential plotted with this model [here](#hux).
 

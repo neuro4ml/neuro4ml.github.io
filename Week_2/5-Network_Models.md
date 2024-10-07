@@ -1,4 +1,4 @@
-# Network Models
+# Network models
 
 [Download the slides here](slides/W2-V4-network-models.pptx)
 
@@ -24,7 +24,7 @@ Let’s first unpack what we mean by that.
 In this section we're going to start looking at modelling networks, which in some sense is the topic of the rest of the course.
 :::
 
-## Universal Function Approximation
+## Universal function approximation
 
 From the [history in neuroscience](#history) section, you’ll know that as early as 1943 McCulloch and Pitts showed that spiking neural networks could implement any logical function. And we don’t need to limit ourselves to logical functions. 
 
@@ -68,7 +68,7 @@ But it does mean that there’s no way we can cover all the things we can do wit
 
  So instead, what we're going to go through, in detail, is one particular type of network, and show how it ties in to some of the concepts that neuroscientists use to understand the brain.
 
-## Sound Localisation Circuit
+## Sound localisation circuit
 
 The circuit we’ll look at is the **sound localisation circuit.** 
 
@@ -114,7 +114,7 @@ In this [example](#eg-sound), you can see that the sound arrives first at the le
 
 So that's how Jeffress’ model of sound localisation works, and it has a few interesting and more general features that we can dig into.
 
-## Coincidence Detection and Tuning Curves
+## Coincidence detection and tuning curves
 
 The first feature is coincidence detection. It’s actually quite a general property of leaky neurons, precisely because of the leak, as you can see in this [picture](#membrane-potential-graph).
 When two spikes arrive at similar times, they’re enough to drive the neuron over threshold and cause a spike.
@@ -140,7 +140,7 @@ In this case, the variable is the arrival time difference between the two spikes
 LIF neuron spiking
 ```
 
-## Spatial Structure
+## Spatial structure
 
 Another aspect of this network that you see many times in neuroscience is the spatial structure.
 The cells [here](#cell-arrangement) are in a 1 dimensional array in order of their preferred difference in arrival time.
@@ -232,7 +232,7 @@ In one of those strange twists of fate, the same year Dan's paper came out, anot
 Dan's perceptron decoding framework
 ```
 
-## Maximum Likelihood and Bayesian Estimators
+## Maximum likelihood and Bayesian estimators
 
 We’ve seen how we have an array of coincidence detectors whose response is larger or smaller depending on the arrival time difference of the sound.
 Now imagine we plot all the tuning curves on top of each other for this population of neurons.
@@ -310,7 +310,7 @@ That was a very quick run through probabilistic population coding.
 We’d recommend the [theoretical neuroscience textbook](https://mitpress.mit.edu/9780262041997/theoretical-neuroscience/) by Dayan and Abbott ([free pdf](https://boulderschool.yale.edu/sites/default/files/files/DayanAbbott.pdf)), or since that’s out of print, a more recent book [“Bayesian models of perception and action”](https://mitpress.mit.edu/9780262047593/bayesian-models-of-perception-and-action/) by Wei Ji Ma and colleagues, available [free online](http://www.cns.nyu.edu/malab/bayesianbook.html).
 :::
 
-## Single Neuron and Population Sensitivity
+## Single neuron and Population Sensitivity
 
 OK that’s pretty much it for the sound localisation example, we just wanted to finish by highlighting what we’ve gained from the network here.
 
@@ -340,7 +340,7 @@ On a single trial it [looks like this](#single-trial). Unlikely we could make a 
 
 By switching to a population and using a population level decoder we get a system that is sensitive to time differences of a few microseconds. Orders of magnitude more time sensitive than the speed of the fastest units in the network.
 
-## Various Topics
+## Various topics
 
 We can’t cover everything about networks here, so to finish off we just want to highlight two interesting things you might want to read up on further.
 
@@ -349,7 +349,7 @@ Cortical neurons receive thousands of tiny inputs per second, so why don’t the
 One possible answer is that there is a balance of excitation and inhibition, and if excitatory and inhibitory inputs are balanced and randomly interspersed, a neuron can fire very irregularly.
 You can see the effect of that [on the right](#balance-exitation/inhibitation).
 
-You actually see both types of behaviour in the brain, and having a range of such behaviours might be important. In [this paper](https://www.sciencedirect.com/science/article/abs/pii/S0378595517301594?via%3Dihub) Dan looks at different mechanisms that can contribute to that in the early auditory system.
+You actually see both types of behaviour in the brain, and having a range of such behaviours might be important. In {cite:t}`https://www.sciencedirect.com/science/article/abs/pii/S0378595517301594?via%3Dihub` Dan looks at different mechanisms that can contribute to that in the early auditory system.
 
 More generally, some of the possible roles that have been suggested for balanced excitation/inhibition include improving the sensitivity, noise robustness and response speed of a network. There’s a big literature on this.
 

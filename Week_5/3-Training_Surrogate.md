@@ -1,4 +1,4 @@
-# Training SNNs with Surrogate Gradients
+# Training SNNs with surrogate gradients
 
 [Download the slides here](slides/W5-V2-surrogate-gradients.pptx)
 
@@ -19,7 +19,7 @@ We're now going to explain how to train spiking neural networks with the surroga
 In the next section, we’ll talk about how to train spiking neural networks with the surrogate gradient method
 :::
 
-## Unrolling Recurrent Neural Networks
+## Unrolling recurrent neural networks
 
 The surrogate gradient method treats a spiking neural network as a very particular sort of recurrent neural network. That’s true even if the spiking neural network doesn’t have recurrent connections, because the fact that the internal state of a neuron at one time step depends on its internal state at a previous time step makes it implicitly recurrent. With that in mind, let’s quickly look at how you can train a recurrent neural network.
 
@@ -84,14 +84,14 @@ That means we can compute a gradient of the loss with respect to the parameters 
 \end{gather}
 ```
 
-That all looks complicated but actually modern machine learning toolboxes do all the work for us with their autodifferentiation packages. We just write the forward pass and it handles efficiently computing the gradients using the chain rule, applying the update rule, etc. This algorithm is called backpropagation through time ({abbr}`BPTT(Backpropagation Through Time)`), because it’s the standard backpropagation algorithm applied to a function that is repeatedly applied through time.
+That all looks complicated but actually modern machine learning toolboxes do all the work for us with their autodifferentiation packages. We just write the forward pass and it handles efficiently computing the gradients using the chain rule, applying the update rule, etc. This algorithm is called backpropagation through time (BPTT), because it’s the standard backpropagation algorithm applied to a function that is repeatedly applied through time.
 
 :::{seealso} For more
 :class: dropdown
 [Lillicrap and Santoro (2019) "Backpropagation through time and the brain"](https://doi.org/10.1016/j.conb.2019.01.011)
 :::
 
-## Spiking Neuron: The Surrogate Gradient
+## Spiking neuron: the surrogate gradient
 
 Now let’s take this idea and apply it to a spiking neural network. We're starting from the same [recap](#LIFrecap) of the leaky integrate and fire neuron from the first section this week, so make sure to check that first if you haven’t already. 
 
@@ -136,9 +136,7 @@ But it turns out that the choice of smoothing function doesn’t actually matter
 [Zenke and Vogels (2021) "The Remarkable Robustness of Surrogate Gradient Learning for Instilling Complex Function in Spiking Neural Networks"](https://doi.org/10.1162/neco_a_01367)
 :::
 
-:::{hint} Linker
 That all sounds nice in theory, but we have these lovely autodifferentiation functions and implementing this idea looks like it’ll be a nightmare.
-:::
 
 
 ## Implementation with PyTorch
@@ -170,7 +168,7 @@ And that’s it. We instantiate this class and just use that instead of the Heav
 [SPyTorch tutorial (including video)](https://github.com/fzenke/spytorch)
 :::
 
-## It Works!
+## It works!
 
 And it works!
 
@@ -216,13 +214,11 @@ Friedemann Zenke, who built this dataset, keeps [a table](#besttab) of the best 
 Friedemann Zenke's Table of Best Performers
 ```
 
-:::{hint} Linker
 Before we get too excited, there are some issues with this method.
-:::
 
 ## Issues
 
-### Resource Hungry
+### Resource hungry
 
 The first is that despite making it feasible to train spiking neural networks at complex tasks, it is still quite resource hungry.
 
@@ -250,11 +246,11 @@ Various ideas have been proposed for this, including but not limited to:
 We should say, the maths for this gets very hairy, very fast, and is highly specific to the type of neurons you’re using, which means this analytical solution is harder to deploy in practice than we might like.
 :::
 
-### Uses Non-Local Information (see next section)
+### Uses non-local information (see next section)
 
 A final issue we wanted to mention is that like any backprop through time algorithm, it uses non-local information that wouldn’t be available to real neurons in the brain, meaning that without some additional work it’s not a good candidate for how the brain itself does learning. That doesn’t mean it’s not a good way to train spiking neural networks in the abstract, however, and doesn’t stop us from using it to model what the brain is doing in other ways.
 
-## Application: Neural Heterogeneity
+## Application: neural heterogeneity
 
 On that note, we’d like to finish with a bit of self advertising, by talking about [a study](https://doi.org/10.1038/s41467-021-26022-3) done by one of the team's PhD students using surrogate gradient descent to tell us something about how the brain might work.
 
@@ -289,7 +285,7 @@ It’s not conclusive, but we think this suggests that having neurons that aren�
 
 Incidentally, [these experimentally recorded distributions](#find) were obtained from the [Allen Institute database](https://allensdk.readthedocs.io/en/latest/), which is openly and freely available to explore with a nice Python API, so you should have a play around with that.
 
-## Next Steps
+## Next steps
 
 OK, that’s all for this video on surrogate gradient descent. We strongly advise you to spend some time getting to grips with it more detail, starting from [Friedemann Zenke’s excellent SPyTorch tutorial](https://github.com/fzenke/spytorch) which builds up the code to run this step by step from scratch until you have a network that can solve the [Spiking Heidelberg digits data set](https://zenkelab.org/resources/spiking-heidelberg-datasets-shd/). 
 

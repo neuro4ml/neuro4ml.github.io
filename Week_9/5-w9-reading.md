@@ -1,4 +1,4 @@
-# Reading Material
+# Reading material
 
 ## Does neuroscience work? 
 * [Scala et al. (2023) "Phenotypic variation of transcriptomic cell types in mouse motor cortex"](https://doi.org/10.1038/s41586-020-2907-3)

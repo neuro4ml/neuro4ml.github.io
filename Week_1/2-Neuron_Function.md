@@ -1,4 +1,4 @@
-# Neuron Function
+# Neuron function
 
 [Download the slides here](slides/W1-V1-function.pptx)
 
@@ -32,13 +32,11 @@ Last week we saw that neurons act as information processing units. To do so, the
 Diagram of Neuron
 ```
 
-:::{hint} Linker
 So let's start by looking at the electrical activity of a single neuron. 
-:::
 
-## Single Neuron Recordings
+## Single neuron recordings
 
-In [Figure 2](#recordings) (from [this paper](https://doi.org/10.1152/jn.00408.2011 
+In [](#recordings) (from [this paper](https://doi.org/10.1152/jn.00408.2011 
 )) we have time in ms on the x-axis and voltage in mV on the y-axis.
 
 Exactly how researchers acquire this sort of data depends on several factors, but in general you need an electrode, an amplifier, and a specimen to record from, like an isolated neuron in a dish or even a human brain during surgery.
@@ -57,19 +55,17 @@ From this sort of plot, we can observe two features: 
 * First, there are these high amplitude, 1-2ms long events, which we call **action potentials** or spikes. 
 * Second, between the spikes, the neurons voltage fluctuates around a baseline value, which we call the resting membrane potential.
 
-:::{hint} Linker
 So, how do neurons generate their resting potential and spikes? 
-:::
 
 (resting-membrane-potential)=
-## Resting Membrane Potential
+## Resting membrane potential
 
-The neuron's cell membrane plays a key role in generating resting potential and spikes. In [Figure 3](#restingpotential), the cell membrane seperates the inside of the cell from the outside.
+The neuron's cell membrane plays a key role in generating resting potential and spikes. In [](#restingpotential), the cell membrane seperates the inside of the cell from the outside.
 
 Importantly, ions (charged particles), like sodium and potassium are unevenly distributed across the membrane. For example:
 (gradients)=
-* {abbr}`K+(Potassium ion)` is at higher concentrations inside 
-* {abbr}`Na+(Sodium ion)` and {abbr}`Cl-(Chloride ion)` are at higher concentrations outside
+* K+ is at higher concentrations inside 
+* Na+ and Cl- are at higher concentrations outside
 
 This means that there are both chemical and electrical gradients across the membrane.
 
@@ -143,11 +139,9 @@ Spike Variation and Raster Plot
 Check out [this video](https://www.youtube.com/watch?v=BbUcWbtVjT4) and [this website](http://hyperphysics.phy-astr.gsu.edu/hbase/Biology/actpot.html#c5) on neuron action potential
 :::
 
-:::{hint} Linker
 But, while each neuron's own spikes share the same shape, not all neurons are alike in their dynamics. 
-:::
 
-## Membrane Time Constant
+## Membrane time constant
 
 Let's think about injecting input current into a neuron. 
 
@@ -165,7 +159,7 @@ Measured Membrane Time Constant for Two Example Neurons
 
 While this may seem far from machine learning, using neural network models to explore what role these features play in computation, or using biological features to boost performance are both exciting prospects. 
 
-Just to give you one example along these lines. In [this paper](https://doi.org/10.1038/s41467-021-26022-3) Dan and colleagues, built neural networks with heterogenous membrane time constants and showed that this lead to improvements in task performance.
+Just to give you one example along these lines. In {cite:t}`https://doi.org/10.1038/s41467-021-26022-3` Dan and colleagues, built neural networks with heterogenous membrane time constants and showed that this lead to improvements in task performance.
 
 But how do you make artificial units with different membrane time constants?
 

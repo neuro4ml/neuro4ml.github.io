@@ -1,4 +1,4 @@
-# Decision Making
+# Decision making
 
 [Download the slides here](slides/W7-V0-decision-making.pptx)
 
@@ -23,9 +23,9 @@ We're going to focus on one particular aspect of decision making that has been s
 That is, how long does it take to make a decision based on a stream of information arriving continuously over time.
 :::
 
-## Two-Alternative Forced Choice ({abbr}`2AFC(Two-Alternative Forced Choice)`)
+## Two-alternative forced choice (2AFC)
 
-Let’s make this even more concrete with a very specific sort of task, the two-alternative forced choice, or {abbr}`2AFC(Two-Alternative Forced Choice)`.
+Let’s make this even more concrete with a very specific sort of task, the two-alternative forced choice, or 2AFC.
 
 In [this task](#2afc), participants are shown some sort of image or movie and asked to decide between two options. A common one is the random dot kinematogram, with random dots on the screen some of which are moving coherently either to the left or right, and some moving randomly. The participants have to determine which direction the coherent dots are moving, and sometimes they’re asked to make their decision as quickly as possible. The reaction time is the time between the start of the video and the moment when they press the button.
 
@@ -47,7 +47,7 @@ If you run this experiment, you see characteristic skewed distributions of react
 2AFC Experiment Results (See [paper](https://doi.org/10.1037/0033-295X.85.2.59))
 ```
 
-## Drift Diffusion / Random Walk Model
+## Drift diffusion / random walk model
 
 There’s a beautifully simple theory for how we make these decisions which can account for these reaction times:
 
@@ -122,7 +122,7 @@ Plot of Reaction Time Distributions for High and Low Decision Thresholds
 
 * And sure enough, we get something that looks very much like the data from [experiments](#2afcresult).
 
-## Probabilistic Interpretation
+## Probabilistic interpretation
 
 That’s nice, but still this model might seem a bit ad hoc. Fortunately, it turns out that there’s a neat probabilistic interpretation of this model.
 
@@ -248,7 +248,7 @@ Probabilistic Interpretation of Model
 ```
 -->
 
-## Electrophysiological Data
+## Electrophysiological data
 
 And finally, perhaps the best thing about this theory is that having come up with the model based on fitting behavioural observations and then finding a rigorous probabilistic interpretation, electrophysiological [experiments](#electrophys) find traces of these evidence accumulation processes across multiple different brain regions in multiple species.
 

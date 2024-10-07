@@ -1,4 +1,4 @@
-# Training SNNs with Limited Gradients
+# Training SNNs with limited gradients
 
 [Download the slides here](slides/W5-V1-limited-gradients.pptx)
 
@@ -16,7 +16,7 @@ In this secction we’ll look at some of the many methods for training spiking n
 
 :::
 
-## Reservoir Computing
+## Reservoir computing
 
 Let’s start with reservoir computing, also known as liquid state machines and echo state networks in different contexts.
 
@@ -46,9 +46,9 @@ You can prove that this setup allows you to approximate any time-varying functio
 Example of a Target Trajectory and a Reconstruction using Reservoir Computing
 ```
 
-There are lots of variants of this, for example with spiking neural networks you can add unsupervised training to the reservoir neurons using {abbr}`STDP(Spike-Timing-Dependent Plasticity)`.
+There are lots of variants of this, for example with spiking neural networks you can add unsupervised training to the reservoir neurons using STDP.
 
-A particularly interesting variant is {abbr}`FORCE(First-Order, Reduced and Controlled Error)` training, where you write the recurrent weights as a sum of a fixed term that induces chaos, and a trainable term that can be trained with a recursive least squares algorithm.
+A particularly interesting variant is FORCE training, where you write the recurrent weights as a sum of a fixed term that induces chaos, and a trainable term that can be trained with a recursive least squares algorithm.
 
 :::{seealso} For more
 :class: dropdown
@@ -59,7 +59,7 @@ See the following:
 * [Nicola and Clopath (2017) "Supervised learning in spiking neural networks with FORCE training"](https://doi.org/10.1038/s41467-017-01827-3)
 :::
 
-## Evolutionary Algorithms
+## Evolutionary algorithms
 
 Another approach is to use global optimisation algorithms that don’t require derivatives.
 
@@ -119,24 +119,24 @@ And [here’s an example](#robottraj) of a trajectory showing that this robot wa
 Robot Controlled by Trained Neuromorphic Hardware Trajectory Map (See [paper](https://doi.org/10.1109/IRIS.2017.8250111))
 ```
 
-## Converting Artificial to Spiking Neural Networks
+## Converting artificial to spiking neural networks
 
 Rather than trying to work with spiking neural networks directly, we can start by doing something we know how to do, like training an artificial neural network, and then convert the result into a spiking neural network.
 
 There’s a huge literature on this but I’m just going to mention two approaches from [Chris Eliasmith and colleagues](https://doi.org/10.48550/arXiv.1510.08829).
 
-### First Approach
+### First approach
 
-1. The first starts by creating a non-spiking artificial neuron called a soft-{abbr}`LIF(Leaky Integrate-and-Fire)` that approximates the input-output behavior of a spiking neuron.
+1. The first starts by creating a non-spiking artificial neuron called a soft-LIF that approximates the input-output behavior of a spiking neuron.
 
-2. You then train this soft-{abbr}`LIF(Leaky Integrate-and-Fire)` network with standard algorithms, possibly adding training noise to make it more noise robust.
+2. You then train this soft-LIF network with standard algorithms, possibly adding training noise to make it more noise robust.
 
-3. Then just replace those soft-{abbr}`LIF(Leaky Integrate-and-Fire)` neurons with real {abbr}`LIF(Leaky Integrate-and-Fire)` neurons and it works fairly well.
+3. Then just replace those soft-LIF neurons with real LIF neurons and it works fairly well.
 
 Eliasmith and colleagues later took this sort of approach much further, creating a very general method called the [Neural Engineering Framework (NEF)](http://compneuro.uwaterloo.ca/research/nef.html).
 
 
-### Second Approach ([NEF](http://compneuro.uwaterloo.ca/research/nef.html))
+### Second approach ([NEF](http://compneuro.uwaterloo.ca/research/nef.html))
 
 1. In this approach, you can directly implement vector function and differentials by encoding input values into a random high dimensional overcomplete representation
 
@@ -144,7 +144,7 @@ Eliasmith and colleagues later took this sort of approach much further, creating
 
 They implemented this in a comprehensive software package [Nengo](https://www.nengo.ai/) so it’s easy to try it out if you’re interested.
 
-Once you have these building blocks, it’s easy to then convert an {abbr}`ANN(Artificial Neural Network)` that is composed of these building blocks into their framework and implement it with spiking neurons.
+Once you have these building blocks, it’s easy to then convert an ANN that is composed of these building blocks into their framework and implement it with spiking neurons.
 
 ## Restricting to a Single Spike
 
