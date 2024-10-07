@@ -7,6 +7,10 @@
 :::
 ---
 
+```{danger} Work in progress
+The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
+```
+
 ## Introduction
 
 One of the most surprising things in neuroscience is that there is this extraordinary method that neurons use to communicate and compute, the discrete action potential, or spike, but we don't know why the brain does this. At a philosophical level, this might be a question without an answer: it just does because that's the path evolution took and it could have taken a different one. That might be true, but we don't know that for sure either.

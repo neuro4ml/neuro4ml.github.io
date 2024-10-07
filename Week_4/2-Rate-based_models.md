@@ -11,6 +11,10 @@
 In this section we'll talk about rate-based Hebbian models of learning.
 :::
 
+```{danger} Work in progress
+The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
+```
+
 ## General form
 
 We'll only discuss learning of a synaptic weight $\color{#0f73bf}{w}$, in response to a pre-synaptic neuron firing spikes at a rate $\color{#b35f10}{r_{pre}}$, and a post-synaptic neuron firing at a rate $\color{#b80909}{r_{post}}$.

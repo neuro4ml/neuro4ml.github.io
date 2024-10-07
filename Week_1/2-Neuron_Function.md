@@ -6,6 +6,11 @@
 :width: 100%
 :::
 ---
+
+```{danger} Work in progress
+The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
+```
+
 ## Introduction
 
 Last week we saw that neurons act as information processing units. To do so, they use both chemical and electrical signals:

@@ -8,6 +8,10 @@
 :::
 ---
 
+```{danger} Work in progress
+The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
+```
+
 ## Introduction
 
 In the [last section](#synapses1-page), we covered [synapses](#chemical-synapses), [neurotransmitters](#neurotransmitters-paragraph), and [receptors](#receptors). 

@@ -7,6 +7,10 @@
 :::
 ---
 
+```{danger} Work in progress
+The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
+```
+
 ## Introduction
 
 This week we're going to cover what we consider to be open issues in neuroscience.

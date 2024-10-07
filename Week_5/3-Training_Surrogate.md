@@ -7,6 +7,10 @@
 :::
 ---
 
+```{danger} Work in progress
+The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
+```
+
 ## Introduction
 
 We're now going to explain how to train spiking neural networks with the surrogate gradient method. This method isn’t perfect, and we’ll talk about some of its drawbacks later, but at the moment it seems to be a very good balance of flexibility and efficiency. There’s a lot of research going on in this area at the moment, and there will likely be big advances in the next few years.

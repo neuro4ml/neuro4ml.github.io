@@ -7,6 +7,10 @@
 :::
 ---
 
+```{danger} Work in progress
+The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
+```
+
 ## Introduction
 
 This section is going to be much shorter than the last one. We don’t want to go deep into models that are more biophysically realistic, but we do want to mention them.

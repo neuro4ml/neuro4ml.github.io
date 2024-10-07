@@ -7,6 +7,10 @@
 :::
 ---
 
+```{danger} Work in progress
+The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
+```
+
 :::{attention} Note!
 In this secction we’ll look at some of the many methods for training spiking neural networks with either no attempt to use gradients, or only using gradients in a limited or constrained way.
 
