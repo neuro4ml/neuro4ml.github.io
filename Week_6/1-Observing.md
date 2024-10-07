@@ -34,11 +34,11 @@ But in a biological system we need to choose how we're going to record neural ac
 
 ```{figure} figures/sensorimotor.png
 :label: SensTransformation
-:alt: Example {abbr}`ANN(Artificial Neural Network)`
+:alt: Example ANN
 :align: center
 ```
 
-## Recording Neural Activity
+## Recording neural activity
 
 There are different methods for recording neural activity, with different pros and cons, but one way to describe them is on a 2d axis where: 
 
@@ -55,9 +55,7 @@ In previous sections we introduced electrophysiology <!-- find a link to this --
 
 To get data from more neurons, with this approach, studies will often record different neurons sequentially over trials and then pool the data over trials and subjects. But even so, you're often limited to tens to hundreds of neurons and pooling them in this way isn't ideal. 
 
-:::{hint} Linker
 So how can we record more neurons simultaneously? 
-:::
 
 ## Neuropixels
 
@@ -83,7 +81,7 @@ These probes represent a huge technological advance. But, it's worth keeping in
 
 So how can we get more comprehensive coverage? 
 
-## Calcium Imaging
+## Calcium imaging
 
 One alternative is calcium imaging. 
 Remember that when an action potentials reaches the axon terminal, it causes voltage-gated calcium channels to open, and calcium to flow into the cell. So we can use changes in calcium concentration to infer neural activity. 
@@ -125,11 +123,9 @@ Though it is worth keeping in mind that it's a proximy measure of neural activit
 
 fMRI Benefits and Challenges (See [paper](https://doi.org/10.1038/s41586-023-06670-9))
 ```
-:::{hint} Linker
 Okay, stepping back a bit, lets approximately map these techniques onto our axis.
-:::
 
-## Recording Neural Activity
+## Recording neural activity
 
 * High-density probes like Neuropixels have high temporal resolution and can record from hundreds to thousands of neurons.
 * Whole-brain calcium imaging has medium temporal resolution, but can record from thousands to tens-of-thousands of neurons.

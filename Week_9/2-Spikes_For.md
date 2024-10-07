@@ -27,7 +27,7 @@ This is basically the reason why digital is often preferred to analogue in commu
 
 It's a very valid argument and it's likely to be part of the reason. It's certainly a key inspiration for the neuromorphic devices we talked about last week. But, how valid is it when we know that there are many other sources of noise in the brain, like synaptic failures. And, even if it’s true, is there more than that? Do we need to understand spikes to understand what the brain is doing?
 
-## The Core Argument
+## The core argument
 
 Dan's point of view is that we know that the brain does use spikes, and so we need to understand them if we want to understand the brain.
 
@@ -101,7 +101,7 @@ So what can we conclude?
 
 Well, it’s not quite as simple as saying that firing rates and spike times are mathematically the same thing, but it is a useful point of view to keep in mind in this debate.
 
-## Information Theoretic View
+## Information theoretic view
 
 Let’s return to the point that knowing the spike times tells you everything there is to know about spike rates, but not necessarily vice versa. Can we quantify that? It’s not entirely straightforward, but people have tried using information theoretic approaches. 
 
@@ -132,7 +132,7 @@ At first this looks like a knock down argument in favour of spike timing, but it
 2. Secondly, just because the information is there doesn’t mean that the animal makes use of that information.
 
 
-## Spike Times Not Reproducible
+## Spike times not reproducible
 
 Another argument against spike times being important is that they are often not reproducible and so they couldn’t be used as the basis of a neural code.
 
@@ -192,7 +192,7 @@ This has been developed into an interested and detailed theory by Sophie Deneve:
 [Deneve (2018) "Bayesian Spiking Neurons I: Inference"](https://doi.org/10.1162/neco.2008.20.1.91)
 :::
 
-## Can We Settle This?
+## Can we settle this?
 
 There’s more to these arguments than this little sketch of course, but you can begin to see the problem. It’s a debate that’s been going for decades and doesn’t seem any closer to being resolved. So what would it take?
 

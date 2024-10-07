@@ -16,7 +16,7 @@ In the last section we discussed connectomes - full diagrams describing how ever
 We don't have a connectome for the human brain so instead, in this section, we’ll look at a more macro level
 :::
 
-## Glial Cells
+## Glial cells
 
 First, let's point out something we've not mentioned yet - neurons may only be some of the story, as there are other cells in the brain too.
 
@@ -41,7 +41,7 @@ But it's increasingly thought that Glial might play computational roles too. For
 Diagrams of Different Types of Glial Cells (See [paper](https://doi.org/10.1002/glia.24343))
 ```
 
-## Human Brain
+## Human brain
 
 Putting it all together, the human brain is thought to be composed of roughly **86 billion** neurons, **50 billion** Glial cells and **$\approx10^{15}$** synapses - though this is hard to estimate.
 
@@ -89,7 +89,7 @@ The outermost layer, the cortex, is also referred to as gray matter as it mainly
 
 Deeper in the brain, there are then various nuclei which are clusters of neurons.
 
-## The Nervous System
+## The nervous system
 
 Zooming out one last time, the entire nervous system is composed of two parts:
 
@@ -131,7 +131,7 @@ For example, we call part of the occipital lobe the visual cortex, and part of t
 
 We have 3 types of data that seem to support localisation of function
 
-1. We observe neural activity in response to stimuli or during tasks we see that neurons with similar responses tend to be co-located. For example, in [this study](https://doi.org/10.1093/brain/123.2.291) human participants were asked to read words presented to a single eye while their brain activity was imaged using a technique known as {abbr}`FMRI(Functional Magnetic Resonance Imaging)`
+1. We observe neural activity in response to stimuli or during tasks we see that neurons with similar responses tend to be co-located. For example, in [this study](https://doi.org/10.1093/brain/123.2.291) human participants were asked to read words presented to a single eye while their brain activity was imaged using a technique known as FMRI
 
     The top row of [the figure](#brainactive) shows left and right views of the brain with the inferred amount of neural activity overlaid in red in response to words presented to either the left or the right eye. So you can see that this task activates some localised areas.
 
@@ -155,9 +155,7 @@ Left and Right Views of Brain Activity to Stimuli (See [paper](https://doi.org/1
 
 3. If we look at the brain structure we see that connectivity tends to be sparse and modular, which could seem to imply that individual modules may perform speciallised functions. 
 
-:::{hint} Linker
 But is that necessarily the case? In other words, will a network with a modular structure necessarily modulise function? 
-:::
 
 ## Structural vs Functional Specialisation
 

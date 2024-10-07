@@ -42,7 +42,7 @@ Part 3 of the course is about some of the theories that have been proposed about
 
 In the final part, we’ll discuss prospects for the future. We’ll talk about neuromorphic computing, that is, specialised hardware designed to mimic some aspects of how the brain functions. We’ll also talk about some more recent developments in neuroscience that we still don’t quite know what to make of.
 
-## Weekly Structure
+## Weekly structure
 
 This course uses a **flipped classroom approach.** That means rather than sitting down and listening to us talk for a couple of hours each week and then go off and try to understand the material on your own, we flip that:
 

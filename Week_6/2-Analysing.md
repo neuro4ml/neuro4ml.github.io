@@ -40,7 +40,7 @@ With this sort of data there are lots of different questions we could ask like:
 
 Once we have a question or questions in mind we can then decide on an appropriate analysis method.
 
-## Analysis Method
+## Analysis method
 
 There are lots of different approaches to analyzing neural data, so I’m just going to highlight three.
 A simple approach is to calculate **summary statistics**.
@@ -50,9 +50,9 @@ Or if we were varying a stimulus parameter continuously, like the brightness of 
 
 So what does this analysis look like? 
 
-## Summary Statistics
+## Summary statistics
 
-In [this paper](https://doi.org/10.1038/nature05601) the authors let a rat freely move around a square area while recording the activity of neurons in part of the brain known as the hippocampus.
+In {cite:t}`https://doi.org/10.1038/nature05601` the authors let a rat freely move around a square area while recording the activity of neurons in part of the brain known as the hippocampus.
 
 In the [left panel](#summary-stats-pic), the black line shows the animal’s path, and the red dots show the locations in space where one neuron spiked. Then the [right panel](#summary-stats-pic), shows a heatmap of the neuron's firing rate, with red being high. So, this heatmap is equivalent to a 2d tuning curve, and we can see that this neuron is tuned to a specific location in this environment.
 
@@ -68,11 +68,9 @@ Place cell neuron response
 
 However, many neuron's aren’t so clearly tuned to specific environmental features and rather than thinking of single neurons as encoding variables it may be better to try to understand what information populations of neurons encode.
 
-:::{hint} Linker
 This brings us onto our second approach which is **neural decoding**.
-:::
 
-## Neural Decoding
+## Neural decoding
 
 The aim of neural decoding is to use neural activity to estimate something about the environment or subject.
 For example, if we think about the rat, we could take its neural activity and try to estimate its velocity or position in the environment.
@@ -83,7 +81,7 @@ To do that we could start from our matrix (of neurons by time), bin the spikes i
 :width: 600px
 ```
 
-As this is essentially a regression problem, there are many approaches we could use to do this like using filters or neural networks, and [this paper](https://doi.org/10.1523/ENEURO.0506-19.2020) compares these methods in detail. For example, in [this image](#hippocampus-graph), each point on the x-axis represents a different decoding approach, and then the y-axis shows how accurately each method can decode the rat’s location and you can see that some methods can do this quite accurately, even though the dataset only has 50 neurons.
+As this is essentially a regression problem, there are many approaches we could use to do this like using filters or neural networks, and {cite:t}`https://doi.org/10.1523/ENEURO.0506-19.2020` compares these methods in detail. For example, in [this image](#hippocampus-graph), each point on the x-axis represents a different decoding approach, and then the y-axis shows how accurately each method can decode the rat’s location and you can see that some methods can do this quite accurately, even though the dataset only has 50 neurons.
 
 ```{figure} figures/analysingPicture3.jpg
 :label: hippocampus-graph
@@ -97,11 +95,9 @@ But if we tried to decode location from another population of neurons somewhere 
 However, decoding relies on having a variable or variables of interest to estimate, and sometimes we may not have that: for example, if we’re just recording spontaneous brain activity.
 
 
-:::{hint} Linker
 In that case, one approach would be what we're going to call **ensemble methods**
-:::
 
-## Neural Ensembles
+## Neural ensembles
 
 These try to identify groups of neurons with correlated patterns of activity over time.
 

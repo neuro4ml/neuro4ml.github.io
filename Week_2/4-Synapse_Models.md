@@ -1,4 +1,4 @@
-# Synapse Models
+# Synapse models
 
 [Download the slides here](slides/W2-V3-synapse-models.pptx)
 
@@ -45,7 +45,7 @@ A helpful picture to draw is the [postsynaptic potential](#postsynaptic-potentia
 (postsynaptic-potential)=
 ![](#postsynaptic-potentials-label)
 
-## Synapse Time Course
+## Synapse time course
 
 We will start with how we can directly model the dynamics in terms of **conductance**, **current** or **membrane potential**. A common approach is to decide the key synaptic variable and model it with one of the 3 classes of functions. There's an explanation as to why these 3 classes come up that we'll return to later.
 
@@ -83,7 +83,7 @@ v(t) &= H(t)(e^{-t/\tau} - e^{-t/\tau_x}) \\
 
 Each of these can be represented as a linear time invariant differential equation with constant coefficients. This makes sense since we would expect time invariance in a model of a physical system. Having linearity and constant coefficients is the simplest thing we can do.
 
-* {abbr}`ODE(Odinary Differential Equation)` for [exponential form](#exponential-eq):
+* ODE for [exponential form](#exponential-eq):
 
 ```{math}
 :label: exp-diff
@@ -93,7 +93,7 @@ v(0) &= 1
 \end{aligned}
 ```
 
-* {abbr}`ODE(Odinary Differential Equation)` for [alpha form](#alpha-eq):
+* ODE for [alpha form](#alpha-eq):
 
 ```{math}
 :label: alpha-diff
@@ -104,7 +104,7 @@ x(0) &= 1
 \end{aligned}
 ```
 
-* {abbr}`ODE(Odinary Differential Equation)` for [biexponential form](#biexponential-eq):
+* ODE for [biexponential form](#biexponential-eq):
 
 ```{math}
 :label: biexp-diff
@@ -177,7 +177,7 @@ Repeated eigenvalues give solutions:
 ```
 :::
 
-## Short-term Plasticity
+## Short-term plasticity
 
 So far we've looked at memoryless models of synapses, where previous activity doesn't affect what they do, but this isn't quite right. Neurotransmitters are released in vesicles, and after being released, a fraction of them will be unavailable if another spike comes along. This means that later spikes will likely have a smaller effect than earlier spikes. This is called **short-term synaptic depression**. We can model it by adding an extra variable $x$ that tracks what fraction of vesicles are available.
 
@@ -246,7 +246,7 @@ As usual, we don’t have a complete answer to that. One thing for sure is that 
 It can also allow the neuron to have richer spike frequency dynamics, allowing them to act as low, high or band pass filters, and do gain control.
 There’s a bunch of other ideas people have suggested, and there are links in the reading list for where you can read more about this and other models of short term plasticity.
 
-# Channel Types: Excitation and Inhibition
+# Channel types: excitation and inhibition
 
 As previously mentioned, synapses can be either [excitatory or inhibitory](#exitatory-inhibitory). There are a range of different ion channels and dynamics giving rise to different sorts of excitatory or inhibitory synapses. Channel types include inhibitory ($GABA_A$ fast and $GABA_B$ slow) and excitatory (AMPA fast and NMDA slow) The simplest model is that excitatory synapses lead to an increase in some variable, while inhibitory synapses lead to a decrease.
 
@@ -271,7 +271,7 @@ Excitation and Inhibition
 
 Another interesting channel type is NMDA, which can’t be modelled linearly. The effect of NMDA requires the receiving neuron’s membrane potential to have recently been high. This may be important in learning.
 
-## Long-term Plasticity
+## Long-term plasticity
 
 Talking of learning, we'll briefly mention long-term plasticity, since this is the main topic of week 4. Earlier, we mentioned the [Hebbian rules](#hebbian), and you can generally model them by adding some differential equations for the synaptic weight $w$ as a function of the activity of the pre-synaptic and post-synaptic neurons. We'll talk about some particular models later.
 
@@ -279,7 +279,7 @@ Talking of learning, we'll briefly mention long-term plasticity, since this is t
 \frac{dw}{dt} = \text{ some function of $w$ and pre- and post-synaptic activity}
 ```
 
-### Spike Timing-Dependent Plasticity (STDP)
+### Spike timing-dependent plasticity (STDP)
 
 It has been observed experimentally that particular pairings of pre- and post-synaptic spike times can lead synapses to get stronger or weaker. We can model this by increasing the weight by some $ \Delta w $ that depends on the timing difference, which can be made a reasonable fit to experimental data. This [particular curve](#stdp-graph), where the synapse gets stronger if pre-synaptic spikes tend to come before post-synaptic spikes, could be thought of as encouraging networks to care about temporal causality. We will cover this in more detail later on.
 
@@ -303,7 +303,7 @@ W(\delta t) =
 Synapse behavior with pre and post-synaptic spikes
 ```
 
-## More Synaptic Fun
+## More synaptic fun
 
 As always, there's a lot more that could be said about modelling synapses. We'll just briefly mention 2. The first is synaptic failure. I'ts easy to model by adding a chance failure to each synaptic event.
 

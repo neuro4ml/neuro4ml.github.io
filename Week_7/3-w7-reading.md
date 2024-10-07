@@ -1,4 +1,4 @@
-# Reading Material
+# Reading material
 
 ## Decision making
 

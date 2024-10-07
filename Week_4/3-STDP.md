@@ -15,7 +15,7 @@ Spike Timing Dependent Plasticity (STDP) is a form of [Hebbian learning](#hebbia
 In this section we'll cover STDP
 :::
 
-## Experimental Measurement
+## Experimental measurement
 
 Let's start with how it's measured. Find a pair of neurons connected by a [synapse](#chemical-synapses). Force the pre-synaptic neuron to fire a spike at time 0 and the post-synaptic neuron to fire a spike at time $\Delta t$. We then repeat this pairing about 60 times, wait around an hour, and measure the change in the synapse. This is measure by computing the height of a post-synaptic current from a single excitatory spike before and after the pairing.
 
@@ -119,7 +119,7 @@ One thing that’s worth pointing out is that the models slightly differ from th
 
 It’s also worth noting that there are some subtleties with delays here. You should do a slightly different thing depending on whether the delays are dendritic, axonal, or some combination of the two. In any case, the experimental data is less clear about delays, so it’s not even obvious that there is a right thing to do here.
 
-## Latency Reduction
+## Latency reduction
 
 Now that we know how to model STDP, let’s start taking a look at the things it can learn.
 We set up a model with a layer of input neurons connected to a single output neuron, with STDP on the synaptic weights. Now, we make those input neurons all fire a burst of spikes for 20 ms but with a random latency, and look at what the network learns.
@@ -136,7 +136,7 @@ What we see is that the neurons with a low latency have their synaptic weights s
 :width: 700px
 ```
 
-## STDP Learns Correlated Groups
+## STDP learns correlated groups
 
 In this next experiment, we divide input neurons into two groups. One group with the white background are firing uncorrelated spikes. The other group with the blue background are firing correlated spikes.
 
@@ -237,7 +237,7 @@ A more fundamental problem that has not yet been solved is how to handle stabili
 
 In general, we know that it’s important to combine multiple time scales because we want to be able to learn fast and forget slowly, but this seems to be hard to achieve. This is related to the similar problem of catastrophic forgetting found in machine learning, and solutions to this problem in either neuroscience or machine learning may prove helpful in the other field.
 
-This isn’t a complete list of all the issues with STDP, and if you’re interested in taking it further [this paper](https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2010.00019/full) has quite a nice review of some of the problems and attempted solutions.
+This isn’t a complete list of all the issues with STDP, and if you’re interested in taking it further {cite:t}`https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2010.00019/full` has quite a nice review of some of the problems and attempted solutions.
 
 ## Other forms of learning
 

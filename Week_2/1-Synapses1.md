@@ -16,7 +16,7 @@ Last week, we covered how ionic movements enable [neurons](#neurons) to generat
 In this section we're going to cover how neurons signal to each other, starting from our [single neuron diagram](#fig1).
 :::
 
-## Saltatory Conduction
+## Saltatory conduction
 
 Inputs at the [neurons dendrites](#neuron-dendrites) cause sodium channels to open.
 
@@ -39,11 +39,11 @@ Single Neuron
 
 So what happens once this signal reaches the neuron's axon terminals? 
 
-## Chemical Synapses
+## Chemical synapses
 
 If we zoom into on one of these [terminals](#zoomed-terminal), we can see that this is where our neuron connects to another adjacent neuron. 
 
-This connection is called a '**synapse**', and the neurons on either side of the synapse are called the pre- and post-synaptic neurons. These connections can either be electrical (known as gap junctions), or chemical (like the one shown in [Figure 2](#zoomed-terminal)).
+This connection is called a '**synapse**', and the neurons on either side of the synapse are called the pre- and post-synaptic neurons. These connections can either be electrical (known as gap junctions), or chemical (like the one shown in [](#zoomed-terminal)).
 
 So what makes up a chemical synapse?
 
@@ -62,7 +62,7 @@ Zoomed-in synapse
 When an [action potential](#action-potential) reaches the axon terminal, the influx of ions depolarizes the membrane and causes voltage-gate channels to [open](#spike), allowing calcium to flow into the cell. This causes the synaptic vesicles to fuse with the cell membrane and release their neurotransmitters into the cleft.
 
 (exitatory-inhibitory)=
-The neurotransmitters then diffuse across the cleft and bind to the post-synaptic receptors, triggering different effects. As shown in [Figure 3](#binding), binding causes an ion channel to open and positive ions to flow into the post-synaptic neuron, raising its membrane potential. 
+The neurotransmitters then diffuse across the cleft and bind to the post-synaptic receptors, triggering different effects. As shown in [](#binding), binding causes an ion channel to open and positive ions to flow into the post-synaptic neuron, raising its membrane potential. 
 
 This is known as an **excitatory synapse**, as a pre-synaptic action potential will make the post-synaptic neuron more likely to fire a spike. Conversely, **inhibitory synapses** reduce the post-synaptic neuron's membrane potential, making spiking of action potentials less likely. 
 
@@ -99,7 +99,7 @@ Individual neurons tend to contain and release multiple transmitters. For exampl
 Images of Glutamate, GABA and Dopamine (See [source](https://i0.wp.com/www.compoundchem.com/wp-content/uploads/2015/07/Chemical-Structures-of-Neurotransmitters-2015.png?ssl=1 ))
 ```
 
-## Dale's Principle
+## Dale's principle
 
 Dale's principle sets up an interesting contrast between biological and artificial neural networks. Biological neurons release the same set of neurotransmitters to all of their partners. 
 
@@ -107,7 +107,7 @@ However in artificial neural networks, single units have both positive and negat
 
 So, is this a limitation of biology or an advantage?
 
-To explore this question, [Jonathan Cornford and colleagues](https://openreview.net/forum?id=eU776ZYxEpz) built {abbr}`ANNs(Artificial Neural Network)` in which each unit was either excitatory or inhibitory. Shown below in pink and blue. 
+To explore this question, [Jonathan Cornford and colleagues](https://openreview.net/forum?id=eU776ZYxEpz) built ANNs in which each unit was either excitatory or inhibitory. Shown below in pink and blue. 
 
 ```{figure} figures/Picture5.png
 :label: ANNs
@@ -117,7 +117,7 @@ To explore this question, [Jonathan Cornford and colleagues](https://openreview
 ANNs built by Jonathan Conford and his colleagues (See [paper](https://openreview.net/forum?id=eU776ZYxEpz))
 ```
 
-It turns out that these networks are difficult to train with standard gradient descent, and end up performing worse than a standard ANN. You can see this on the [graph below](#Dale's-principle-graph), where the black curve shows the performance of a standard {abbr}`ANN(Artificial Neural Network)` and the green shows a simple implementation of Dale's principle. So, they introduced some corrections and were able to get networks which respect Dale's principle and **match** the performance of standard {abbr}`ANNs(Artificial Neural Network)`. This improved implementation of Dale's principle is shown in red. 
+It turns out that these networks are difficult to train with standard gradient descent, and end up performing worse than a standard ANN. You can see this on the [graph below](#Dale's-principle-graph), where the black curve shows the performance of a standard ANN and the green shows a simple implementation of Dale's principle. So, they introduced some corrections and were able to get networks which respect Dale's principle and **match** the performance of standard ANNs. This improved implementation of Dale's principle is shown in red. 
 
 ```{figure} figures/Picture6.png
 :label: Dale's-principle-graph

@@ -27,7 +27,7 @@ In humans, irreversible changes usually result from accidents, disease processes
 
 But in animal models, we can irreversibly destroy single neurons or even whole parts of the brain, to study the effect.
 
-For example, [this paper](https://doi.org/10.3389/fnins.2023.971980) used rats to study the role of motor cortex: a part of the brain where many studies have observed neural activity correlated with movement.
+For example, {cite:t}`https://doi.org/10.3389/fnins.2023.971980` used rats to study the role of motor cortex: a part of the brain where many studies have observed neural activity correlated with movement.
 
 In this paper, the authors:
 
@@ -84,9 +84,9 @@ Examples of Optogenetics
 
 While, this may seem a bit detached from machine learning, we can actually use the same types of manipulations to interrogate artificial neural networks.  
 
-## Single-element Lesions in ANNs
+## Single-element lesions in ANNs
 
-For example, in [this paper](https://doi.org/10.1371/journal.pcbi.1010250) the authors studied an ANN by lesioning it extensively.
+For example, in {cite:t}`https://doi.org/10.1371/journal.pcbi.1010250` the authors studied an ANN by lesioning it extensively.
 To create their ANN, they used an evolutionary algorithm called (NEAT) to evolve a neural network which could play the arcade game Space Invaders.
 
 Their evolved network is [shown here](#single-lesions-pic1):
@@ -125,7 +125,7 @@ Taking this further, because of the complex interactions between elements in a n
 To overcome this issue, the authors compare their results to a multi-element approach. 
 
 (multi-element-lessions)=
-## Multi-element Lesions in ANNs
+## Multi-element lesions in ANNs
 
 In this multi-element approach, you sample combinations of lesions.
 For example, you silence node 1 and check the networks score, then silence node 1 and 2 together, 1, 2, 3 together etc.

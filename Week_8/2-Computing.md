@@ -37,7 +37,7 @@ Finally, there’s learning. Ideally, this should be done on the neuromorphic de
 Neuromorphic Computing Overview
 ```
 
-## Emulating Neurons
+## Emulating neurons
 
 The first step is simulating the neuron or components of the neuron.
 A very traditional approach that goes back to the beginning of neuromorphic computing is subthreshold analogue approaches. In these, you design an electrical circuit that behaves like a neuron model, with time constants that are comparable to biological ones so that it can operate in realtime.
@@ -72,7 +72,7 @@ This approach tends to be very flexible in terms of what you can simulate, but l
 :width: 200px
 ```
 
-{abbr}`FPGAs(Field programmable gate arrays)` are a first step towards full customisation. They allow for partial configuration of the hardware. They’re a bit less flexible than a CPU but can also be more efficient in terms of speed and power.
+FPGAs are a first step towards full customisation. They allow for partial configuration of the hardware. They’re a bit less flexible than a CPU but can also be more efficient in terms of speed and power.
 
 Finally, you can go all the way to fully customised chips. These are the least flexible and the most expensive to develop, but can be much more efficient.
 And of course there are also hybrid approaches that combine these elements in different ways.
@@ -97,7 +97,7 @@ A common solution is the memristor crossbar array. A memristor is an electrical 
 Memrisator grid configuration (See [paper](https://doi.org/10.1016/j.softx.2020.100617))
 ```
 
-## Sending Spikes
+## Sending spikes
 
 In addition to processing spikes that have been received, we also need to send spikes.
 The way the brain does that is simply to have one wire from each input to each output. Can we just do the same?
@@ -110,7 +110,7 @@ Those events are communicated by multiplexing them in time on a very fast digita
 However, because multiple events may happen simultaneously, you either have to queue simultaneous events, introducing an error in time, or drop them entirely.
 This is theoretically problematic if your aim is a perfect simulation, but not necessarily a big issue if you have trained a noise robust network using some form of temporal jitter and synaptic dropout.
 
-This {abbr}`AER(address event representation)` scheme is therefore very widely used in neuromorphic systems.
+This AER scheme is therefore very widely used in neuromorphic systems.
 
 ```{figure} figures/ComputingPicture6.png
 :label: adress-event-pic

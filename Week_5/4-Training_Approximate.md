@@ -1,3 +1,3 @@
-# Training SNNs with Approximated Gradients
+# Training SNNs with approximate gradients
 
-Comming soon!
+Comming soon! (Maybe.)
