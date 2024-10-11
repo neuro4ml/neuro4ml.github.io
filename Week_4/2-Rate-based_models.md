@@ -28,7 +28,7 @@ We model this with a [differential equation](#hebbian-rule-eq) saying that the w
 
 (hebbian-rule-eq)=
 ```{math}
-\textcolor{purple}{\tau_w} \frac{d \textcolor{#0f73bf}{w}}{dt} = F (\textcolor{#0f73bf}{w}, \textcolor{#b35f10}{r_{pre}}, \textcolor{#b80909}{r_{post}})
+\textcolor{purple}{\tau_w} \frac{d \textcolor{#0f73bf}{w}}{\ud t} = F (\textcolor{#0f73bf}{w}, \textcolor{#b35f10}{r_{pre}}, \textcolor{#b80909}{r_{post}})
 ```
 
 Different functions $F$ give you different models.
@@ -40,7 +40,7 @@ That's quite abstract, so let's take a look at a concrete example.
 Let's choose the function $F$ to be the product of the pre- and post-synaptic firing rates so that $w$ just grows in proportion to the correlation between the firing rates.
 
 ```{math}
-\textcolor{purple}{\tau_w} \frac{d \textcolor{#0f73bf}{w}}{dt} = \textcolor{#b35f10}{r_{pre}} \textcolor{#b80909}{r_{post}}
+\textcolor{purple}{\tau_w} \frac{d \textcolor{#0f73bf}{w}}{\ud t} = \textcolor{#b35f10}{r_{pre}} \textcolor{#b80909}{r_{post}}
 ```
 
 This clearly satisfies the idea of _"Cells that fire ($\textcolor{#b35f10}{r_{pre}}$ and $\textcolor{#b80909}{r_{post}}$ both large) together wire together ($\textcolor{#0f73bf}{w}$ grows)"_
@@ -62,7 +62,7 @@ Another solution is a softer bound which just reduces the rate of change of the 
 ```{math}
 \begin{gather}
 \text{Soft Bound:} \\
-\textcolor{purple}{\tau_w} \frac{d \textcolor{#0f73bf}{w}}{dt} = \text{const } \cdot (w^{max} - \textcolor{#0f73bf}{w}) \cdot \textcolor{#b35f10}{r_{pre}} \textcolor{#b80909}{r_{post}}
+\textcolor{purple}{\tau_w} \frac{d \textcolor{#0f73bf}{w}}{\ud t} = \text{const } \cdot (w^{max} - \textcolor{#0f73bf}{w}) \cdot \textcolor{#b35f10}{r_{pre}} \textcolor{#b80909}{r_{post}}
 \end{gather}
 ```
 
@@ -75,7 +75,7 @@ You take the standard [Hebbian rule](#hebbian-rule-eq) and subtract off a term p
 In other words, after growing for a while the weights will stop changing.
 
 ```{math}
-\textcolor{purple}{\tau_w} \frac{d \textcolor{#0f73bf}{w}}{dt} = \textcolor{#b35f10}{r_{pre}} \textcolor{#b80909}{r_{post}} - \textcolor{#0f73bf}{w} \textcolor{#b80909}{r_{post}^2}
+\textcolor{purple}{\tau_w} \frac{d \textcolor{#0f73bf}{w}}{\ud t} = \textcolor{#b35f10}{r_{pre}} \textcolor{#b80909}{r_{post}} - \textcolor{#0f73bf}{w} \textcolor{#b80909}{r_{post}^2}
 ```
 
 This has two nice properties:
@@ -162,10 +162,10 @@ This is exactly the definition of $\bold{w}$ being a **principal component**. In
 |\bold{w}|^2 = \bold{w}^T \bold{w}
 ```
 
-We set its derivative to 0, and by expanding that out in components we can see that this is $\bold{w}^T \frac{d}{dt} \bold{w}$, which give us the following:
+We set its derivative to 0, and by expanding that out in components we can see that this is $\bold{w}^T \frac\ud{\ud t} \bold{w}$, which give us the following:
 
 ```{math}
-0 = \langle \frac{d}{dt} \bold{w} ^T \bold{w} \rangle = \langle \frac{d}{dt} \sum_i w_i^2 \rangle = \langle \sum_i 2 \dot{w_i} w_i \rangle = 2 \langle \bold{w}^T \bold{\dot{w}} \rangle
+0 = \langle \frac{\ud}{\ud t} \bold{w} ^T \bold{w} \rangle = \langle \frac{\ud}{\ud t} \sum_i w_i^2 \rangle = \langle \sum_i 2 \dot{w_i} w_i \rangle = 2 \langle \bold{w}^T \bold{\dot{w}} \rangle
 ```
 
 Expanding the derivative out using the formula we calculated [above](#norm-eq), we get a second $\lambda$ term appearing and this simplifies to $\lambda (1 - |\bold{w}|^2)$.
@@ -192,7 +192,7 @@ Their aim was a model of the development of selectivity in the visual cortex, an
 Their rule multiplies the simple [Hebbian rule](#hebbian-rule-eq) from before with a term that can be positive or negative. It’s positive if the postsynaptic firing rate is high, and negative if it’s low. High and low and controlled by a threshold $\textcolor{#18a326}{\theta}$.
 
 ```{math}
-\textcolor{purple}{\tau_w} \frac{d \textcolor{#0f73bf}{w}}{dt} = \textcolor{#b35f10}{r_{pre}} \textcolor{#b80909}{r_{post}} (\textcolor{#b80909}{r_{post}} - \textcolor{#18a326}{\theta})
+\textcolor{purple}{\tau_w} \frac{d \textcolor{#0f73bf}{w}}{\ud t} = \textcolor{#b35f10}{r_{pre}} \textcolor{#b80909}{r_{post}} (\textcolor{#b80909}{r_{post}} - \textcolor{#18a326}{\theta})
 ```
 
 This means that synapses can get stronger or weaker. The intuition here is that it promotes selectivity because those inputs that cause a high firing rate will be driven even higher, and those with a low firing rate even lower. However, you can already see that if $\textcolor{#18a326}{\theta}$ is just a constant, there’s nothing to stop this from blowing up. Once the post-synaptic firing rate goes above $\textcolor{#18a326}{\theta}$ it can just keep growing without bounds.

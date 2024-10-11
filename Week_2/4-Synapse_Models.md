@@ -280,7 +280,7 @@ Another interesting channel type is NMDA, which can’t be modelled linearly. Th
 Talking of learning, we'll briefly mention long-term plasticity, since this is the main topic of week 4. Earlier, we mentioned the [Hebbian rules](#hebbian), and you can generally model them by adding some differential equations for the synaptic weight $w$ as a function of the activity of the pre-synaptic and post-synaptic neurons. We'll talk about some particular models later.
 
 ```{math}
-\frac{dw}{dt} = \text{ some function of $w$ and pre- and post-synaptic activity}
+\frac{\ud w}{\ud t} = \text{ some function of $w$ and pre- and post-synaptic activity}
 ```
 
 ### Spike timing-dependent plasticity (STDP)

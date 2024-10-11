@@ -40,7 +40,7 @@ Actually, there are thousands of papers on different types of ion channels and t
 ```{math}
 :label: ion-channel-models
 
-C \frac{dv}{dt} = \Sigma_k I_k (t) + I(t)
+C \frac{\ud v}{\ud t} = \Sigma_k I_k (t) + I(t)
 
 ```
 
@@ -66,7 +66,7 @@ Their [model](#model2) fitted $m$, $n$ and $h$ into equations like [this](#equat
 ```{math}
 :label: equation
 
-\frac{dm}{dt} = a_{m}(v)(1-m) - \beta(v)m
+\frac{dm}{\ud t} = a_{m}(v)(1-m) - \beta(v)m
 
 ```
 

@@ -7,10 +7,6 @@
 :::
 ---
 
-```{danger} Work in progress
-The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
-```
-
 ## Introduction
 
 So far this week we’ve seen a lot of biological detail about neurons.
@@ -24,24 +20,38 @@ In this section, we’ll focus on models without a lot of biological detail like
 
 You’re probably familiar with the artificial neuron from machine learning.
 
-This neuron has n inputs, which have activations $x_1$ to $x_n$ with weights $w_1$to $w_n$. Each of these activations and weights is a real number.
+```{figure} figures/ann-unit.jpg
+:label: ann-unit
 
-It performs a weighted sum of its inputs and then passes that through some nonlinear function $f$.
-Various functions can be used here.
-
-In older work you’ll often see the sigmoid function, and that’s partly because it was considered a good model of real neurons.
-
-Nowadays, you’ll more often see the ReLU, which turns out to be much easier to work with and gives results that are often better.
-
-```{figure} figures/artificial.png
-:label: neuronmodel
-:alt: Models for Artifical Neurons
-:align: center
-
-Models for Artificial Neurons
+Single artificial neuron.
 ```
 
-Interestingly, there are papers still being published about what the best model of real neurons’ activation functions, like [this one](https://www.biorxiv.org/content/10.1101/2023.09.13.557650v1) from 2023 which looks a bit intermediate between sigmoid and ReLU.
+This neuron has $n$ inputs, which have activations $x_1$ to $x_n$ with weights $w_1$ to $w_n$. Each of these activations and weights is a real number.
+
+It performs a weighted sum of its inputs and then passes that through some nonlinear function $f$:
+
+(ann-unit-eq)=
+$$
+x_\mathrm{out} = f(\sum_{i=1}^n w_i x_i)
+$$
+
+Various activation functions can be used here.
+In older work you’ll often see the sigmoid function, and that’s partly because it was considered a good model of real neurons.
+Nowadays, you’ll more often see the ReLU, which turns out to be much easier to work with and gives results that are often better.
+
+```{figure} figures/ann-activations.jpg
+:label: ann-activations
+
+Common activation functions for an artificial neuron.
+```
+
+Interestingly, there are papers still being published about what the best model of real neurons’ activation functions, like [](https://www.biorxiv.org/content/10.1101/2023.09.13.557650v1) which finds an activation function that looks a bit intermediate between sigmoid and ReLU.
+
+```{figure} figures/lafosse_et_al_2023.png
+:label: real-activations
+
+Estimated activation function from real neurons (from [](https://www.biorxiv.org/content/10.1101/2023.09.13.557650v1)).
+```
 
 The relationship between the model and the biological data is established by computing an input-output function, typically by counting the number of spikes coming in to the neurons versus the number of spikes going out, averaged over multiple runs and some time period.
 
@@ -56,7 +66,7 @@ The source of the input current is incoming spikes from other neurons, and we’
 For this week, [here’s](#ideal-graph) a simple, idealised picture of what this looks like. It’s from a model rather than real data, to more clearly illustrate the process.
 
 (ideal-graph)=
-![](#biological-neuron-fig-label)
+![](#bioneuron)
 
 The curve shows the membrane potential of a neuron receiving input spikes at the times indicated by the red circles. Each incoming spike causes a transient rush of incoming current.
 
@@ -70,49 +80,66 @@ The simplest way to model this is using the "integrate and fire neuron". [Here's
 
 ![](#integrate-and-fire-fig-label)
 
-Each time an incoming spike arrives, every 10 milliseconds here, the membrane potential instantaneously jumps by some fixed weight until it hits the threshold, at which point it fires a spike and resets.
+Each time an incoming spike arrives - every 10 milliseconds here - the membrane potential instantaneously jumps by some fixed weight until it hits the threshold, at which point it fires a spike and resets.
 
 We can write this down in a standard form as a series of event-based equations.
 
-Firstly, when you receive an incoming spike:
+1. When you receive an incoming spike, set the variable $v$ to be $v+w_i$.
+2. If the threshold condition ($v > 1$) is true, fire a spike.
+3. After a spike, set $v$ to 0.
 
-```{math}
-:label: rxspike
+```{list-table} Integrate and fire neuron definition
+:header-rows: 1
+:label: if-neuron-definition
 
-v \leftarrow v + w_i
-
+* - Condition
+  - Model behaviour
+* - On presynaptic spike index $i$
+  - $v\leftarrow v+w_i$
+* - Threshold condition, fire a spike if
+  - $v>1$
+* - Reset event, after a spike set
+  - $v\leftarrow 0$
 ```
-
-Set the variable $v$ to be $v+w_i$, if the threshold condition ($v > 1$) is true, fire a spike.
-
-After a spike, set $v$ to 0.
 
 We can see that already this captures part of what’s going on in a real neuron, but misses the fact that in the absence of new inputs, the membrane potential decays back to rest. Let’s add that.
 
 (LIF-section)=
 ## Leaky integrate-and-fire (LIF) neuron
 
-We can model this decay by treating the membrane as a capacitor in an electrical circuit. Turning this into a differential equation, $v$ evolves over time according to the [differential equation:](#de)
+We can model this decay by treating the membrane as a capacitor in an electrical circuit. Turning this into a differential equation, $v$ evolves over time according to the differential equation:
 
 ```{math}
-:label: de
+:label: de-lif
 
-\tau \frac{dv}{dt} = - v
+\tau \frac{\ud v}{\ud t} = - v
 
 ```
-where $\tau$ is the membrane time constant we discussed in the last section.
+where $\tau$ is the [membrane time constant discussed earlier](#membrane-time-constant). We can summarise this as a table as before:
 
-This differential equation can be solved to show that in the absence of any input, $v$ decreases exponentially over time with a time scale of $\tau$.
+```{list-table} Leaky integrate-and-fire neuron definition
+:header-rows: 1
+:label: lif-neuron-definition
+
+* - Condition
+  - Model behaviour
+* - Continuous evolution over time
+  - $\tau \frac{\ud v}{\ud t} = - v$
+* - On presynaptic spike index $i$
+  - $v\leftarrow v+w_i$
+* - Threshold condition, fire a spike if
+  - $v>1$
+* - Reset event, after a spike set
+  - $v\leftarrow 0$
+```
+
+This differential equation can be solved to show that in the absence of any input, $v$ decreases exponentially over time with a time scale of $\tau$:
+
+$$
+v(t) = v(0) \exp(-t/\tau)
+$$
 
 Here's how that looks:
-
-```{math}
-\begin{gather}
-\text{Continuous evolution over time:}\\
-\tau \frac{dv}{dt} = -v\\
-\text{Solution is } v(t) = v(0)e^{\frac{-t}{\tau}}
-\end{gather}
-```
 
 ![](#LIF-fig-label)
 
@@ -125,6 +152,7 @@ But there is another reason why adding this leak might be important.
 In experiments, if you inject a constant input current ([horizontal line, top left](#reliable)) into a neuron and record what happens over a few repeated trials, you see that the membrane potentials ([top left above input current](#reliable)) and the spike times ([bottom left](#reliable)) are fairly different between trials. That’s because there’s a lot of noise in the brain which adds up over time.
 
 On the other hand, if you inject a fluctuating input current ([top right](#reliable)) and do the same thing, you’ll see both the membrane potentials ([top right, above fluctuating current](#reliable)) and the spikes ([bottom right](#reliable)) tend to occur at the same times.
+The vertical lines on the bottom right plot show that on every repeat, the spike is happening at the same time.
 
 
 ```{figure} figures/reliable1.png
@@ -132,16 +160,15 @@ On the other hand, if you inject a fluctuating input current ([top right](#relia
 :alt: Spike Timing
 :align: center
 
-Spike Timing Graphs for Constant and Fluctuating Input Current (see [paper](https://doi.org/10.1126/science.7770778))
+Raster plots for constant and fluctuating input current {cite:p}`https://doi.org/10.1126/science.7770778`.
 ```
 
-The vertical lines on the bottom right plot show that on every repeat, the spike is happening at the same time.
 
 :::{note} Note
 We’ll come back to why this happens in a moment, but first let’s have a look at some models in the same situation.
 :::
 
-We see the same thing with a LIF neuron. [Here](#LIFSpike) are the plots for the membrane potentials as semi-transparent so that you can clearly see that both the spike times and membrane potentials tend to overlap for the fluctuating current, but not the constant current.
+We see the same thing with a LIF neuron. [Here](#LIFSpike) are the plots with semi-transparent membrane potentials so that you can clearly see that both the spike times and membrane potentials tend to overlap for the fluctuating current, but not the constant current.
 
 (LIFSpike)=
 ![](#Brian-LIF-fig-label)
@@ -153,7 +180,7 @@ But now if we repeat that with a simple integrate and fire neuron without a leak
 
 In other words, adding the leak made the neuron more robust to noise. An important property for the brain, and perhaps also for low power neuromorphic hardware that we’ll talk about later in the course.
 
-So why does the leak make it more noise robust? Well that was answered by Romain Brette in a [paper](https://doi.org/10.1162/089976603762552924) in 2003. The mathematical analysis is complicated, but it boils down to the fact that if you either have a leak, or a nonlinearity in the differential equations, the fluctuations due to the internal noise don’t accumulate over time, whereas with a linear and non-leaky neuron, they do.
+So why does the leak make it more noise robust? Well that was answered by [](https://doi.org/10.1162/089976603762552924). The mathematical analysis is complicated, but it boils down to the fact that if you either have a leak, or a nonlinearity in the differential equations, the fluctuations due to the internal noise don’t accumulate over time, whereas with a linear and non-leaky neuron, they do.
 
 ## LIF neuron with synapses
 
@@ -166,18 +193,36 @@ You can see on the bottom plot [here](#LIFimproved) that the input current is no
 :::{figure} #LIF-with-synapses-fig-label
 :label: LIFimproved
 
-Improved LIF Model
+Leaky integrate-and-fire with exponential synapses.
 :::
 
 We model that by adding a [differential equation](#de2), with its own time constant $\tau_I$:
 
 ```{math}
 :label: de2
-\tau_I \frac{dI}{dt} = -I 
+\tau_I \frac{\ud I}{\ud t} = -I 
 
 ```
 
-We also add that current $I$ to the differential equation for $V$ here, multiplied by a constant $R$. The rest of the model is as it was before.
+We also add that current $I$ to the differential equation for $V$, multiplied by a constant $R$. The rest of the model is as it was before:
+
+```{list-table} Leaky integrate-and-fire neuron with exponential synapses definition
+:header-rows: 1
+:label: lif-expsyn-neuron-definition
+
+* - Condition
+  - Model behaviour
+* - Continuous evolution over time
+  - $\tau \frac{\ud v}{\ud t} = RI - v$
+
+    $\tau_I\frac{\ud I}{\ud t}=-I$
+* - On presynaptic spike index $i$
+  - $I\leftarrow I+w_i$
+* - Threshold condition, fire a spike if
+  - $v>1$
+* - Reset event, after a spike set
+  - $v\leftarrow 0$
+```
 
 We can see that this gives a better approximation of the shape.
 There’s more that can be done here if you want, for example modelling changes in conductance rather than current, but we’ll get back to that next week.
@@ -193,37 +238,46 @@ However, real neurons have a memory of their recent activity. [Here](#memory) ar
 :alt: Spike Frequency Adaptation
 :align: center
 
-Evidence of Neuron Memory Based on Spike Frequency
+Example of spike frequency adaptation {cite:p}`https://doi.org/10.7554/eLife.65459`.
 ```
 
 In these recordings (from {cite:t}`https://doi.org/10.7554/eLife.65459`), they’ve injected a constant current into these three different neurons, and recorded their activity.
 We can see that rather than outputting a regularly spaced sequence of spikes, there’s an increasing gap between the spikes.
 There are various mechanisms underlying this, but essentially it comes down to slower processes that aren’t reset by a spike. Let’s see how we can model that.
 
-Actually there are many, many different models for spike frequency adaptation. We'll just show one very simple approach, but you can take a look at [this review](http://dx.doi.org/10.4249/scholarpedia.30643) if you want some more ideas.
+Actually there are many, many different models for spike frequency adaptation. We'll just show one very simple approach, but if you want some more ideas it's reviewed in [](http://dx.doi.org/10.4249/scholarpedia.30643).
 
 In the simple model [here](#memorymodel), we just introduce a variable threshold represented by the variable $v_T$. Each time the neuron spikes, the threshold increases, making it more difficult to fire the next spike, before slowly decaying back to its starting value.
-
-:::{math}
-\begin{gather}
-\text{Continuous evolution over time:} \\
-\tau_T \frac{dv_T}{dt} = 1 - v_T\\
-\text{Threshold condition, fire spike if:}\\
-v > v_r\\
-\text{Reset event, after a spike set:}\\
-v_T \leftarrow v_T + \delta v_T
-\end{gather}
-:::
 
 :::{figure}  #adaptive-LIF-fig-label
 :label: memorymodel
 :alt: Spike Frequency Adaptation Memory Model
 :align: center
 
-Spike Frequency Adaptation Memory Model
+Spike frequency adaptation model compared to standard LIF.
 :::
 
 In the equations, we represent that by having a new exponentially decaying differential equation for the threshold, modifying the threshold condition so that it’s $v>v_T$ instead of $v>1$, and specifying that after a spike the threshold should increase by some value. You can see that it does the job, there’s a smaller gap between earlier spikes than later spikes.
+
+```{list-table} Adaptive leaky integrate-and-fire neuron definition
+:header-rows: 1
+:label: alif-neuron-definition
+
+* - Condition
+  - Model behaviour
+* - Continuous evolution over time
+  - $\tau \frac{\ud v}{\ud t} = RI - v$
+
+    $\tau_T\frac{\ud v_T}{\ud t}=1-v_T$
+* - On presynaptic spike index $i$
+  - $v\leftarrow v+w_i$
+* - Threshold condition, fire a spike if
+  - $v>v_T$
+* - Reset event, after a spike set
+  - $v\leftarrow 0$
+
+    $v_T\leftarrow v_T+\delta v_T$
+```
 
 In general, spike frequency adaptation can give really rich and powerful dynamics to neurons, but we won’t go into any more detail about that right now.
 
@@ -231,18 +285,16 @@ In general, spike frequency adaptation can give really rich and powerful dynamic
 
 This has been a quick tour of some features of abstract neuron models. There’s a lot more to know about if you want to dive deeper.
 
-```{figure} figures/othermodels.png
-:label: moremodels
-:alt: More Neuron Models
-:align: center
-
-More Abstract Neuron Models
-```
-
 Some of the behaviours of real neurons that we haven’t seen in our models so far include:
 * Phasic spiking, i.e. only spiking at the start of an input.
 * Bursting, both phasic at the start or tonic ongoing.
 * And post-inhibitory rebound, where a neuron fires a spike once an inhibitory or negative current is turned off.
+
+```{figure} figures/neuronbehaviours.png
+:label: neuronbehaviours
+
+Behaviours of real neurons.
+```
 
 You can capture a lot of these effects with two variable models such as the adaptive exponential integrate and fire or Izhikevich neuron models.
 
@@ -252,16 +304,11 @@ Taking that further there are Markov chain models of neurons where you model the
 
 :::{seealso} For more
 :class: dropdown
-You can find the figures from this section in the exercise section.
+You can find the code to generate the figures from this section in [](./code-for-figures.ipynb).
 
 Further reading:
 
-* [Gerstner and Brette (2009) " Adaptive exponential integrate-and-fire model"](http://dx.doi.org/10.4249/scholarpedia.8427)
+* [](http://dx.doi.org/10.4249/scholarpedia.8427)
 * [Gerstner et al. (2014) "Neuronal Dynamics" - Part 1 Foundations of Neuronal Dynamics](https://neuronaldynamics.epfl.ch/online/Pt1.html)
 * [Biological neuron models](https://en.wikipedia.org/wiki/Biological_neuron_model) - good Wikipedia article
-:::
-
-:::{seealso} That's it!
-In the next section, we’ll talk about more biophysically detailed models of neurons.
-
 :::

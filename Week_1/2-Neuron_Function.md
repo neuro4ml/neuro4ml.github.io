@@ -7,10 +7,6 @@
 :::
 ---
 
-```{danger} Work in progress
-The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
-```
-
 ## Introduction
 
 Last week we saw that neurons act as information processing units. To do so, they use both chemical and electrical signals:
@@ -36,8 +32,7 @@ So let's start by looking at the electrical activity of a single neuron. 
 
 ## Single neuron recordings
 
-In [](#recordings) (from [this paper](https://doi.org/10.1152/jn.00408.2011 
-)) we have time in ms on the x-axis and voltage in mV on the y-axis.
+In [](#recordings) (from [](https://doi.org/10.1152/jn.00408.2011)) we have time in ms on the x-axis and voltage in mV on the y-axis.
 
 Exactly how researchers acquire this sort of data depends on several factors, but in general you need an electrode, an amplifier, and a specimen to record from, like an isolated neuron in a dish or even a human brain during surgery.
 
@@ -141,6 +136,7 @@ Check out [this video](https://www.youtube.com/watch?v=BbUcWbtVjT4) and [this we
 
 But, while each neuron's own spikes share the same shape, not all neurons are alike in their dynamics. 
 
+(membrane-time-constant)=
 ## Membrane time constant
 
 Let's think about injecting input current into a neuron. 
@@ -159,7 +155,7 @@ Simulations showing how neurons with long (left) vs short (right) membrane time 
 
 While this may seem far from machine learning, using neural network models to explore what role these features play in computation, or using biological features to boost performance are both exciting prospects. 
 
-Just to give you one example along these lines. In {cite:t}`https://doi.org/10.1038/s41467-021-26022-3` Dan and colleagues, built neural networks with heterogenous membrane time constants and showed that this lead to improvements in task performance.
+Just to give you one example along these lines. In {cite:t}`https://doi.org/10.1038/s41467-021-26022-3`, Dan and colleagues built neural networks with heterogenous membrane time constants and showed that this lead to improvements in task performance.
 
 But how do you make artificial units with different membrane time constants?
 

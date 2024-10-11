@@ -106,6 +106,7 @@ project:
     AER: Address Event Representation)
   math:
     '\argmax': '\operatorname{argmax}'
+    '\ud': '\mathrm{d}'
 
 site:
   template: book-theme

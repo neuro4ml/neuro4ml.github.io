@@ -100,7 +100,7 @@ Over time it evolves according to a differential equation, with instantaneous ef
 \text{Recap:} \\
 \text{\textbf{Leaky integrate-and-fire neuron}} \\
 \text{Continous evolution oer time:} \\
-\tau \frac{dv}{dt} = -v \\
+\tau \frac{\ud v}{\ud t} = -v \\
 \text{On presynaptic spike index i:} \\
 v \leftarrow v + w_i \\
 \text{Threshold condition, fire a spike if:} \\

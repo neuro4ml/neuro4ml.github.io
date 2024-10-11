@@ -125,7 +125,7 @@ An [example function](#logfunc) we can use is the logistic sigmoid function, whi
 :label: logfunc
 \begin{gather}
 \text{Logistic function } H^{\text{smooth}}(x) = \sigma (x) = \frac{1}{1+e^{-\beta x}} \text{ to get}\\
-\frac{d}{dx}H^{\text{smooth}} = \beta \sigma (x)(1-\sigma(x))
+\frac{\ud}{dx}H^{\text{smooth}} = \beta \sigma (x)(1-\sigma(x))
 \end{gather}
 ```
 
