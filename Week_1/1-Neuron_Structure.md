@@ -11,9 +11,9 @@
 
 In the first week we're going to focus on neurons - which are thought to be the brain's primary processing units. We'll cover 3 topics:
 
-* Neuron structure
-* Neuron function
-* How we can model neurons mathematically and simulate them in code
+* Neuron structure.
+* Neuron function.
+* How we can model neurons mathematically and simulate them in code.
 
 ## Sensorimotor transformation
 
@@ -24,7 +24,7 @@ For example, a trained ANN may take in images and output classes. Similarly, a p
 ```{figure} figures/sensorimotor.png
 :align: center
 
-Example sensorimotor transformation.
+The sensorimotor transformation.
 ```
 
 So, how do these systems compute these transformations?
@@ -39,7 +39,7 @@ In brains, the equivalent are **neurons** which are not just simple points, but 
 :label: neuronactivation
 :align: center
 
-Artificial neuron (left) versus real neuron (right).
+An artificial unit (left) versus a real neuron (right).
 ```
 
 So, what makes up a neuron? 
@@ -48,8 +48,8 @@ So, what makes up a neuron? 
 
 Like other cells, neurons have:
 
-* A fatty membrane which separates their inner contents from their surroundings 
-* Then inside, they are filled with a fluid known as cytoplasm 
+* A fatty membrane which separates their inner contents from their surroundings.
+* Then inside, they are filled with a fluid known as cytoplasm.
 * In their cytoplasam, you'll find things which are found in other cells, like a nucleus containing genetic material, which sits in their main cell body or soma.
 
 But, unlike many other cells, neurons act as information processing units:
@@ -62,7 +62,7 @@ But, unlike many other cells, neurons act as information processing units:
 :label: neuron
 :align: center
 
-Diagram of a neuron
+Diagram of a neuron.
 ```
 :::{note} Remember
 While [this](#neuron) is the sort cartoon we often use, **neurons are actually incredibly diverse**
@@ -121,7 +121,7 @@ Frankly, that's an open question, so rather than giving you an answer, we're jus
 :alt: Study of Changing Dentritic Tree and Computation
 :align: center
 
-Modelling complex dendritic trees with an artificial neural network {cite:p}`https://doi.org/10.1162/neco_a_01390`.
+Modelling dendritic trees with artificial neural networks {cite:p}`https://doi.org/10.1162/neco_a_01390`.
 ```
 
 Shown on [the left](#structurecomp) here is an outline of a real neuron. It's cell body is marked in pink and the black lines show it's dendritic tree. From examining these trees, researchers have found two interesting features: their branched morphology and repeated inputs.  
@@ -131,7 +131,7 @@ These features are shown schematically in [the middle](#structurecomp). Here we 
 So, in this paper, the authors study how altering the structure of this tree, which they call a k-tree neuron model, impacts task performance. As a lower bound, they use a linear point neuron model, and as an upper bound they use a fully connected neural network with the same number of trainable parameters. 
 
 What they conclude is that:
-* The performance of their tree model improves as you increase k (the number of repeated subtrees)
+* The performance of their tree model improves as you increase k (the number of repeated subtrees).
 * But degrades when you make the trees more realistic by making them asymmetrical. 
 
 Which suggests that there is still lots left to explore in this space!

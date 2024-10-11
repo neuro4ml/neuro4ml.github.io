@@ -26,10 +26,10 @@ Last week we saw that neurons act as information processing units. To do so, the
 
 ```{figure} figures/neurondiagram.png
 :label: neuron-diagram
-:alt: Diagram of Neuron
+:alt: Diagram of neuron
 :align: center
 
-Diagram of Neuron
+Diagram of neuron.
 ```
 
 So let's start by looking at the electrical activity of a single neuron. 
@@ -43,10 +43,10 @@ Exactly how researchers acquire this sort of data depends on several factors, bu
 
 ```{figure} figures/singleneuronrecord.png
 :label: recordings
-:alt: Single Neuron Recording Graph
+:alt: A diagram showing the activity of a single neuron over time. 
 :align: center
 
-Single Neuron Recording
+A recording of the activity of a single neuron over time. 
 ```
 
 From this sort of plot, we can observe two features: 
@@ -60,12 +60,12 @@ So, how do neurons generate their resting potential and spikes? 
 (resting-membrane-potential)=
 ## Resting membrane potential
 
-The neuron's cell membrane plays a key role in generating resting potential and spikes. In [](#restingpotential), the cell membrane seperates the inside of the cell from the outside.
+The neuron's cell membrane plays a key role in generating resting potential and spikes. In [](#restingpotential), the cell membrane separates the inside of the cell from the outside.
 
 Importantly, ions (charged particles), like sodium and potassium are unevenly distributed across the membrane. For example:
 (gradients)=
-* K+ is at higher concentrations inside 
-* Na+ and Cl- are at higher concentrations outside
+* K+ is at higher concentrations inside. 
+* Na+ and Cl- are at higher concentrations outside. 
 
 This means that there are both chemical and electrical gradients across the membrane.
 
@@ -74,7 +74,7 @@ This means that there are both chemical and electrical gradients across the memb
 :alt: Resting Membrane Potential
 :align: center
 
-Diagram Showing the Resting Membrane Potential and Ionic Movements
+Diagram showing the resting membrane potential and ionic movements.
 ```
 
 However, these charged ions can't cross the membrane directly, and instead must use specialized channels – which are proteins embedded in the membrane.
@@ -107,7 +107,7 @@ Check out [this video](https://www.youtube.com/watch?v=hk09AkV5_Kc) on resting m
 5. After hyperpolarization, a combination of active and passive ionic movements eventually bring the membrane back to its resting state of -70 mV.
 
 :::{note} Note
-Part of the importance of hyperpolarization is in preventing any stimulus already sent up an axon from triggering another action potential in the opposite direction. In other words, hyperpolarization assures that the signal is proceeding in one direction
+Part of the importance of hyperpolarization is in preventing any stimulus already sent up an axon from triggering another action potential in the opposite direction. In other words, hyperpolarization assures that the signal proceeds in one direction.
 :::
 
 ```{figure} figures/spikes.png
@@ -115,12 +115,12 @@ Part of the importance of hyperpolarization is in preventing any stimulus alread
 :alt: Spike Schematic
 :align: center
 
-Spike Schematic
+A diagram illustrating action potential generation. 
 ```
 
-Given the complexity of this process, you may expect that spikes would be noisy, but if we return to our [single neuron recording](#recordings), we see that they are remarkably stereotypical in their shape. If we overlay, we see that the spikes from a given neuron all look alike.
+Given the complexity of this process, you may expect that spikes would be noisy, but if we return to our [single neuron recording](#recordings), we see that they are remarkably stereotypical in their shape. Indeed, if we overlay them, we see that the spikes from a given neuron all look alike.
 
-For example  see [this figure](#allornothing). On the left we see more than 100 spikes recorded from a real neuron, in response to different inputs.
+For example see [this figure](#allornothing). On the left we see more than 100 spikes recorded from a real neuron, in response to different inputs.
 
 What this means is that each neuron's spikes are essentially binary, all or nothing responses, and if neurons need to encode more complex information they must do so by varying the number or timing of their spikes. But, we'll return to how neurons encode information later in the course. 
 
@@ -128,15 +128,15 @@ As each neuron's spikes are so similar, sequences of spikes or spike trains are
 
 ```{figure} figures/allornothing.png
 :label: allornothing
-:alt: Spike Variation
+:alt: A figure showing that the spikes from a given neuron are all incredibly similar. 
 :align: center
 
-Spike Variation and Raster Plot
+As the spikes from a given neuron are so similar (left), they can be plotted as binary events over time (right). Adapted from {cite:t}`https://doi.org/10.1152/jn.00408.2011`. 
 ```
 
 :::{seealso} For more
 :class: dropdown
-Check out [this video](https://www.youtube.com/watch?v=BbUcWbtVjT4) and [this website](http://hyperphysics.phy-astr.gsu.edu/hbase/Biology/actpot.html#c5) on neuron action potential
+Check out [this video](https://www.youtube.com/watch?v=BbUcWbtVjT4) and [this website](http://hyperphysics.phy-astr.gsu.edu/hbase/Biology/actpot.html#c5) on neuron action potentials. 
 :::
 
 But, while each neuron's own spikes share the same shape, not all neurons are alike in their dynamics. 
@@ -151,10 +151,10 @@ But if we inject just a small amount of current transiently, then it's membrane 
 
 ```{figure} figures/timeconstant.png
 :label: timeconstant
-:alt: Membrane Time Constant
+:alt: Illustrations of how a neuron's membrane time constant determines it's behaviour.  
 :align: center
 
-Measured Membrane Time Constant for Two Example Neurons
+Simulations showing how neurons with long (left) vs short (right) membrane time constants, decay to rest at different rates. 
 ```
 
 While this may seem far from machine learning, using neural network models to explore what role these features play in computation, or using biological features to boost performance are both exciting prospects. 
