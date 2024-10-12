@@ -15,7 +15,7 @@ The text below has been transcribed by hand from the video above but has not yet
 
 This week we're going to cover what we consider to be open issues in neuroscience.
 
-:::{attention} Note!
+:::{note}
 In this section, we're  going to discuss the question does neuroscience work and how could we know?
 :::
 
@@ -50,7 +50,7 @@ In {cite:t}`https://doi.org/10.1371/journal.pcbi.1005268`, the authors take an [
 :alt: Microprocessor Design
 :align: center
 
-Microprocessor Design (See [paper](https://doi.org/10.1371/journal.pcbi.1005268))
+Microprocessor Design {cite:p}`https://doi.org/10.1371/journal.pcbi.1005268`.
 ```
 
 Critically, we know how the microprocessor works – so we can test how well these methods do at recovering that information.
@@ -77,7 +77,7 @@ While they find some interesting results, it's difficult to see how you could go
 :alt: Microprocessor Connectome
 :align: center
 
-(A) MOS 6502 silicon die was examined under a visible light microscope (B) to build up an image mosaic (C) of the chip surface. Computer vision algorithms were used to identify metal and silicon regions (E) to detect transistors (F), (G) ultimately producing a complete accurate netlist of the processor (D). (See [paper](https://doi.org/10.1371/journal.pcbi.1005268))
+(A) MOS 6502 silicon die was examined under a visible light microscope (B) to build up an image mosaic (C) of the chip surface. Computer vision algorithms were used to identify metal and silicon regions (E) to detect transistors (F), (G) ultimately producing a complete accurate netlist of the processor (D). {cite:p}`https://doi.org/10.1371/journal.pcbi.1005268`.
 ```
 
 So next, they simulate the microprocessor, and observe the activity patterns of it's transistors – much like a neuroscientist might record and analyze neural activity.
@@ -87,7 +87,7 @@ So next, they simulate the microprocessor, and observe the activity patterns of 
 :alt: Microprocessor Activity Patterns
 :align: center
 
-(Left) transistors' spiking (rising edge) behavior over a short time window during behavior DK. (Middle) Mean transistor response as a function of output pixel luminance: Some transistors exhibit simple unimodal tuning curves, others more complex tuning curves. (Right) Plotted all the activities for each of the three behavioral states. Each transistor’s activity is normalized to zero-mean and unit variance and plotted as a function of time. (See [paper](https://doi.org/10.1371/journal.pcbi.1005268))
+(Left) transistors' spiking (rising edge) behavior over a short time window during behavior DK. (Middle) Mean transistor response as a function of output pixel luminance: Some transistors exhibit simple unimodal tuning curves, others more complex tuning curves. (Right) Plotted all the activities for each of the three behavioral states. Each transistor’s activity is normalized to zero-mean and unit variance and plotted as a function of time. {cite:p}`https://doi.org/10.1371/journal.pcbi.1005268`.
 ```
 
 [The figure on the left](#microplots) shows the off-to-on transitions of 10 transistors over time (which look surprisingly like spikes in a raster plot).
@@ -121,7 +121,7 @@ To do that the authors [silence each transistor in turn](#microsingel), and chec
 :alt: Lesioning every single transistor to identify function.
 :align: center
 
-They identify transistors whose elimination disrupts behavior analogous to lethal alleles or lesioned brain areas. These are transistors whose elimination results in the processor failing to render the game. (A) Transistors which impact only one behavior, colored by behavior. (B) Breakdown of the impact of transistor lesion by behavioral state. The elimination of 1565 transistors have no impact, and 1560 inhibit all behaviors. (See [paper](https://doi.org/10.1371/journal.pcbi.1005268))
+They identify transistors whose elimination disrupts behavior analogous to lethal alleles or lesioned brain areas. These are transistors whose elimination results in the processor failing to render the game. (A) Transistors which impact only one behavior, colored by behavior. (B) Breakdown of the impact of transistor lesion by behavioral state. The elimination of 1565 transistors have no impact, and 1560 inhibit all behaviors. {cite:p}`https://doi.org/10.1371/journal.pcbi.1005268`.
 ```
 
 As [the left of the figure](#microsingel) shows:

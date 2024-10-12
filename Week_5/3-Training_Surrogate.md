@@ -15,7 +15,7 @@ The text below has been transcribed by hand from the video above but has not yet
 
 We're now going to explain how to train spiking neural networks with the surrogate gradient method. This method isn’t perfect, and we’ll talk about some of its drawbacks later, but at the moment it seems to be a very good balance of flexibility and efficiency. There’s a lot of research going on in this area at the moment, and there will likely be big advances in the next few years.
 
-:::{attention} Note!
+:::{note}
 In the next section, we’ll talk about how to train spiking neural networks with the surrogate gradient method
 :::
 
@@ -254,7 +254,7 @@ A final issue we wanted to mention is that like any backprop through time algori
 
 On that note, we’d like to finish with a bit of self advertising, by talking about [a study](https://doi.org/10.1038/s41467-021-26022-3) done by one of the team's PhD students using surrogate gradient descent to tell us something about how the brain might work.
 
-The idea was to start from [the standard leaky integrate-and-fire neuron equations](#de), but instead of just training the synaptic weights, we also make these time constants $\tau$ trainable too. In terms of implementation in PyTorch, that’s almost as simple as a single line modification of the [code](#surrogatecode), although there is some work to do to stop the algorithm getting stuck or running into numerical integration issues.
+The idea was to start from [the standard leaky integrate-and-fire neuron equations](#lif-neuron-definition), but instead of just training the synaptic weights, we also make these time constants $\tau$ trainable too. In terms of implementation in PyTorch, that’s almost as simple as a single line modification of the [code](#surrogatecode), although there is some work to do to stop the algorithm getting stuck or running into numerical integration issues.
 
 The results from this were really neat:
 

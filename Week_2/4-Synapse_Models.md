@@ -7,26 +7,17 @@
 :::
 ---
 
-```{danger} Work in progress
-The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
-```
-
 ## Introduction
 
 In the last section we went through a lot of detailed biology!
-
-:::{attention} Note!
 In this section we're going to turn that detailed biology into relatively simple equations.
-:::
 
-## Level of Abstraction
-
-<!-- The links to the hodkin huxley stuff don't work as intended -->
+## Level of abstraction
 
 Previously we explained how when a spike arrives at a transmitting synapse, a [neurotransmitter](#neurotransmitters-paragraph) is released. This neurotransmitter causes a change in the conductance of the receiving cell due to the opening of an associated ion channel. 
 
 In turn, this leads to an input current following the same sort of equations we saw for the [Hodgkin-Huxley](#hodkin-huxley-label) formalism last week. This then leads to a change in membrane potential for either the
-[Hodgkin-Huxley](#hodkin-huxley-label) or leaky integrate-and-fire type neurons. Just as we did for [neurons](#neurons), we need to decide what level of detail we want to include in our synapse model.
+[Hodgkin-Huxley](#hodkin-huxley-label) or leaky integrate-and-fire type neurons. Just as we did for neurons, we need to decide what level of detail we want to include in our synapse model.
 
 One reason we might want to leave out some of this detail is that some of these changes will happen fast enough that modelling their temporal dynamics won't change much at the scale we're looking at.
 
@@ -35,7 +26,7 @@ One reason we might want to leave out some of this detail is that some of these 
 :width: 100%
 :align: center
 
-Dealing with changes
+Deciding on the right level of abstraction for synapse models.
 ```
 
 A helpful picture to draw is the [postsynaptic potential](#postsynaptic-potential), sometimes referred to simply as a PSP (shown below). This shows the increase in the membrane potential of the receiving cell as a result of a spike arriving at that cell. In this figure you can see a model synapse at three levels of detail:
@@ -51,7 +42,7 @@ A helpful picture to draw is the [postsynaptic potential](#postsynaptic-potentia
 
 ## Synapse time course
 
-We will start with how we can directly model the dynamics in terms of **conductance**, **current** or **membrane potential**. A common approach is to decide the key synaptic variable and model it with one of the 3 classes of functions. There's an explanation as to why these 3 classes come up that we'll return to later.
+We will start with how we can directly model the dynamics in terms of **conductance**, **current** or **membrane potential**. A common approach is to decide the key synaptic variable and model it with one of the three classes of functions. There's an explanation as to why these three classes come up that we'll return to later.
 
 For simplicity, we'll describe each of these as postsynaptic membrane potentials, although they can also be used to model currents or conductance.
 
@@ -161,24 +152,25 @@ M &= \begin{pmatrix}
 ```
 
 These three forms are essentially the only possibilities for a 1 or 2-dimensional system that is linear, time invariant and has constant coefficients.
-The [exponential](#exp-matrix) is the only possibility for 1 dimension, and in 2 dimensions you either get the [alpha](#alpha-matrix) or [biexponential](#biexp-matrix) depending on whether the eigenvalue is repeated.
+The [exponential](#exp-matrix) is the only possibility for 1 dimension, and in 2 dimensions you either get the [alpha](#alpha-matrix) or [biexponential](#biexp-matrix) depending on whether the eigenvalue is repeated (see box below).
 
-:::{note} Differential Equations
-:class: dropdown
+:::{note} Constant matrix differential equations
 The differential equation:
 ```{math}
 \boldsymbol{y}' = M \boldsymbol{y}
 ```
-Has solutions:
+where $\mathbf{y}$ is a vector variable, and $M$ is a matrix, has solutions consisting of linear sums of terms of the form:
 ```{math}
 \boldsymbol{y}(t) = \boldsymbol{y}^*e^{\lambda t}
 ```
-for eigenvalues $\lambda$ and eigenvectors $\boldsymbol{y}^*$.
+for all the eigenvalues $\lambda$ and eigenvectors $\boldsymbol{y}^*$ of $M$.
 
 Repeated eigenvalues give solutions:
 ```{math}
 \boldsymbol{y}(t) = \boldsymbol{y}^*te^{\lambda t}, \space t^2e^{\lambda t}
 ```
+
+For more details, consult your favourite book on differential equations or [try the wikipedia article](https://en.wikipedia.org/wiki/Matrix_differential_equation).
 :::
 
 ## Short-term plasticity
@@ -189,8 +181,6 @@ So far we've looked at memoryless models of synapses, where previous activity do
 :label: pic6
 :width: 500px
 :align: center
-
-Short-term Synaptic Depression Model with $x$
 ```
 
 ![](#depression-graph)
@@ -205,27 +195,38 @@ A simple model that encapsulates both effects is to add an extra variable, $u$, 
 :label: pic19
 :width: 500px
 :align: center
-
-Short-term Synaptic Depression Model with $x$ and $u$
 ```
+
 Combining these two ideas in the simplest way possible, we get this model:
 
-```{math}
-\begin{gather}
-\text{Continuous evolution:} \\
-\tau_f \textcolor{#fc05db}{u}' = -\textcolor{#fc05db}{u} \\
-\tau_d \textcolor{#0a62a6}{x}' = 1-\textcolor{#0a62a6}{x}\\
-\end{gather}
-```
+:::{important} Definition of short term plasticity model
+At each synapse, we have the following dynamic variables:
+* $x$ is the fraction of available neurotransmitter, and starts at 1.
+* $u$ is the probability that a neurotransmitter is released, and starts at 0.
 
+And constants:
+* $\tau_d$ the decay rate of $x$ that controls the time scale of depression
+* $\tau_f$ the decay rate of $u$ that controls the time scale of facilitation
+* $U$ the effect of a spike on $u$, controlling the scale of facilitation
+* $A$ is a synaptic weight, controlling the strength of the synapse
+
+In the absence of a spike, the variables evolve continuously following these equations:
 ```{math}
-\begin{gather}
-\text{When a spike arrives:} \\
-\textcolor{#fc05db}{u} \leftarrow \textcolor{#fc05db}{u} + U \cdot (1-\textcolor{#fc05db}{u}) \\
-v \leftarrow v + A \cdot \textcolor{#fc05db}{u} \cdot \textcolor{#0a62a6}{x} \\
-\textcolor{#0a62a6}{x} \leftarrow \textcolor{#0a62a6}{x} - \textcolor{#fc05db}{u} \cdot \textcolor{#0a62a6}{x}
-\end{gather}
+\begin{aligned}
+\tau_f \textcolor{#fc05db}{u}' &= -\textcolor{#fc05db}{u} \\
+\tau_d \textcolor{#0a62a6}{x}' &= 1-\textcolor{#0a62a6}{x}\\
+\end{aligned}
 ```
+When a spike arrives, the following instantaneous changes are made (where $v$ is the post-synaptic potential):
+```{math}
+\begin{aligned}
+\textcolor{#fc05db}{u} &\leftarrow \textcolor{#fc05db}{u} + U \cdot (1-\textcolor{#fc05db}{u}) \\
+v &\leftarrow v + A \cdot \textcolor{#fc05db}{u} \cdot \textcolor{#0a62a6}{x} \\
+\textcolor{#0a62a6}{x} &\leftarrow \textcolor{#0a62a6}{x} - \textcolor{#fc05db}{u} \cdot \textcolor{#0a62a6}{x}
+\end{aligned}
+```
+Note that the order of operations matters! If $u=0$ and $x=1$ before the spike, after the first operation $u$ will increase to $U$, then the post-synaptic potential will then increase by the non-zero quantity $AU$, and finally $x$ will decrease to $1-U$.
+:::
 
 In the absence of any spikes, the pool of available vesicles will increase exponentially until all vesicles are available.
 
@@ -250,16 +251,12 @@ As usual, we don’t have a complete answer to that. One thing for sure is that 
 It can also allow the neuron to have richer spike frequency dynamics, allowing them to act as low, high or band pass filters, and do gain control.
 There’s a bunch of other ideas people have suggested, and there are links in the reading list for where you can read more about this and other models of short term plasticity.
 
-# Channel types: excitation and inhibition
+## Channel types: excitation and inhibition
 
 As previously mentioned, synapses can be either [excitatory or inhibitory](#exitatory-inhibitory). There are a range of different ion channels and dynamics giving rise to different sorts of excitatory or inhibitory synapses. Channel types include inhibitory ($GABA_A$ fast and $GABA_B$ slow) and excitatory (AMPA fast and NMDA slow) The simplest model is that excitatory synapses lead to an increase in some variable, while inhibitory synapses lead to a decrease.
 
-```{math}
-\begin{gather}
-\text{Excitation } v \leftarrow v + w \\
-\text{Inhibition } v \leftarrow v + w
-\end{gather}
-```
+* Excitation: $v \leftarrow v + w$
+* Inhibition: $v \leftarrow v - w$
 
 However, when synapses are modelled with detail ion channel dynamics and spatial structure, things can get more interesting. Shunting inhibition is a good example. 
 
@@ -269,8 +266,6 @@ In shunting inhibition, a spike causes a local increase in conductance but with 
 :label: excite
 :width: 200px
 :align: center
-
-Excitation and Inhibition
 ```
 
 Another interesting channel type is NMDA, which can’t be modelled linearly. The effect of NMDA requires the receiving neuron’s membrane potential to have recently been high. This may be important in learning.
@@ -288,15 +283,17 @@ Talking of learning, we'll briefly mention long-term plasticity, since this is t
 It has been observed experimentally that particular pairings of pre- and post-synaptic spike times can lead synapses to get stronger or weaker. We can model this by increasing the weight by some $ \Delta w $ that depends on the timing difference, which can be made a reasonable fit to experimental data. This [particular curve](#stdp-graph), where the synapse gets stronger if pre-synaptic spikes tend to come before post-synaptic spikes, could be thought of as encouraging networks to care about temporal causality. We will cover this in more detail later on.
 
 ```{math}
-\begin{gather}
-\Delta w = \sum_{\text{pre-synaptic spikes } t_j} \sum_{\text{postsynaptic spikes } t_i} W(t_i - t_j) \\
+\Delta w = \sum_{\substack{\text{pre-synaptic}\\\text{spikes }t_j}} \;\; \sum_{\substack{\text{post-synaptic}\\\text{spikes }t_i}} W(t_i - t_j)
+```
 
+where
+
+```{math}
 W(\delta t) = 
 \begin{cases}
     A_+ e^{-\frac{\delta t}{\tau_+}} \quad \text{for } \delta t > 0 \\
     A_- e^{-\frac{\delta t}{\tau_-}} \quad \text{for } \delta t < 0
 \end{cases}
-\end{gather}
 ```
 
 ```{figure} figures/synapse-modelsPicture12.jpg
@@ -309,7 +306,7 @@ Synapse behavior with pre and post-synaptic spikes
 
 ## More synaptic fun
 
-As always, there's a lot more that could be said about modelling synapses. We'll just briefly mention 2. The first is synaptic failure. I'ts easy to model by adding a chance failure to each synaptic event.
+As always, there's a lot more that could be said about modelling synapses. We'll just briefly mention 2. The first is synaptic failure. It's easy to model by adding a chance of failure to each synaptic event.
 
 ```{math}
 v \leftarrow v + w \text{ (with probability $p$)}
@@ -320,28 +317,26 @@ These can again be straight forwardly modelled as just another current proportio
 There are of course more complicated models too.
 
 ```{math}
-\begin{gather}
-\tau v' = I_{gap} - v \\
-I_{gap} = w(v_{pre} - v{post})
-\end{gather}
+\begin{aligned}
+\tau v' &= I_\text{gap} - v \\
+I_\text{gap} &= w(v_\text{pre} - v_\text{post})
+\end{aligned}
 ```
 
 ```{figure} figures/synapse-modelsPicture13.png
 :label: gapjunc
 :width: 500px
 :align: center
-
-Modeling Gap Junctions
 ```
 
-Gap junctions occur in many species, but a particularly interesting example is the tiny worm C elegans. Neuroscientists love it because it always has precisely 302 neurons with the same pattern of connections. It’s unusual though because they are mostly non-spiking, using gap junctions to communicate instead.
+Gap junctions occur in many species, but a particularly interesting example is the tiny worm caenorhabditis elegans (usually written _C. elegans_). Neuroscientists love it because it always has precisely 302 neurons with the same pattern of connections. It’s unusual though because they are mostly non-spiking, using gap junctions to communicate instead.
 
 ```{figure} figures/synapse-modelsPicture14.png
 :label: p14
 :width: 400px
 :align: center
 
-C-Elegans Connectome
+_C. elegans_ connectome.
 ```
 
 :::{seealso} That's it!

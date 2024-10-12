@@ -15,7 +15,7 @@ The text below has been transcribed by hand from the video above but has not yet
 
 This week we're going to explore how researchers try to **understand** neural networks. 
 
-:::{attention} Note!
+:::{note}
 In this section we'll think about what it actually means to understand neural networks.
 :::
 
@@ -71,7 +71,7 @@ The main part of this probe is its extremely thin shank, which is inserted int
 :align: center
 :width: 700px
 
-High-density probes results for simultaneous neuron recording (See [paper](https://doi.org/10.1126/science.abf4588))
+High-density probes results for simultaneous neuron recording {cite:p}`https://doi.org/10.1126/science.abf4588`.
 ```
 
 These sites record nearby electrical activity, and so each sites' signal results from the combined activity of many neurons. However, from this data it's possible to infer the underlying spiking activity of individual neurons, using spike-sorting algorithms which make use of the fact that different neurons have distinct spike shapes. 
@@ -103,7 +103,7 @@ The end result of this is shown [here](#calcium-imaging-pic) in a larval zebrafi
 :label: calcium-imaging-pic
 :width: 500px
 
-Calcium activity of larval zebrafish (See [paper](https://doi.org/10.3389/fncir.2013.00065))
+Calcium activity of larval zebrafish {cite:p}`https://doi.org/10.3389/fncir.2013.00065`.
 :::
 
 While you can use this technique in any animal model, it works particularly well in larval zebrafish as they’re small, and transparent - which, we're not - so how can we image neural activity in humans?  
@@ -125,7 +125,7 @@ Though it is worth keeping in mind that it's a proximy measure of neural activit
 :align: center
 :width: 400px
 
-fMRI Benefits and Challenges (See [paper](https://doi.org/10.1038/s41586-023-06670-9))
+fMRI Benefits and Challenges {cite:p}`https://doi.org/10.1038/s41586-023-06670-9`.
 ```
 Okay, stepping back a bit, lets approximately map these techniques onto our axis.
 

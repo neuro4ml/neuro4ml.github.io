@@ -10,13 +10,15 @@
 
 ```{danger} Work in progress
 The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
+
+-- Reviewed for style by Dan, not yet reviewed for accuracy by Marcus.
 ```
 
 ## Introduction
 
-Last week, we covered how ionic movements enable [neurons](#neurons) to generate their resting membrane potential and spikes. 
+Last week, we covered how ionic movements enable neurons to generate their resting membrane potential and spikes. 
 
-:::{attention} Note!
+:::{note}
 In this section we're going to cover how neurons signal to each other, starting from our [single neuron diagram](#fig1).
 :::
 
@@ -34,15 +36,15 @@ These nodes of Ranvier are rich in voltage-gated channels. These effectively boo
 
 ```{figure} figures/Picture1.jpg
 :label: Fig1
-:alt: Image of an Axon
 :width: 100%
 :align: center
 
-Single Neuron
+Schematic diagram of a single neuron.
 ```
 
 So what happens once this signal reaches the neuron's axon terminals? 
 
+(chemical-synapses)=
 ## Chemical synapses
 
 If we zoom into on one of these [terminals](#zoomed-terminal), we can see that this is where our neuron connects to another adjacent neuron. 
@@ -60,7 +62,7 @@ The gap between the two is known as the '**synaptic cleft**'. While it is often 
 :width: 500px
 :align: center
 
-Zoomed-in synapse
+Schematic diagram of a chemical synapse.
 ```
 
 When an [action potential](#action-potential) reaches the axon terminal, the influx of ions depolarizes the membrane and causes voltage-gate channels to [open](#spike), allowing calcium to flow into the cell. This causes the synaptic vesicles to fuse with the cell membrane and release their neurotransmitters into the cleft.
@@ -72,7 +74,7 @@ This is known as an **excitatory synapse**, as a pre-synaptic action potential w
 
 This signal terminates when some neurotransmitter molecules diffuse away from the cleft. Some of these are broken down by enzymes and some are taken back up into the pre-synaptic neuron.
 
-::: {note} Interesting side note
+:::{aside}
 Many drugs used to treat depression work by inhibiting this type of reuptake channel. These are known as selective-serotonin reuptake inhibitors (SSRIs) and a common example is Prozac. 
 :::
 
@@ -100,7 +102,7 @@ Individual neurons tend to contain and release multiple transmitters. For exampl
 :align: center
 :width: 100%
 
-Images of Glutamate, GABA and Dopamine (See [source](https://i0.wp.com/www.compoundchem.com/wp-content/uploads/2015/07/Chemical-Structures-of-Neurotransmitters-2015.png?ssl=1 ))
+Chemical structure of glutamate, GABA and dopamine ([source](https://i0.wp.com/www.compoundchem.com/wp-content/uploads/2015/07/Chemical-Structures-of-Neurotransmitters-2015.png?ssl=1)).
 ```
 
 ## Dale's principle
@@ -111,14 +113,14 @@ However in artificial neural networks, single units have both positive and negat
 
 So, is this a limitation of biology or an advantage?
 
-To explore this question, [Jonathan Cornford and colleagues](https://openreview.net/forum?id=eU776ZYxEpz) built ANNs in which each unit was either excitatory or inhibitory. Shown below in pink and blue. 
+To explore this question, [Cornford et al. (2021)](https://openreview.net/forum?id=eU776ZYxEpz) built ANNs in which each unit was either excitatory or inhibitory. Shown below in pink and blue. 
 
 ```{figure} figures/Picture5.png
 :label: ANNs
 :width: 500px
 :align: center
 
-ANNs built by Jonathan Conford and his colleagues (See [paper](https://openreview.net/forum?id=eU776ZYxEpz))
+ANN model respecting Dale's principle ([Cornford et al. 2021](https://openreview.net/forum?id=eU776ZYxEpz)).
 ```
 
 It turns out that these networks are difficult to train with standard gradient descent, and end up performing worse than a standard ANN. You can see this on the [graph below](#Dale's-principle-graph), where the black curve shows the performance of a standard ANN and the green shows a simple implementation of Dale's principle. So, they introduced some corrections and were able to get networks which respect Dale's principle and **match** the performance of standard ANNs. This improved implementation of Dale's principle is shown in red. 
@@ -128,11 +130,12 @@ It turns out that these networks are difficult to train with standard gradient d
 :width: 500px
 :align: center
 
-Implementation of Dale's Principle (See [paper](https://openreview.net/forum?id=eU776ZYxEpz))
+Implementation of Dale's principle ([Cornford et al. 2021](https://openreview.net/forum?id=eU776ZYxEpz)).
 ```
 
 But, as they're only able to match standard ANNs, and no one has shown better results by following Dale's principle. Why neurons tend to follow Dale's principle remains an open question.
 
+(receptors)=
 ## Receptors
 
 Once released, neurotransmitters diffuse across the synaptic cleft, bind receptors embedded in the cell membrane, and trigger effects. There are hundreds of receptors which are specific to different neurotranmitters, but there are just 2 major types:
@@ -144,7 +147,7 @@ Once released, neurotransmitters diffuse across the synaptic cleft, bind recepto
 :width: 250px
 :align: center
 
-Ionotropic Receptor (See [source](https://www.brainkart.com/article/Ion-Channels---Neurotransmitter-Receptors_24662/))
+Ionotropic receptor ([source](https://www.brainkart.com/article/Ion-Channels---Neurotransmitter-Receptors_24662/)).
 ```
 
 * **Metabotropic receptors** - receptors where binding triggers signaling cascades within the post-synaptic neuron, which may open ion channels or cause other effects.
@@ -154,9 +157,7 @@ Ionotropic Receptor (See [source](https://www.brainkart.com/article/Ion-Channels
 :width: 600px
 :align: center
 
-Metabotropic Receptor (See [source](https://www.brainkart.com/article/Ion-Channels---Neurotransmitter-Receptors_24662/))
+Metabotropic receptor ([source](https://www.brainkart.com/article/Ion-Channels---Neurotransmitter-Receptors_24662/))
 ```
 
-:::{seealso} That's it!
 Hopefully this has given you a better idea of how synapses work. In the next section, we're going to cover how synapses can adjust their strength or weight, and a few other details.
-:::

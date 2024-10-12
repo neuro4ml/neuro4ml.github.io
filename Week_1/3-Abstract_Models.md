@@ -12,7 +12,7 @@
 So far this week we’ve seen a lot of biological detail about neurons.
 The topic of this section is how we abstract and simplify this into very simple models.
 
-:::{attention} Note!
+:::{note}
 In this section, we’ll focus on models without a lot of biological detail like the spatial structure of the neuron, and we’ll come back to that in the next section.
 :::
 

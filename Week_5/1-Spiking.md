@@ -11,7 +11,7 @@
 The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
 ```
 
-:::{attention} Note!
+:::{note}
 In this section, we’ll focus on how to train spiking neural networks. But first though, in this video, we’ll see why this is difficult to do.
 :::
 

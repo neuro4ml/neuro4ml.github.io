@@ -15,7 +15,7 @@ The text below has been transcribed by hand from the video above but has not yet
 
 Spike Timing Dependent Plasticity (STDP) is a form of [Hebbian learning](#hebbian) that takes the timing of individual spikes into account.
 
-:::{attention} Note!
+:::{note}
 In this section we'll cover STDP
 :::
 

@@ -7,7 +7,7 @@
 :::
 ---
 
-:::{attention} Note!
+:::{note}
 In this section we'll talk about rate-based Hebbian models of learning.
 :::
 
@@ -180,6 +180,7 @@ Expanding the derivative out using the formula we calculated [above](#norm-eq), 
 
 In other words, we get weight normalisation from Oja’s rule.
 
+(bcm-rule)=
 ## BCM rule
 
 We’ve seen that Oja’s rule keeps weights bounded and leads to the neuron learning principal components. Another approach is the BCM rule, named after Bienenstock, Cooper and Munro.

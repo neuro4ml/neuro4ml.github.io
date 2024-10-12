@@ -17,7 +17,7 @@ This week we’re going to be talking about neuromorphic computing, which is the
 
 A lot of the research for this week’s videos was done by Gabriel Béna who is currently doing a PhD with Dan.
 
-:::{attention} Note!
+:::{note}
 In this section we'll introduce you to neuromorphic computing
 :::
 

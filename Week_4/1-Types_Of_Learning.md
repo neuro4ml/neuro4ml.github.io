@@ -15,7 +15,7 @@ The text below has been transcribed by hand from the video above but has not yet
 
 This week is about learning. How it happens in the brain, what models we have, and how those models relate to algorithms from machine learning. 
 
-:::{attention} Note!
+:::{note}
 Before we get into the details, in this section we'll start with an overview of what types of learning there are and the different mechanisms they could use.
 :::
 

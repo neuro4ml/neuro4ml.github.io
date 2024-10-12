@@ -16,7 +16,7 @@ Last week we saw that neurons act as information processing units. To do so, the
 * Transform this into an electrical signal, 
 * And then output their own neurotransmitters to other neurons via their axon terminals. 
 
-:::{attention} Note!
+:::{note}
 **We'll cover chemical signaling next week, and focus on the electrical part today.**
 :::
 

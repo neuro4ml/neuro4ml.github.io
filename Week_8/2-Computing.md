@@ -15,7 +15,7 @@ The text below has been transcribed by hand from the video above but has not yet
 
 In this section we're going to talk in a bit more detail about neuromorphic computing. That is, nonstandard computational architectures that mimic some aspect of the way the brain works. That doesn’t have to mean spiking, but a lot of recent approaches do use spiking activity in some form. There have been a lot of approaches to designing neuromorphic computing devices. One review paper included 2,700 references, 66 pages out of an 88 page paper. So there’s no way we can cover everything that has been tried. Instead, we're going to give an overview of some of the most common features, highlighting a few examples, and suggest you go take a look at the extensive literature if you want to know more!
 
-:::{attention} Note!
+:::{note}
 In this section we'll go into more detail about neuromorphic computing by providing an overview and some examples
 :::
 
@@ -53,7 +53,7 @@ A very traditional approach that goes back to the beginning of neuromorphic comp
 :align: center
 :width: 100%
 
-Transistor / Capacitor circuits designed to emulate synaptic dynamics (See [paper](https://doi.org/10.1162/neco.2007.19.10.2581))
+Transistor / Capacitor circuits designed to emulate synaptic dynamics {cite:p}`https://doi.org/10.1162/neco.2007.19.10.2581`.
 ```
 
 There are also above threshold analogue approaches that are thousands to hundreds of thousands of times faster than biology, and so they can be used for accelerating simulations. On the downside, they tend to have higher currents and more complicated circuit designs.
@@ -65,7 +65,7 @@ It’s worth noting that these analogue circuits are noisy, for example [here](#
 :align: center
 :width: 400px
 
-Conductance change over time of synaptic dynamics circuits (See [paper](https://doi.org/10.1162/neco.2007.19.10.2581))
+Conductance change over time of synaptic dynamics circuits {cite:p}`https://doi.org/10.1162/neco.2007.19.10.2581`.
 ```
 
 Then we get to digital approaches. The simplest of these is just to use a standard CPU, for example a reduced instruct set processor like an ARM. The clever part is in connecting these together.
@@ -98,7 +98,7 @@ A common solution is the memristor crossbar array. A memristor is an electrical 
 :align: center
 :width: 100%
 
-Memrisator grid configuration (See [paper](https://doi.org/10.1016/j.softx.2020.100617))
+Memrisator grid configuration {cite:p}`https://doi.org/10.1016/j.softx.2020.100617`.
 ```
 
 ## Sending spikes

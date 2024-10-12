@@ -17,7 +17,7 @@ This week’s sections don’t cover a single theme. Instead, we’ll look at a 
 
 In this section, we’ll focus on decision making - a really broad topic of course, because in a way you can think of everything the brain has to do is about making decisions.
 
-:::{attention} Note!
+:::{note}
 We're going to focus on one particular aspect of decision making that has been studied a lot in neuroscience and less in machine learning: Reaction times. 
 
 That is, how long does it take to make a decision based on a stream of information arriving continuously over time.
@@ -44,7 +44,7 @@ If you run this experiment, you see characteristic skewed distributions of react
 :alt: 2AFC Experiment Results
 :align: center
 
-2AFC Experiment Results (See [paper](https://doi.org/10.1037/0033-295X.85.2.59))
+2AFC Experiment Results {cite:p}`https://doi.org/10.1037/0033-295X.85.2.59`.
 ```
 
 ## Drift diffusion / random walk model
@@ -257,7 +257,7 @@ And finally, perhaps the best thing about this theory is that having come up wit
 :alt: Experimental Evidence of Accumulation Processes Across Multiple Brain Regions and Species
 :align: center
 
-Experimental Evidence of Accumulation Processes Across Multiple Brain Regions and Species (See [paper](https://doi.org/10.1016/j.tins.2018.06.005))
+Experimental Evidence of Accumulation Processes Across Multiple Brain Regions and Species {cite:p}`https://doi.org/10.1016/j.tins.2018.06.005`.
 ```
 
 Of course, it’s never quite as clean cut as the theory and all sorts of modifications have been proposed, like adaptive thresholds that get closer to the origin over time to represent the increasing urgency of making some sort of decision, or thresholds that adapt to wider context in various ways. There are also much more comprehensive Bayesian theories of decision making in which this model is just one special case, and so on. 

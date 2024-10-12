@@ -9,13 +9,15 @@
 
 ```{danger} Work in progress
 The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
+
+-- Reviewed for style by Dan, not yet reviewed for accuracy by Marcus.
 ```
 
 ## Introduction
 
 In the [last section](#synapses-2) we covered how neurons signal and synapse with each other. 
 
-:::{attention} Note!
+:::{note}
 In this section we will go through how neurons connect together to form networks and circuits.
 :::
 
@@ -32,7 +34,7 @@ Biological circuit mapping is essentially done by dissecting an animal's brain, 
 :width: 100%
 :align: center
 
-Cajal's drawing on the left and modern techniques on the right
+Cajal's drawing on the left and modern techniques on the right.
 ```
 
 ## The cerebellum
@@ -44,7 +46,7 @@ The cerebellum is an area of the brain involved in coordinating movement, and is
 :width: 100%
 :align: center
 
-The cerebellum (See [source](https://commons.wikimedia.org/wiki/File:Cerebellar_Circuit.svg))
+The cerebellum ([source](https://commons.wikimedia.org/wiki/File:Cerebellar_Circuit.svg)).
 ```
 
 There are 3 points to note here:
@@ -69,12 +71,12 @@ Models have been propsed for over 50 years, but one simplified way to think abo
 :width: 100%
 :align: center
 
-Model of network's function (See [paper](https://doi.org/10.1152%2Fjn.00449.2020))
+Model of cerebellar function {cite:p}`https://doi.org/10.1152%2Fjn.00449.2020`.
 ```
 
 :::{seealso} For more
 :class: dropdown
-[This paper](https://doi.org/10.1152%2Fjn.00449.2020) focuses on an interesting question, which is how the network can learn, when the connections conveying the error signal to the third layer are relatively weak (shown by thin red arrow).
+[](https://doi.org/10.1152%2Fjn.00449.2020) focuses on an interesting question, which is how the network can learn, when the connections conveying the error signal to the third layer are relatively weak (shown by thin red arrow).
 :::
 
 ## Head direction cells
@@ -88,7 +90,7 @@ Here for example, are three neurons firing rates (in spikes per second) as a fun
 :width: 100%
 :align: center
 
-Graphs of firing rates of neurons (See [paper](https://doi.org/10.1523/JNEUROSCI.10-02-00420.1990))
+Firing rates of neurons as a function of head direction {cite:p}`https://doi.org/10.1523/JNEUROSCI.10-02-00420.1990`.
 ```
 
 This and later work would show that, as a population, neurons evenly tile the space of heading directions, and the activity of these cells depends on both visual and vestibular (balance) inputs.
@@ -96,25 +98,25 @@ This and later work would show that, as a population, neurons evenly tile the sp
 (ring-attractor)=
 ## Ring attractors
 
-A team proposed an attractor model in 1995, which they drew as a series of rings, with the head direction cells in the outer ring, and visual and vestibular inputs in the inner rings.
+One team proposed an attractor model in 1995, which they drew as a series of rings, with the head direction cells in the outer ring, and visual and vestibular inputs in the inner rings.
 
 ```{figure} figures/NetworksPicture5.png
 :label:
 :width: 300px
 :align: center
 
-Attractor model proposed in 1995 (See [paper](https://pubmed.ncbi.nlm.nih.gov/11539168/))
+Attractor model proposed in 1995 ([Skaggs et al. 1995](https://pubmed.ncbi.nlm.nih.gov/11539168/)).
 ```
 
 There are lots of details, but the most salient one is that there are strong excitatory connections between neighboring head direction cells, and strong inhibitory connections between distant cells. This means that there will be just one cluster of active cells at any time, and either visual or vestibular inputs to the head direction cells will cause the peak to shift around the ring. 
 
-Interestingly the [authors](https://pubmed.ncbi.nlm.nih.gov/11539168/) thought of this as a somewhat abstract model, and wrote: 
+Interestingly they thought of this as a somewhat abstract model, and wrote: 
 
-_"It is helpful to think of the network as a set of circular layers; this does not reflect the anatomical organization of the corresponding cells in the brain"_
+> "It is helpful to think of the network as a set of circular layers; this does not reflect the anatomical organization of the corresponding cells in the brain"
 
 Though recently experiments in fruit-flies revealed a group of neurons arranged in a ring, with a single bump of activity which tracks the fruit-flies heading direction.
 
-In this [experiment](https://www.nature.com/articles/521165a), the authors essentially have a fruit-fly walk on a rotating treadmill while the fly watches a screen with landmarks on – the blue ring in panel A on the [figure below](#fruit-flies-experiment).
+[](https://doi.org/10.1038/nature14446) essentially have a fruit-fly walk on a rotating treadmill while the fly watches a screen with landmarks on – the blue ring in panel A on the [figure below](#fruit-flies-experiment).
 They're also recording the fly's brain activity, which is shown in the black and red boxes [below](#fruit-flies-experiment). The recording technique used will be explained later in the course, but for now it's enough to know that red indicates more neural activity. What you can hopefully see is that there is a single bump of activity, which rotates around the ring as the fly navigates around. The panels below, [D and E](#fruit-flies-experiment), show that this bump accurately tracks the flies heading direction.
 
 ```{figure} figures/NetworksPicture6.png
@@ -122,7 +124,7 @@ They're also recording the fly's brain activity, which is shown in the black and
 :width: 100%
 :align: center
 
-Results from fruit-fly experiment (See [paper](https://doi.org/10.1038/521165a))
+Evidence for the ring attractor model in fruit flies {cite:p}`https://doi.org/10.1038/nature14446`.
 ```
 
 To conclude, [ring attractors](#ring-attractor) are a nice example of where experiments and theory came full circle.

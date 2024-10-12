@@ -21,7 +21,7 @@ In other words, once we’ve found neurons that respond to a stimulus or precede
 
 We can do this by manipulating neural activity, and these manipulations can be either irreversible or reversible.
 
-:::{attention} Note!
+:::{note}
 In this section we'll look at manipulating neural activity
 :::
 
@@ -104,7 +104,7 @@ Their evolved network is [shown here](#single-lesions-pic1):
 :align:center
 :width: 100%
 
-Evolved space invader network (See [paper](https://doi.org/10.1371/journal.pcbi.1010250))
+Evolved space invader network {cite:p}`https://doi.org/10.1371/journal.pcbi.1010250`.
 ```
 
 To manipulate their network they then silenced each node one-by-one and checked how well the network performed with each node silenced individually.
@@ -119,7 +119,7 @@ On the [right of the figure](#single-lesions-pic2), the authors also silence eve
 :align:center
 :width: 100%
 
-Manipulated evolved network results (See [paper](https://doi.org/10.1371/journal.pcbi.1010250))
+Manipulated evolved network results {cite:p}`https://doi.org/10.1371/journal.pcbi.1010250`.
 ```
 
 However, the results from single-element manipulations like these could be misleading. For example, imagine if two units in this network perform the same function in parallel. Then silencing either one alone, may not result in a change to the networks score and we could wrongly conclude that neither of these units are important.
@@ -145,7 +145,7 @@ If you’d like to learn more about this approach and these results, we highly r
 :align:center
 :width: 100%
 
-Manipulated evolved network results using multi-element approach (See [paper](https://doi.org/10.1371/journal.pcbi.1010250))
+Manipulated evolved network results using multi-element approach {cite:p}`https://doi.org/10.1371/journal.pcbi.1010250`.
 ```
 
 :::{seealso} That's it!

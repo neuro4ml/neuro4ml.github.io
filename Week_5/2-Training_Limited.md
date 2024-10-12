@@ -11,7 +11,7 @@
 The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
 ```
 
-:::{attention} Note!
+:::{note}
 In this secction we’ll look at some of the many methods for training spiking neural networks with either no attempt to use gradients, or only using gradients in a limited or constrained way.
 
 :::
@@ -94,7 +94,7 @@ It’s also been used to train neuromorphic hardware that we’ll talk about lat
 :align: center
 :width: 300px
 
-Robot Controlled by Trained Neuromorphic Hardware (See [paper](https://doi.org/10.1145/3381755.3381758))
+Robot Controlled by Trained Neuromorphic Hardware {cite:p}`https://doi.org/10.1145/3381755.3381758`.
 ```
 
 You can see [an example](#robotnetwork) of the sort of network it finds. Another advantage here is that you can easily adapt it to the type of hardware available. In this case, a field programmable gate array or FPGA.
@@ -105,7 +105,7 @@ You can see [an example](#robotnetwork) of the sort of network it finds. Another
 :align: center
 :width: 500px
 
-Robot Controlled by Trained Neuromorphic Hardware Network (See [paper](https://doi.org/10.1109/IRIS.2017.8250111))
+Robot Controlled by Trained Neuromorphic Hardware Network {cite:p}`https://doi.org/10.1109/IRIS.2017.8250111`.
 ```
 
 And [here’s an example](#robottraj) of a trajectory showing that this robot was able to learn to drive around, avoid obstacles, etc.
@@ -116,7 +116,7 @@ And [here’s an example](#robottraj) of a trajectory showing that this robot wa
 :align: center
 :width: 400px
 
-Robot Controlled by Trained Neuromorphic Hardware Trajectory Map (See [paper](https://doi.org/10.1109/IRIS.2017.8250111))
+Robot Controlled by Trained Neuromorphic Hardware Trajectory Map {cite:p}`https://doi.org/10.1109/IRIS.2017.8250111`.
 ```
 
 ## Converting artificial to spiking neural networks
@@ -172,7 +172,7 @@ They found that this gave excellent performance at the same types of visual clas
 :align: center
 :width: 700px
 
-Distinguishing Between Faces and Motorcycles Visual Classification Task (See [paper](https://doi.org/10.1142/S0129065720500276))
+Distinguishing Between Faces and Motorcycles Visual Classification Task {cite:p}`https://doi.org/10.1142/S0129065720500276`.
 ```
 
 OK, that’s enough for these limited gradient approaches. As usual, this section has only scratched the surface, and it’s still a very active area of research.

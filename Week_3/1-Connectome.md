@@ -20,7 +20,7 @@ Now, we're going to zoom out and consider what whole-brains look like, which bri
 To date only four organisms have a full connectome, the first of which was the [roundworm c.elegans](#p14)
 
 
-:::{attention} Note!
+:::{note}
 In this section, we’ll look at the connectome.
 :::
 

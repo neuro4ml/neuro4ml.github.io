@@ -15,7 +15,7 @@ The text below has been transcribed by hand from the video above but has not yet
 
 In the last section we discussed connectomes - full diagrams describing how every neuron connects to every other neuron in an animal.
 
-:::{attention} Note!
+:::{note}
 
 We don't have a connectome for the human brain so instead, in this section, we’ll look at a more macro level
 :::
@@ -42,7 +42,7 @@ But it's increasingly thought that Glial might play computational roles too. For
 :alt: Diagrams of Different Types of Glial Cells
 :align: center
 
-Diagrams of Different Types of Glial Cells (See [paper](https://doi.org/10.1002/glia.24343))
+Diagrams of Different Types of Glial Cells {cite:p}`https://doi.org/10.1002/glia.24343`.
 ```
 
 ## Human brain
@@ -144,7 +144,7 @@ We have 3 types of data that seem to support localisation of function
 :alt: Left and Right Views of Brain Activity to Stimuli
 :align: center
 
-Left and Right Views of Brain Activity to Stimuli (See [paper](https://doi.org/10.1093/brain/123.2.291))
+Left and Right Views of Brain Activity to Stimuli {cite:p}`https://doi.org/10.1093/brain/123.2.291`.
 ```
 
 2. If we manipulate specific parts of the brain, we see specific differences in behavior. So while we do these manipulations in animal models, in humans these manipulations usually result from accidents, disease processes or surgical interventions.
@@ -153,7 +153,7 @@ Left and Right Views of Brain Activity to Stimuli (See [paper](https://doi.org/1
 
     The 2 rows of patient imaging data show how their neural activity differs from controls, and so reflects this behavioral difference. Specifically in control subjects, a region was activated irrespective of the simulated Hemi field, which is shown by [the green circle](#brainactive), but in patients it was only activated by right field stimulation.
 
-:::{attention} Note!
+:::{note}
 **We'll cover observing and manipulating neural activity in more detail later in the course**
 :::
 
@@ -177,7 +177,7 @@ One of their main results is shown on the [right figure](#strucvsfunc), where th
 :alt: Study Results for Localised Function
 :align: center
 
-Study Results for Localised Function (See [paper](https://doi.org/10.48550/arXiv.2106.02626))
+Study Results for Localised Function {cite:p}`https://doi.org/10.48550/arXiv.2106.02626`.
 ```
 
 This suggests that only networks with extremely sparse inter module connections become functionally specialised, and together with other evidence, this paper adds to a growing picture that function in the brain may be less localised than previously thought.

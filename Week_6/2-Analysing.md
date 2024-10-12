@@ -15,7 +15,7 @@ The text below has been transcribed by hand from the video above but has not yet
 
 In the last section we learnt about how we can acquire neural data. 
 
-:::{attention} Note!
+:::{note}
 In this section we're going to think about how we can interpret or analyse neural data.
 :::
 
@@ -92,7 +92,7 @@ As this is essentially a regression problem, there are many approaches we could 
 :align: center
 :width: 500px
 
-Decoder result summary. R2 values are reported for all decoders (different colors) for each brain area (top to bottom). Error bars represent the mean ± SEM across cross-validation folds. Xs represent the R2 values of each cross-validation fold. The NB decoder had mean R2 values of 0.26 and 0.36 (below the minimum y-axis value) for the motor and somatosensory cortex datasets, respectively. (See [paper](https://doi.org/10.1523/ENEURO.0506-19.2020))
+Decoder result summary. R2 values are reported for all decoders (different colors) for each brain area (top to bottom). Error bars represent the mean ± SEM across cross-validation folds. Xs represent the R2 values of each cross-validation fold. The NB decoder had mean R2 values of 0.26 and 0.36 (below the minimum y-axis value) for the motor and somatosensory cortex datasets, respectively. {cite:p}`https://doi.org/10.1523/ENEURO.0506-19.2020`.
 ```
 
 But if we tried to decode location from another population of neurons somewhere else in the brain, like visual cortex, our results would be much worse, and so we can use decoding accuracy to estimate what information is present in different brain areas.
