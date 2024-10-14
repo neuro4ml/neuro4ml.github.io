@@ -1,3 +1,7 @@
+---
+authors: goodman
+---
+
 # Why neuroscience?
 
 [Download the slides here](slides/W0-V0-why-neuroscience.pptx)

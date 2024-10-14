@@ -1,3 +1,7 @@
+---
+authors: goodman
+---
+
 # Synapse models
 
 [Download the slides here](slides/W2-V3-synapse-models.pptx)

@@ -1,3 +1,7 @@
+---
+authors: goodman
+---
+
 # Rate-based models
 
 [Download the slides here](slides/W4-V1-rate-based-models.pptx)

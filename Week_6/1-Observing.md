@@ -1,3 +1,7 @@
+---
+authors: ghosh
+---
+
 # Observing
 
 [Download the slides here](slides/W6-V0-observing.pptx)

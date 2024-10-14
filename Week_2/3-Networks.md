@@ -1,3 +1,7 @@
+---
+authors: ghosh
+---
+
 # Networks
 
 [Download the slides here](slides/W2-V2-networks.pptx)

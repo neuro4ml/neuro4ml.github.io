@@ -1,3 +1,7 @@
+---
+authors: goodman
+---
+
 # Computing
 
 [Download the slides here](slides/W8-V1-computing.pptx)

@@ -1,3 +1,7 @@
+---
+authors: goodman
+---
+
 # Biophysical neuron models
 
 [Download the slides here](slides/W1-V3-biophysical-models.pptx)

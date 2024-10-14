@@ -1,3 +1,7 @@
+---
+authors: ghosh
+---
+
 # Analysing
 
 [Download the slides here](slides/W6-V1-analysing.pptx)

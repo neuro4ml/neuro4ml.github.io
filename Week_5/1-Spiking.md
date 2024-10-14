@@ -1,3 +1,7 @@
+---
+authors: goodman
+---
+
 # Spiking is Not Differentiable
 
 [Download the slides here](slides/W5-V0-spiking-is-not-differentiable.pptx)

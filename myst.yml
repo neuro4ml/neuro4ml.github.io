@@ -6,10 +6,12 @@ project:
   # keywords: []
   authors: 
     - name: Dan Goodman
+      id: goodman
       orcid: https://orcid.org/0000-0003-1007-6474
       url: https://neural-reckoning.org
       twitter: neuralreckoning
     - name: Marcus Ghosh
+      id: ghosh
       orcid: https://orcid.org/0000-0002-2428-4605
       url: https://neural-reckoning.org/marcus_ghosh.html
       twitter: marcusghosh

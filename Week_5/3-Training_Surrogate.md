@@ -1,3 +1,7 @@
+---
+authors: goodman
+---
+
 # Training SNNs with surrogate gradients
 
 [Download the slides here](slides/W5-V2-surrogate-gradients.pptx)

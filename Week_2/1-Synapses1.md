@@ -1,3 +1,7 @@
+---
+authors: ghosh
+---
+
 (synapses1-page)=
 # Synapses 1
 

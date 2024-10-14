@@ -1,3 +1,7 @@
+---
+authors: goodman
+---
+
 # Introduction
 
 [Download the slides here](slides/W8-V0-intro.pptx)

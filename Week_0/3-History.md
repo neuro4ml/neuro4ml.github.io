@@ -1,3 +1,7 @@
+---
+authors: goodman
+---
+
 (history)=
 # History of neuroscience and machine learning
 

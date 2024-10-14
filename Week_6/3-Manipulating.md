@@ -1,3 +1,7 @@
+---
+authors: ghosh
+---
+
 # Manipulating
 
 [Download the slides here](slides/W6-V2-manipulating.pptx)

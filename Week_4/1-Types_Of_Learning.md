@@ -1,3 +1,7 @@
+---
+authors: goodman
+---
+
 # Types of Learning
 
 [Download the slides here](slides/W4-V0-types-of-learning.pptx)

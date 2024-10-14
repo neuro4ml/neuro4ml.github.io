@@ -1,3 +1,7 @@
+---
+authors: goodman
+---
+
 # What are Spikes For?
 
 [Download the slides here](slides/W9-V1-what-are-spikes-for.pptx)

@@ -1,3 +1,7 @@
+---
+authors: ghosh
+---
+
 # Does neuroscience work?
 
 [Download the slides here](slildes/W9-V0-does-neuroscience-work.pptx)

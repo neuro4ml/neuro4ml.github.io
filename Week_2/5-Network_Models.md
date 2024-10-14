@@ -1,3 +1,7 @@
+---
+authors: goodman
+---
+
 # Network models
 
 [Download the slides here](slides/W2-V4-network-models.pptx)

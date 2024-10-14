@@ -1,3 +1,7 @@
+---
+authors: goodman
+---
+
 # STDP
 
 [Download the slides here](slides/W4-V2-STDP.pptx)

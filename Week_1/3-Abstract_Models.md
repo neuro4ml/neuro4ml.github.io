@@ -1,3 +1,7 @@
+---
+authors: goodman
+---
+
 # Abstract neuron models
 
 [Download the slides here](slides/W1-V2-abstract-models.pptx)

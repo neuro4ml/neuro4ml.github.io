@@ -1,3 +1,6 @@
+---
+authors: goodman
+---
 # Course outline
 
 [Download the slides here](slides/W0-V1-course-outline.pptx)

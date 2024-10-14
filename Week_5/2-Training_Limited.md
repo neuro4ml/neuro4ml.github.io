@@ -1,3 +1,7 @@
+---
+authors: goodman
+---
+
 # Training SNNs with limited gradients
 
 [Download the slides here](slides/W5-V1-limited-gradients.pptx)

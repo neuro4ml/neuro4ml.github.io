@@ -1,3 +1,7 @@
+---
+authors: goodman
+---
+
 # Decision making
 
 [Download the slides here](slides/W7-V0-decision-making.pptx)

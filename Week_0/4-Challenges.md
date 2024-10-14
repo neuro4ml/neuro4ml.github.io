@@ -1,3 +1,7 @@
+---
+authors: goodman
+---
+
 # Challenges for machine learning and neuroscience
 
 [Download the slides here](slides/W0-V3-challenges.pptx)

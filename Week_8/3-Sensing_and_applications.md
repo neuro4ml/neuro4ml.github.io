@@ -1,3 +1,7 @@
+---
+authors: goodman
+---
+
 # Neuromorphic sensing and applications
 
 [Download the slides here](slides/W8-V2-sensing-and-applications.pptx)

@@ -1,3 +1,7 @@
+---
+authors: ghosh
+---
+
 # Neuron function
 
 [Download the slides here](slides/W1-V1-function.pptx)

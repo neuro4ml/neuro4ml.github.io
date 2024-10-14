@@ -1,3 +1,7 @@
+---
+authors: ghosh
+---
+
 # Neuron structure
 
 [Download the slides here](slides/W1-V0-structure.pptx)
