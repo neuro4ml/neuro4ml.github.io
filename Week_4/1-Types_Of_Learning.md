@@ -2,7 +2,7 @@
 authors: goodman
 ---
 
-# Types of Learning
+# Types of learning
 
 [Download the slides here](slides/W4-V0-types-of-learning.pptx)
 
@@ -11,17 +11,11 @@ authors: goodman
 :::
 ---
 
-```{danger} Work in progress
-The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
-```
-
 ## Introduction
 
 This week is about learning. How it happens in the brain, what models we have, and how those models relate to algorithms from machine learning. 
 
-:::{note}
 Before we get into the details, in this section we'll start with an overview of what types of learning there are and the different mechanisms they could use.
-:::
 
 ## What is learning?
 
@@ -52,8 +46,6 @@ Taking that further, the exact chemical composition of the extracellular regions
 :label: mech
 :width: 700px
 :align: center
-
-Neural Network Modifications and Mechanisms
 ```
 
 ## Categories
@@ -66,6 +58,7 @@ One way to model this is with a family of rate-based models which use correlatio
 Alternatively, we can take timing of individual spikes into account, as in spike timing-dependent plasticity or STDP.
 
 If we’re thinking about ways the brain changes, then thinking about **homeostasis** is important. This is the process by which the body or brain keeps itself in a sort of balance. If some neurons are firing too much, then synapses might get weaker or thresholds might go up to reduce activity.
+
 It’s also important to distinguish between short and long term changes, like the difference between changes in activity and permanent changes to the structure of synapses and neurons.
 
 Finally, we should think about the signals available for learning, such as in machine learning we can distinguish between unsupervised and supervised forms of learning.

@@ -101,7 +101,7 @@ project:
     LIF: Leaky Integrate-and-Fire
     ODE: Ordinary Differential Equation
     FMRI: Functional Magnetic Resonance Imaging
-    STDP: Spike-Timing-Dependent Plasticity
+    STDP: Spike Timing-Dependent Plasticity
     BPTT: Backpropagation Through Time
     2AFC: Two-Alternative Forced Choice
     FPGA: Field Programmable Gate Array
@@ -109,6 +109,9 @@ project:
   math:
     '\argmax': '\operatorname{argmax}'
     '\ud': '\mathrm{d}'
+    '\pre': '\mathrm{pre}'
+    '\post': '\mathrm{post}'
+    '\umax': '\mathrm{max}'
 
 site:
   template: book-theme
