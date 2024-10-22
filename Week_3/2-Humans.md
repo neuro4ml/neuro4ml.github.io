@@ -11,19 +11,13 @@ authors: ghosh
 :::
 ---
 
-```{danger} Work in progress
-The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
-
--- Reviewed for style by Dan, not yet reviewed for accuracy by Marcus.
-```
-
 ## Introduction
 
 In the last section we discussed connectomes - full diagrams describing how every neuron connects to every other neuron in an animal.
 
 :::{note}
 
-We don't have a connectome for the human brain so instead, in this section, we’ll look at a more macro level
+We don't have a connectome for the human brain so instead, in this section, we’ll look at a more macro level.
 :::
 
 ## Glial cells
@@ -35,27 +29,27 @@ These are known as **glial cells**. In humans it's estimated that the ratio of n
 So what are they for?
 
 Historically, it was thought they mainly played supporting roles. For example:
-* **Oligodendrocytes**, [shown in purple](#glialdiagram), form the fatty mileage sheaths around absons
-* **Microglia**, [shown in blue](#glialdiagram), act as immune cells by removing dead cells and responding to pathogens
+* **Oligodendrocytes**, [shown in purple](#glialdiagram), form the fatty myelin sheaths around axons.
+* **Microglia**, [shown in blue](#glialdiagram), act as immune cells by removing dead cells and responding to pathogens.
 
-But it's increasingly thought that glial might play computational roles too. For example **Astrocytes**, which have star shapes, [shown in green](#glialdiagram), both detect and respond to neural activity through multiple mechanisms like:
+But it's increasingly thought that glial may play computational roles too. For example **Astrocytes**, which have star shapes, [shown in green](#glialdiagram), both detect and respond to neural activity through multiple mechanisms like:
 
 * Modulating the concentration of potassium around neurons
-* Or even using their own neurotransmitters known as glial-transmitters
+* Or even using their own neurotransmitters known as glial-transmitters. 
 
 ```{figure} figures/glial.png
 :label: glialdiagram
 :alt: Diagrams of Different Types of glial Cells
 :align: center
 
-Diagrams of different types of glial cells {cite:p}`https://doi.org/10.1002/glia.24343`.
+Diagram illustrating the different types of glial cells. From [](https://doi.org/10.1002/glia.24343).
 ```
 
 ## Human brain
 
 Putting it all together, the human brain is thought to be composed of roughly **86 billion** neurons, **50 billion** glial cells and **$\approx10^{15}$** synapses - though this is hard to estimate.
 
-At a more macro view, [these figures](#brains), show the growth structure of the brain from a lateral view, as if you're looking at someone from their left hand side.
+At a more macro level, [these figures](#brains), show the gross structure of the brain from a lateral view, as if you're looking at someone from their left hand side.
 
 The diagram on the left shows the brain's outer surface and there are a few interesting features to note.
 
@@ -63,11 +57,10 @@ The diagram on the left shows the brain's outer surface and there are a few inte
 :label: brains
 :align: center
 
-Lateral view and sagittal section of brain.
+Lateral view and sagittal views showing the gross structure of the human brain. 
 ```
 
-
-The outermost layer, known as the cortex, has a folded strucutre which increases its surface area relative to brain volume.
+The outermost layer, known as the cortex, has a folded structure which increases its surface area relative to brain volume.
 
 Folds are known as **gyri** and depressions are known **sulci.**
 
@@ -91,10 +84,10 @@ Taking a different view, if we now imagine looking at someone front on and then 
 :alt: Diagram of Coronal Section
 :align: center
 
-Diagram of coronal section.
+Diagram showing a coronal section of the human brain.
 ```
 
-The outermost layer, the cortex, is also referred to as gray matter as it mainly contains dendrites, soma, synapses etc which are unmelinated. However, below there are tracks where melinated axons tend to travel, which are known as white matter. For example the corpus callosum, which we just mentioned.
+The outermost layer, the cortex, is also referred to as gray matter as it mainly contains dendrites, soma, synapses etc which are Unmyelinated. However, below there are tracks where myelinated axons tend to travel, which are known as white matter. For example the corpus callosum, which we just mentioned.
 
 Deeper in the brain, there are then various nuclei which are clusters of neurons.
 
@@ -102,34 +95,34 @@ Deeper in the brain, there are then various nuclei which are clusters of neurons
 
 Zooming out one last time, the entire nervous system is composed of two parts:
 
-1. The **central nervous system** - which consists of the brain and the spinal cord
-2. and the **peripheral nervous system** - which carries information in two directions
+1. The **central nervous system** - which consists of the brain and the spinal cord.
+2. And the **peripheral nervous system** - which carries information in two directions.
 
 ```{figure} figures/nervoussystem.png
 :label: nervous
 :alt: Diagram of Nervous System
 :align: center
 
-Diagram of nervous system 
+Diagram of the entire human nervous system.
 ```
-[Sensory neurons](#sensory) convert external stimuli to spikes and then carry these signals to the spinal cord and the brain. For example, neurons which sense pressure, have specialised channels known as **piezo channels**, which can physically deform in response to pressure. This allows ions to flow into the neuron and then trigger action potentials.
+[Sensory neurons](#sensory) convert external stimuli to spikes and then carry these signals to the spinal cord and the brain. For example, neurons which sense pressure, have specialised channels known as **piezo channels**, which physically deform in response to pressure. This allows ions to flow into the neuron and then trigger action potentials.
 
 ```{figure} figures/sensoryneuron.png
 :label: sensory
 :alt: Diagram of Sensory Neuron
 :align: center
 
-Diagram of sensory neuron
+Diagram showing a piezo channel.
 ```
 
-In the other direction, [motor neurons](#motor) synapse with muscles, at what is known as the neuromuscular junction, where they use a special neurotransmiter **acetylcholine** to link neural activity to movement.
+In the other direction, [motor neurons](#motor) synapse with muscles, at what is known as the neuromuscular junction, where they use a special neurotransmiter (**acetylcholine**) to link neural activity to movement.
 
 ```{figure} figures/motorneuron.png
 :label: motor
 :alt: Diagram of Motor Neuron
 :align: center
 
-Diagram of motor neuron.
+Diagram showing the neuromuscular junction. 
 ```
 
 ## Localisation of function
@@ -138,39 +131,31 @@ Going back to the brain, we often think about specific functions as being locali
 
 For example, we call part of the occipital lobe the visual cortex, and part of the temporal lobe the auditory cortex.
 
-We have 3 types of data that seem to support localisation of function
+We have 3 types of data that seem to support localisation of function:
 
-1. We observe neural activity in response to stimuli or during tasks we see that neurons with similar responses tend to be co-located. For example, in [this study](https://doi.org/10.1093/brain/123.2.291) human participants were asked to read words presented to a single eye while their brain activity was imaged using a technique known as FMRI
-
-    The top row of [the figure](#brainactive) shows left and right views of the brain with the inferred amount of neural activity overlaid in red in response to words presented to either the left or the right eye. So you can see that this task activates some localised areas.
+1. When we observe neural activity in response to stimuli or during tasks we see that neurons with similar responses tend to be co-located. For example, in [this study](https://doi.org/10.1093/brain/123.2.291) human participants were asked to read words presented to a single eye while their brain activity was imaged using a technique known as FMRI. The top row of [this figure](#brainactive) shows left and right views of the brain with the inferred amount of neural activity overlaid in red in response to words presented to either the left or the right eye. So you can see that this task activates some localised areas.
 
 ```{figure} figures/brainactivity.png
 :label: brainactive
 :alt: Left and Right Views of Brain Activity to Stimuli
 :align: center
 
-Left and right views of brain activity to stimuli {cite:p}`https://doi.org/10.1093/brain/123.2.291`.
+A study of human brain activity (using FMRI) in both controls and patients. From [](https://doi.org/10.1093/brain/123.2.291).
 ```
 
-2. If we manipulate specific parts of the brain, we see specific differences in behavior. So while we do these manipulations in animal models, in humans these manipulations usually result from accidents, disease processes or surgical interventions.
-
-    For example, in the [same paper](https://doi.org/10.1093/brain/123.2.291), the authors also studied two patients who had damaged part of their corpus callosum. These patients lost relatively specific function and in this study, they were unable to read words aloud that were presented in the left visual field.
-
-    The 2 rows of patient imaging data show how their neural activity differs from controls, and so reflects this behavioral difference. Specifically in control subjects, a region was activated irrespective of the simulated hemi field, which is shown by [the green circle](#brainactive), but in patients it was only activated by right field stimulation.
+2. If we manipulate specific parts of the brain, we see specific differences in behavior. Though, while we perform these manipulations in animal models ourselves, in humans they usually result from accidents, disease processes or surgical interventions. For example, in the [same paper](https://doi.org/10.1093/brain/123.2.291), the authors also studied two patients who had damaged part of their corpus callosum. These patients lost relatively specific function and in this study, they were unable to read words aloud that were presented in the left visual field. The 2 rows of patient imaging data show how their neural activity differs from controls, and so reflects this behavioral difference. Specifically in control subjects, a region was activated irrespective of the simulated hemi-field, which is shown by [the green circle](#brainactive), but in patients it was only activated by right field stimulation.
 
 :::{margin}
-We'll cover observing and manipulating neural activity in more detail later in the course.
+Note: We'll cover observing and manipulating neural activity in more detail later in the course.
 :::
 
-3. If we look at the brain structure we see that connectivity tends to be sparse and modular, which could seem to imply that individual modules may perform speciallised functions. 
-
-But is that necessarily the case? In other words, will a network with a modular structure necessarily modularise function? 
+3. If we look at the brain structure we see that connectivity tends to be sparse and modular, which could seem to imply that individual modules may perform specialised functions. But is that necessarily the case? In other words, will a network with a modular structure necessarily modularise function? 
 
 ## Structural vs functional specialisation
 
-[](https://doi.org/10.48550/arXiv.2106.02626) uses a really neat setup. As a model they use artificial neural networks composed of modules where each module is a recurrent neural network with dense connections internally but sparse connections to other modules.
+[](https://doi.org/10.48550/arXiv.2106.02626) use a really neat setup to explore this question. As a model they use artificial neural networks composed of modules where each module is a recurrent neural network with dense connections internally but sparse connections to other modules.
 
-As a task, the input are pairs of digits and train networks to output a parity based label, which means that networks could solve the task by using a modular solution, where each module would learn to recognise its own input digit. To measure functional specialisation they use three different metrics
+As a task, they input pairs of digits and train networks to output a parity based label, which means that networks could solve the task by using a modular solution, where each module would learn to recognise its own input digit. To measure functional specialisation they use three different metrics. 
 
 One of which is a manipulation based metric, where they silence each module in turn and see how that affects the network's ability to recognise each digit. So a module would be defined as specialised if silencing it decreases the classification accuracy for one digit but not the other.
 With that setup, they then vary the amount of connectivity between the modules labelled as $p$ on the [left diagram](#strucvsfunc) and measure functional specialisation.
@@ -182,11 +167,11 @@ One of their main results is shown on the [right figure](#strucvsfunc), where th
 :alt: Study Results for Localised Function
 :align: center
 
-Task and results for {cite:t}`https://doi.org/10.48550/arXiv.2106.02626`.
+Setup and results from {cite:t}`https://doi.org/10.48550/arXiv.2106.02626`.
 ```
 
 This suggests that only networks with extremely sparse inter module connections become functionally specialised, and together with other evidence, this paper adds to a growing picture that function in the brain may be less localised than previously thought.
 
 :::{seealso} That's it!
-Ok, that's all for this week, next week we will cover learning rules in both machine learning and neuroscience
+Ok, that's all for this week, next week we will cover learning rules in both machine learning and neuroscience. 
 :::
