@@ -121,6 +121,7 @@ We can model this decay by treating the membrane as a capacitor in an electrical
 ```
 where $\tau$ is the [membrane time constant discussed earlier](#membrane-time-constant). We can summarise this as a table as before:
 
+(LIF-neuron-definition)=
 ```{list-table} Leaky integrate-and-fire neuron definition
 :header-rows: 1
 :label: lif-neuron-definition

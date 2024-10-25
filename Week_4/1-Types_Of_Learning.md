@@ -25,6 +25,7 @@ Abstractly what do we mean by learning? Something like: any change to behaviour 
 :label: learning
 :width: 700px
 :align: center
+:class: dark:bg-white
 
 What is learning?
 ```
