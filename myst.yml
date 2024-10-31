@@ -65,7 +65,6 @@ project:
         - file: Week_5/1-Spiking.md
         - file: Week_5/2-Training_Limited.md
         - file: Week_5/3-Training_Surrogate.md
-        - file: Week_5/4-Training_Approximate.md
         - file: Week_5/exercises.md
         - file: Week_5/reading.md
     - title: Week 6 - Understanding neural networks
@@ -112,6 +111,7 @@ project:
     '\pre': '\mathrm{pre}'
     '\post': '\mathrm{post}'
     '\umax': '\mathrm{max}'
+    '\dt': '\mathrm{d}t'
 
 site:
   template: book-theme

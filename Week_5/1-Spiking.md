@@ -84,6 +84,7 @@ So we can efficiently compute the gradient just by matrix and vector multiplicat
 
 So, can we just do this for a spiking neural network? It’s not quite so easy. Let’s see why.
 
+(why-we-cant-differentiate-spikes)=
 ## Why we can't do it
 
 To see what goes wrong here, let’s start with a recap of the [leaky integrate-and-fire neuron](#LIF-section) we’ve seen before.
@@ -97,15 +98,15 @@ We’re going to rewrite these equations, temporarily ignoring the synaptic conn
 
 The threshold we’ll write as $S(t)$ being the Heaviside function of $v(t)-1$. So this will be equal to $1$ if the neuron has spiked, otherwise $0$.
 
+(threshold-with-heaviside)=
 ```{math}
-:label: thresholdre
 S(t) = H(v(t) - 1)
 ```
 
 Reminder that the Heaviside function is defined as follows:
 
+(heaviside-definition)=
 ```{math}
-:label: heaviside-definition
 H(x) = 
 \begin{cases} 
       0 & \text{if } x < 0 \\
@@ -115,16 +116,16 @@ H(x) =
 
 Now we replace the differential equation with a discrete update rule. To get $v$ at time $t+\delta t$ we multiply $v$ at time $t$ with an exponential term (this comes from just solving the differential equation to get $v(t+\delta t)$ at time $t+\delta t$ with initial condition $v(t)$ at time $t$). We also fold in handling the spike reset by then multiplying this value by $1-S(t)$. So this means we multiply by $0$ if it spiked, otherwise we multiply by $1$. This is equivalent to setting it to $0$ after a spike.
 
+(lif-update-step)=
 ```{math}
-:label: replacede
 v(t + \delta t) = e^{\frac{-\delta t}{\tau}}v(t)(1 - S(t))
 ```
 
 Now if we wanted to use gradient descent we'd have to compute the gradient using the chain rule.
 That's unproblematic for every part of these equations except for the Heaviside function. This function has derivative zero at every point except 0, where it's undefined.
 
+(heaviside-is-not-differentiable)=
 ```{math}
-:label: heavire
 \frac{\ud H}{\ud x} = 
 \begin{cases} 
       0 & \text{if } x \neq 0 \\
