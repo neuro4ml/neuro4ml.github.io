@@ -13,6 +13,8 @@ authors: ghosh
 
 ```{danger} Work in progress
 The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
+
+-- Checked for style by Dan.
 ```
 
 ## Introduction
@@ -86,8 +88,6 @@ So, by expressing these channels in neurons and then triggering them with light 
 :label: reversible-pic
 :align:center
 :width: 500px
-
-Examples of Optogenetics
 ```
 
 While, this may seem a bit detached from machine learning, we can actually use the same types of manipulations to interrogate artificial neural networks.  
@@ -142,7 +142,7 @@ Then you calculate each nodes importance by comparing the networks score with an
 The results are shown as before in [panel B](#multi-lesions), and [in panel C](#multi-lesions) on the right you can see that the single and multi-node ablations assigns different importance to different nodes.
 This and other results lead the authors to conclude that even small ANNs can be challenging to interpret.
 And so we should perhaps be cautious when interpreting manipulation results from larger and more complex systems.
-If you’d like to learn more about this approach and these results, we highly recommend [the paper](https://doi.org/10.1371/journal.pcbi.1010250).
+If you’d like to learn more about this approach and these results, we highly recommend the paper {cite:p}`https://doi.org/10.1371/journal.pcbi.1010250`.
 
 ```{figure} figures/manipulatingPicture4.png
 :label: multi-lesions

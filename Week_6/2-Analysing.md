@@ -13,6 +13,8 @@ authors: ghosh
 
 ```{danger} Work in progress
 The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
+
+-- Checked for style by Dan.
 ```
 
 ## Introduction
@@ -64,14 +66,14 @@ In {cite:t}`https://doi.org/10.1038/nature05601` the authors let a rat freely mo
 
 In the [left panel](#summary-stats-pic), the black line shows the animal’s path, and the red dots show the locations in space where one neuron spiked. Then the [right panel](#summary-stats-pic), shows a heatmap of the neuron's firing rate, with red being high. So, this heatmap is equivalent to a 2d tuning curve, and we can see that this neuron is tuned to a specific location in this environment.
 
-Neurons with responses like these are known as **place cells**, they were first discovered in [1971](https://doi.org/10.1016/0006-8993(71)90358-1), but are still an active area of research.
+Neurons with responses like these are known as **place cells**, they were first discovered in 1971 {cite:p}`https://doi.org/10.1016/0006-8993(71)90358-1`, but are still an active area of research.
 
 ```{figure} figures/analysingPicture2.png
 :label: summary-stats-pic
 :align: center
 :width: 400px
 
-Place cell neuron response
+Place cell neuron response.
 ```
 
 However, many neuron's aren’t so clearly tuned to specific environmental features and rather than thinking of single neurons as encoding variables it may be better to try to understand what information populations of neurons encode.
@@ -96,14 +98,14 @@ As this is essentially a regression problem, there are many approaches we could 
 :align: center
 :width: 500px
 
-Decoder result summary. R2 values are reported for all decoders (different colors) for each brain area (top to bottom). Error bars represent the mean ± SEM across cross-validation folds. Xs represent the R2 values of each cross-validation fold. The NB decoder had mean R2 values of 0.26 and 0.36 (below the minimum y-axis value) for the motor and somatosensory cortex datasets, respectively. {cite:p}`https://doi.org/10.1523/ENEURO.0506-19.2020`.
+Decoder result summary. $R^2$ values are reported for all decoders (different colors) for each brain area (top to bottom). Error bars represent the mean ± SEM across cross-validation folds. Crosses represent the $R^2$ values of each cross-validation fold. The NB decoder had mean $R^2$ values of 0.26 and 0.36 (below the minimum y-axis value) for the motor and somatosensory cortex datasets, respectively. {cite:p}`https://doi.org/10.1523/ENEURO.0506-19.2020`.
 ```
 
 But if we tried to decode location from another population of neurons somewhere else in the brain, like visual cortex, our results would be much worse, and so we can use decoding accuracy to estimate what information is present in different brain areas.
 However, decoding relies on having a variable or variables of interest to estimate, and sometimes we may not have that: for example, if we’re just recording spontaneous brain activity.
 
 
-In that case, one approach would be what we're going to call **ensemble methods**
+In that case, one approach would be what we're going to call **ensemble methods**.
 
 ## Neural ensembles
 
@@ -123,7 +125,7 @@ Here, we take our 2d matrix of neurons recorded over time and trials, and reshap
 :align: center
 :width: 600px
 
-Tensor Component Analysis
+Tensor component analysis.
 ```
 
 This may seem a bit abstract, so let's see what it yields when applied to real data.
@@ -152,7 +154,7 @@ Now try to interpret the other ensembles yourself.
 :align: center
 :width: 600px
 
-Ensembles Results
+Tensor component analysis applied to a mouse navigation experiment.
 ```
 
 ## Summary

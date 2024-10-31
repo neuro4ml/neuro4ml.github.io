@@ -13,15 +13,13 @@ authors: ghosh
 
 ```{danger} Work in progress
 The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
+
+-- Checked for style by Dan.
 ```
 
 ## Introduction
 
 This week we're going to explore how researchers try to **understand** neural networks. 
-
-:::{note}
-In this section we'll think about what it actually means to understand neural networks.
-:::
 
 ## Understanding
 
@@ -75,7 +73,7 @@ The main part of this probe is its extremely thin shank, which is inserted int
 :align: center
 :width: 700px
 
-High-density probes results for simultaneous neuron recording {cite:p}`https://doi.org/10.1126/science.abf4588`.
+High-density probe for simultaneous neuron recording {cite:p}`https://doi.org/10.1126/science.abf4588`.
 ```
 
 These sites record nearby electrical activity, and so each sites' signal results from the combined activity of many neurons. However, from this data it's possible to infer the underlying spiking activity of individual neurons, using spike-sorting algorithms which make use of the fact that different neurons have distinct spike shapes. 
@@ -129,7 +127,7 @@ Though it is worth keeping in mind that it's a proximy measure of neural activit
 :align: center
 :width: 400px
 
-fMRI Benefits and Challenges {cite:p}`https://doi.org/10.1038/s41586-023-06670-9`.
+fMRI benefits and challenges {cite:p}`https://doi.org/10.1038/s41586-023-06670-9`.
 ```
 Okay, stepping back a bit, lets approximately map these techniques onto our axis.
 
