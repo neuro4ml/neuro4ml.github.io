@@ -11,12 +11,6 @@ authors: ghosh
 :::
 ---
 
-```{danger} Work in progress
-The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
-
--- Checked for style by Dan.
-```
-
 ## Introduction
 
 In the last two sections we've looked at how we can record and analyze neural activity.
@@ -48,17 +42,18 @@ In this paper, the authors:
 
 :::{figure} figures/Media2.mp4
 :label: rat-vid1
+
+Rats with motor cortex lesions cross a series of steps similarly to controls {cite:p}`https://doi.org/10.3389/fnins.2023.971980`. 
 :::
 
-One conclusion from this result could be that motor cortex isn’t needed for a simple task like this.
-So, the authors then increased the difficulty of the task by making more and more of the steps unstable.
+One conclusion from this result could be that motor cortex isn’t needed for a simple task like this. So, the authors then increased the difficulty of the task by making more and more of the steps unstable.
 
 Surprisingly, again they didn’t see any difference between the two groups. Until they looked at their data very carefully.
 
 What they found was that when the animals first encountered the unstable steps, they responded in one of the three ways shown in [this video](#rat-vid2):
 
-* Some controls stopped to investigate the unstable step
-* Some controls compensated by adjusting their movement
+* Some controls stopped to investigate the unstable step.
+* Some controls compensated by adjusting their movement.
 * But the animals with motor cortex lesions stopped moving for several seconds.
 
 This suggests that the main role of this brain area may be to help the animal to adapt its behaviour to unexpected situations.
@@ -67,6 +62,8 @@ Though, in the context of [this video](#rat-vid2), I think this paper nicely ill
 
 :::{figure} figures/Media3.mp4
 :label: rat-vid2
+
+Rats with motor cortex lesions respond differently to unstable steps / unpredictable situations {cite:p}`https://doi.org/10.3389/fnins.2023.971980`.
 :::
 
 However, we don’t always have to use irreversible manipulations, as there are reversible methods too.
@@ -77,7 +74,7 @@ In humans, one approach is called **trans-cranial magnetic stimulation** or TMS,
 But, in animal models we can control neural activity more precisely and one great method for doing this is **optogenetics**: which uses light-gated proteins to control neural activity.
 Some of these light-gated proteins are genetically engineered, but some occur naturally in things like algae.
 
-For example, 
+For example:
 
 * Channelrhodopsin – shown on the [left of this figure](#reversible-pic). Is an ion channel which, when exposed to blue light, changes its structure and allows positive ions to flow into neurons, increasing their membrane potential and spiking activity. 
 * In contrast, the proteins shown on the [right](#reversible-pic) [Halorhodopsin and Archaerhodopsin] respond to yellow light by either moving chloride ions into the neuron or moving hydrogen ions out, both of which will decrease the neurons membrane potential and spiking activity. 
@@ -88,14 +85,15 @@ So, by expressing these channels in neurons and then triggering them with light 
 :label: reversible-pic
 :align:center
 :width: 500px
+
+Diagram showing how optogenetic tools can be used to activate (left) or inhibit (right) neurons {cite:p}`https://doi.org/10.1038/nmeth.f.323`.
 ```
 
 While, this may seem a bit detached from machine learning, we can actually use the same types of manipulations to interrogate artificial neural networks.  
 
 ## Single-element lesions in ANNs
 
-For example, in {cite:t}`https://doi.org/10.1371/journal.pcbi.1010250` the authors studied an ANN by lesioning it extensively.
-To create their ANN, they used an evolutionary algorithm called (NEAT) to evolve a neural network which could play the arcade game Space Invaders.
+For example, in {cite:t}`https://doi.org/10.1371/journal.pcbi.1010250` the authors studied an ANN by lesioning it extensively. To create their ANN, they used an evolutionary algorithm called (NEAT) to evolve a neural network which could play the arcade game Space Invaders.
 
 Their evolved network is [shown here](#single-lesions-pic1):
 
@@ -108,7 +106,7 @@ Their evolved network is [shown here](#single-lesions-pic1):
 :align:center
 :width: 100%
 
-Evolved space invader network {cite:p}`https://doi.org/10.1371/journal.pcbi.1010250`.
+A neural network evolved to play space invaders {cite:p}`https://doi.org/10.1371/journal.pcbi.1010250`.
 ```
 
 To manipulate their network they then silenced each node one-by-one and checked how well the network performed with each node silenced individually.
@@ -123,7 +121,7 @@ On the [right of the figure](#single-lesions-pic2), the authors also silence eve
 :align:center
 :width: 100%
 
-Manipulated evolved network results {cite:p}`https://doi.org/10.1371/journal.pcbi.1010250`.
+How silencing the individual nodes (left) or weights (right) alters the performance of a trained neural network {cite:p}`https://doi.org/10.1371/journal.pcbi.1010250`.
 ```
 
 However, the results from single-element manipulations like these could be misleading. For example, imagine if two units in this network perform the same function in parallel. Then silencing either one alone, may not result in a change to the networks score and we could wrongly conclude that neither of these units are important.
@@ -135,24 +133,18 @@ To overcome this issue, the authors compare their results to a multi-element app
 (multi-element-lessions)=
 ## Multi-element lesions in ANNs
 
-In this multi-element approach, you sample combinations of lesions.
-For example, you silence node 1 and check the networks score, then silence node 1 and 2 together, 1, 2, 3 together etc.
-Then you calculate each nodes importance by comparing the networks score with and without the node in different combinations.
+In this multi-element approach, you sample combinations of lesions. For example, you silence node 1 and check the networks score, then silence node 1 and 2 together, 1, 2, 3 together etc. Then you calculate each nodes importance by comparing the networks score with and without the node in different combinations.
 
-The results are shown as before in [panel B](#multi-lesions), and [in panel C](#multi-lesions) on the right you can see that the single and multi-node ablations assigns different importance to different nodes.
-This and other results lead the authors to conclude that even small ANNs can be challenging to interpret.
-And so we should perhaps be cautious when interpreting manipulation results from larger and more complex systems.
-If you’d like to learn more about this approach and these results, we highly recommend the paper {cite:p}`https://doi.org/10.1371/journal.pcbi.1010250`.
+The results are shown as before in [panel B](#multi-lesions), and [in panel C](#multi-lesions) on the right you can see that the single and multi-node ablations assigns different importance to different nodes. This and other results lead the authors to conclude that even small ANNs can be challenging to interpret. And so we should perhaps be cautious when interpreting manipulation results from larger and more complex systems. If you’d like to learn more about this approach and these results, we highly recommend the paper {cite:p}`https://doi.org/10.1371/journal.pcbi.1010250`.
 
 ```{figure} figures/manipulatingPicture4.png
 :label: multi-lesions
 :align:center
 :width: 100%
 
-Manipulated evolved network results using multi-element approach {cite:p}`https://doi.org/10.1371/journal.pcbi.1010250`.
+Silencing individual (A) or multiple (B) components of a trained neural network will lead to different conclusions on those components importance (C) {cite:p}`https://doi.org/10.1371/journal.pcbi.1010250`.
 ```
 
 :::{seealso} That's it!
-Hopefully that’s given you an overview of how we can manipulate neural activity. 
-In the next section we're going to outline this week’s exercise, which will challenge you to observe and manipulate an ANN yourself.
+Hopefully that’s given you an overview of how we can manipulate neural activity. In the next section we're going to outline this week’s exercise, which will challenge you to observe and manipulate an ANN yourself.
 :::

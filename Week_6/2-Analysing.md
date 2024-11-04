@@ -11,12 +11,6 @@ authors: ghosh
 :::
 ---
 
-```{danger} Work in progress
-The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
-
--- Checked for style by Dan.
-```
-
 ## Introduction
 
 In the last section we learnt about how we can acquire neural data. 
@@ -36,6 +30,8 @@ Regardless of what method we use to collect our data we’re going to end up wit
 :label: graph
 :align: center
 :width: 400px
+
+Neural data can be represented as a matrix of neurons x time, where each cell denotes the activity of neuron *i* at time *t*. 
 ```
 
 One thing to note is that rather than recording neural activity continuously, experimentalists will often conduct multiple trials with a fixed length. So time may be discontinuous. For example, an experiment could be composed of trials where a subject is shown images which they’re asked to classify, with breaks in-between.  
@@ -50,17 +46,17 @@ With this sort of data there are lots of different questions we could ask like:
 
 Once we have a question or questions in mind we can then decide on an appropriate analysis method.
 
-## Analysis method
+## Analysis methods
 
 There are lots of different approaches to analyzing neural data, so I’m just going to highlight three.
 A simple approach is to calculate **summary statistics**.
 
 For example, in a classification task we could compute how strongly each neuron responds to each class, and then see how specific it’s response is.
-Or if we were varying a stimulus parameter continuously, like the brightness of a screen, we could see how tunned to this parameter each neuron is (i.e., how activity changes as a function of this parameter).
+Or if we were varying a stimulus parameter continuously, like the brightness of a screen, we could see how tuned to this parameter each neuron is (i.e., how activity changes as a function of this parameter).
 
 So what does this analysis look like? 
 
-## Summary statistics
+### Summary statistics
 
 In {cite:t}`https://doi.org/10.1038/nature05601` the authors let a rat freely move around a square area while recording the activity of neurons in part of the brain known as the hippocampus.
 
@@ -73,7 +69,7 @@ Neurons with responses like these are known as **place cells**, they were first 
 :align: center
 :width: 400px
 
-Place cell neuron response.
+Place cells spike at specific locations within an environment {cite:p}`https://doi.org/10.1038/nature05601`.
 ```
 
 However, many neuron's aren’t so clearly tuned to specific environmental features and rather than thinking of single neurons as encoding variables it may be better to try to understand what information populations of neurons encode.
@@ -82,13 +78,13 @@ This brings us onto our second approach which is **neural decoding**.
 
 ## Neural decoding
 
-The aim of neural decoding is to use neural activity to estimate something about the environment or subject.
-For example, if we think about the rat, we could take its neural activity and try to estimate its velocity or position in the environment.
-To do that we could start from our matrix (of neurons by time), bin the spikes into bins to get continuous firing rates – which are easier to work with, and then use data from multiple bins to predict our variable of interest at a specific time.
+The aim of neural decoding is to use neural activity to estimate something about the environment or subject. For example, if we think about the rat, we could take its neural activity and try to estimate its velocity or position in the environment. To do that we could start from our matrix (of neurons by time), bin the spikes into bins to get continuous firing rates – which are easier to work with, and then use data from multiple bins to predict our variable of interest at a specific time.
 
 ```{figure} figures/analysingPicture4.jpg
 :align: center
 :width: 600px
+
+Decoding attempts to relate neural activity to other variables. For example, the animal's velocity {cite:p}`https://doi.org/10.1523/ENEURO.0506-19.2020`. 
 ```
 
 As this is essentially a regression problem, there are many approaches we could use to do this like using filters or neural networks, and {cite:t}`https://doi.org/10.1523/ENEURO.0506-19.2020` compares these methods in detail. For example, in [this image](#hippocampus-graph), each point on the x-axis represents a different decoding approach, and then the y-axis shows how accurately each method can decode the rat’s location and you can see that some methods can do this quite accurately, even though the dataset only has 50 neurons.
@@ -98,21 +94,18 @@ As this is essentially a regression problem, there are many approaches we could 
 :align: center
 :width: 500px
 
-Decoder result summary. $R^2$ values are reported for all decoders (different colors) for each brain area (top to bottom). Error bars represent the mean ± SEM across cross-validation folds. Crosses represent the $R^2$ values of each cross-validation fold. The NB decoder had mean $R^2$ values of 0.26 and 0.36 (below the minimum y-axis value) for the motor and somatosensory cortex datasets, respectively. {cite:p}`https://doi.org/10.1523/ENEURO.0506-19.2020`.
+Decoding accuracy (y-axis) across a range of different decording approaches (x-axis) {cite:p}`https://doi.org/10.1523/ENEURO.0506-19.2020`.
 ```
 
-But if we tried to decode location from another population of neurons somewhere else in the brain, like visual cortex, our results would be much worse, and so we can use decoding accuracy to estimate what information is present in different brain areas.
-However, decoding relies on having a variable or variables of interest to estimate, and sometimes we may not have that: for example, if we’re just recording spontaneous brain activity.
-
+But if we tried to decode location from another population of neurons somewhere else in the brain, like visual cortex, our results would be much worse, and so we can use decoding accuracy to estimate what information is present in different brain areas. However, decoding relies on having a variable or variables of interest to estimate, and sometimes we may not have that: for example, if we’re just recording spontaneous brain activity.
 
 In that case, one approach would be what we're going to call **ensemble methods**.
 
 ## Neural ensembles
 
-These try to identify groups of neurons with correlated patterns of activity over time.
+These methods try to identify groups of neurons with correlated patterns of activity over time (which we term ensembles).
 
-One approach to this would be to use a **clustering algorithm** to group the neurons into clusters with similar activity patterns.
-Another is the method [shown here](#tensor-component), which is called **tensor component analysis**.
+One approach to this would be to use a **clustering algorithm** to group the neurons into clusters with similar activity patterns. Another is the method [shown here](#tensor-component), which is called **tensor component analysis**.
 
 Here, we take our 2d matrix of neurons recorded over time and trials, and reshape it to a 3d tensor of neurons by time by trials, then describe this tensor using a set of ensembles – each of which is described by three vectors [(shown in red, green and blue)](#tensor-component).
 
@@ -125,14 +118,12 @@ Here, we take our 2d matrix of neurons recorded over time and trials, and reshap
 :align: center
 :width: 600px
 
-Tensor component analysis.
+Tensor component analysis {cite:p}`https://doi.org/10.1016/j.neuron.2018.05.015`.
 ```
 
 This may seem a bit abstract, so let's see what it yields when applied to real data.
 
-[This experiment](#ensembles-experiment) is still focussed on spatial navigation but we’ve switched to mice, and what we call a plus maze – which you can see in [panel A](#ensembles-experiment). 
-
-Essentially the mouse starts in either the east or west arm, has to navigate to either the north or the south, and then if it’s correct it receives a reward.
+[This experiment](#ensembles-experiment) is still focussed on spatial navigation but we’ve switched to mice, and what we call a plus maze – which you can see in [panel A](#ensembles-experiment). Essentially the mouse starts in either the east or west arm, has to navigate to either the north or the south, and then if it’s correct it receives a reward.
 
 So, what does applying tensor component analysis to the neural data recorded during this experiment reveal?
 
@@ -154,7 +145,7 @@ Now try to interpret the other ensembles yourself.
 :align: center
 :width: 600px
 
-Tensor component analysis applied to a mouse navigation experiment.
+Tensor component analysis applied to a mouse navigation experiment {cite:p}`https://doi.org/10.1016/j.neuron.2018.05.015`.
 ```
 
 ## Summary
