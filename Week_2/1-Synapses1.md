@@ -12,12 +12,6 @@ authors: ghosh
 :::
 ---
 
-```{danger} Work in progress
-The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
-
--- Reviewed for style by Dan, not yet reviewed for accuracy by Marcus.
-```
-
 ## Introduction
 
 Last week, we covered how ionic movements enable neurons to generate their resting membrane potential and spikes. 
@@ -36,7 +30,7 @@ Low amounts of input won't raise the membrane potential enough to trigger the op
 
 The solution to prevent this, is to insulate the axon using a fatty substance called '**myelin**'. However, even insulating the whole length may not be enough, so instead, there are blocks of myelin separated by gaps known as '**nodes of Ranvier**'. 
 
-These nodes of Ranvier are rich in voltage-gated channels. These effectively boost the signal as it travels along the axon and generate 'saltatory' or jumping conduction. 
+These nodes of Ranvier are rich in voltage-gated channels. So, effectively boost the signal as it travels along the axon and generate 'saltatory' or jumping conduction. 
 
 ```{figure} figures/Picture1.jpg
 :label: Fig1
@@ -74,9 +68,12 @@ When an [action potential](#action-potential) reaches the axon terminal, the inf
 (exitatory-inhibitory)=
 The neurotransmitters then diffuse across the cleft and bind to the post-synaptic receptors, triggering different effects. As shown in [](#binding), binding causes an ion channel to open and positive ions to flow into the post-synaptic neuron, raising its membrane potential. 
 
-This is known as an **excitatory synapse**, as a pre-synaptic action potential will make the post-synaptic neuron more likely to fire a spike. Conversely, **inhibitory synapses** reduce the post-synaptic neuron's membrane potential, making spiking of action potentials less likely. 
+This is known as an **excitatory synapse**, as a pre-synaptic action potential will make the post-synaptic neuron more likely to fire a spike. Conversely, **inhibitory synapses** reduce the post-synaptic neuron's membrane potential, making spiking / action potentials less likely. 
 
-This signal terminates when some neurotransmitter molecules diffuse away from the cleft. Some of these are broken down by enzymes and some are taken back up into the pre-synaptic neuron.
+This signal terminates when neurotransmitter molecules:
+* Diffuse away from the cleft. 
+* Are broken down by enzymes.
+* Are taken back up into the pre-synaptic neuron.
 
 :::{aside}
 Many drugs used to treat depression work by inhibiting this type of reuptake channel. These are known as selective-serotonin reuptake inhibitors (SSRIs) and a common example is Prozac. 
@@ -87,7 +84,7 @@ Many drugs used to treat depression work by inhibiting this type of reuptake cha
 :width: 500px
 :align: center
 
-Binding
+Schematic showing neurotransmission at an excitatory chemical synapse. 
 ```
 (neurotransmitters-paragraph)=
 ## Neurotransmitters
@@ -96,7 +93,7 @@ Neurotransmitters are molecules synthesized by neurons, which are used to signal
 
 * Glutamate - the main excitatory neurotransmitter in vertebrate nervous systems.
 * GABA - the main inhibitory neurotransmitter.
-* Dopamine - often thought of as a pleasure signal, but it's probably best described as a signaling valence.
+* Dopamine - often thought of as a pleasure signal, but it's probably best described as a signalling valence.
 
 Individual neurons tend to contain and release multiple transmitters. For example, a single neuron may use both GABA and Dopamine. Though in general, neurons release the same set of transmitters at all of their synapses. This is known as **Dale's principle**.
 
@@ -106,14 +103,14 @@ Individual neurons tend to contain and release multiple transmitters. For exampl
 :align: center
 :width: 100%
 
-Chemical structure of glutamate, GABA and dopamine ([source](https://i0.wp.com/www.compoundchem.com/wp-content/uploads/2015/07/Chemical-Structures-of-Neurotransmitters-2015.png?ssl=1)).
+Chemical structure of glutamate, GABA and dopamine ([Adapted from](https://i0.wp.com/www.compoundchem.com/wp-content/uploads/2015/07/Chemical-Structures-of-Neurotransmitters-2015.png?ssl=1)).
 ```
 
 ## Dale's principle
 
 Dale's principle sets up an interesting contrast between biological and artificial neural networks. Biological neurons release the same set of neurotransmitters to all of their partners. 
 
-However in artificial neural networks, single units have both positive and negative output weights, allowing their activation to send different signals to different units.
+However, in artificial neural networks, single units have both positive and negative output weights, allowing their activation to send different signals to different units.
 
 So, is this a limitation of biology or an advantage?
 
@@ -124,7 +121,7 @@ To explore this question, [Cornford et al. (2021)](https://openreview.net/forum
 :width: 500px
 :align: center
 
-ANN model respecting Dale's principle ([Cornford et al. 2021](https://openreview.net/forum?id=eU776ZYxEpz)).
+ANN model respecting Dale's principle. From[Cornford et al. 2021](https://openreview.net/forum?id=eU776ZYxEpz).
 ```
 
 It turns out that these networks are difficult to train with standard gradient descent, and end up performing worse than a standard ANN. You can see this on the [graph below](#Dale's-principle-graph), where the black curve shows the performance of a standard ANN and the green shows a simple implementation of Dale's principle. So, they introduced some corrections and were able to get networks which respect Dale's principle and **match** the performance of standard ANNs. This improved implementation of Dale's principle is shown in red. 
@@ -134,7 +131,7 @@ It turns out that these networks are difficult to train with standard gradient d
 :width: 500px
 :align: center
 
-Implementation of Dale's principle ([Cornford et al. 2021](https://openreview.net/forum?id=eU776ZYxEpz)).
+Test error over training, for: standard ANNs - black, a naive-implementation of Dale's principle - green and an improved version - red. From [Cornford et al. 2021](https://openreview.net/forum?id=eU776ZYxEpz).
 ```
 
 But, as they're only able to match standard ANNs, and no one has shown better results by following Dale's principle. Why neurons tend to follow Dale's principle remains an open question.
@@ -142,7 +139,7 @@ But, as they're only able to match standard ANNs, and no one has shown better re
 (receptors)=
 ## Receptors
 
-Once released, neurotransmitters diffuse across the synaptic cleft, bind receptors embedded in the cell membrane, and trigger effects. There are hundreds of receptors which are specific to different neurotranmitters, but there are just 2 major types:
+Once released, neurotransmitters diffuse across the synaptic cleft, bind receptors embedded in the cell membrane, and trigger effects. There are hundreds of receptors which are specific to different neurotransmitters, but there are just 2 major types:
 
 * **Ionotropic receptors** - receptors where neurotransmitter binding triggers a change in structure, causing an ion channel to open.
 
@@ -151,17 +148,17 @@ Once released, neurotransmitters diffuse across the synaptic cleft, bind recepto
 :width: 250px
 :align: center
 
-Ionotropic receptor ([source](https://www.brainkart.com/article/Ion-Channels---Neurotransmitter-Receptors_24662/)).
+An ionotropic receptor. [From](https://www.brainkart.com/article/Ion-Channels---Neurotransmitter-Receptors_24662/).
 ```
 
-* **Metabotropic receptors** - receptors where binding triggers signaling cascades within the post-synaptic neuron, which may open ion channels or cause other effects.
+* **Metabotropic receptors** - receptors where binding triggers signalling cascades within the post-synaptic neuron, which may open ion channels or cause other effects.
 
 ```{figure} figures/Picture8.jpg
 :label: metabotropic
 :width: 600px
 :align: center
 
-Metabotropic receptor ([source](https://www.brainkart.com/article/Ion-Channels---Neurotransmitter-Receptors_24662/))
+A metabotropic receptor [From](https://www.brainkart.com/article/Ion-Channels---Neurotransmitter-Receptors_24662/).
 ```
 
 Hopefully this has given you a better idea of how synapses work. In the next section, we're going to cover how synapses can adjust their strength or weight, and a few other details.

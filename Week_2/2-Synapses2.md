@@ -12,12 +12,6 @@ authors: ghosh
 :::
 ---
 
-```{danger} Work in progress
-The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
-
--- Reviewed for style by Dan, not yet reviewed for accuracy by Marcus.
-```
-
 ## Introduction
 
 In the [last section](#synapses1-page), we covered [synapses](#chemical-synapses), [neurotransmitters](#neurotransmitters-paragraph), and [receptors](#receptors). 
@@ -36,12 +30,16 @@ As early as 1949 [Donald Hebb](https://en.wikipedia.org/wiki/Donald_O._Hebb) pro
 > "When an axon of cell A is near enough to excite a cell B and repeatedly or persistently takes part in firing it, some growth process or metabolic change takes place in one or both cells such that A’s efficiency, as one of the cells firing B, is increased."
 
 At the time this was just a theory, but experimental evidence confirmed it around 20 years later.
+
 This is often summarised as _'Cells that fire together wire together'_, and conversely _'Cells that fire out of sync lose their link'._
+
 Though this misses the fact that cell A must spike first to contribute to B's firing, therefore the relative timing matters. 
 
 ## Spike timing-dependent plasticity
 
-Let's consider a pair of neurons. In the [figure below](#Synapses2Picture1), panel A illustrates that if the pre-synaptic neuron's spike occurs before or after the post-synaptic neuron, their relationship is causal or acausal. Panel B shows how this synapse's strength (on the y-axis) will be adjusted depending on the difference in spike timing between the two neurons. If the relationship is casual, so 'pre' precedes 'post' the strength will be increased or potentiated (shown in green). While if it is acausal, so 'pre' tends to follow 'post', then the strength will be decreased (shown in red).
+Let's consider a pair of neurons. In the [figure below](#Synapses2Picture1), panel A illustrates that if the pre-synaptic neuron's spike occurs before or after the post-synaptic neuron, their relationship is causal or acausal. 
+
+Panel B shows how this synapse's strength (on the y-axis) will be adjusted depending on the difference in spike timing between the two neurons. If the relationship is casual, so 'pre' precedes 'post' the strength will be increased or potentiated (shown in green). While if it is acausal, so 'pre' tends to follow 'post', then the strength will be decreased (shown in red).
 
 ```{figure} figures/Synapses2Picture1.jpg
 :label: Synapses2Picture1
@@ -57,10 +55,10 @@ So, what changes at the synapse to cause this change in weight?
 
 ## Altering synapses
 
-If we think about the structure of the synapse, then we can see that there are many possibilities for changing the connection strength such as:
+If we think about the structure of the synapse, then we can see that there are many possibilities for changing the connection strength, such as:
 
-* Increasing the number of synaptic vesicles or density of neurotransmitters
-* Increasing the number of post-synaptic receptors
+* Increasing the number of synaptic vesicles or density of neurotransmitters.
+* Increasing the number of post-synaptic receptors.
 * Increasing the surface or even adding an additional synapse between the two neurons.
 
 But these are long-term changes, and synaptic weights can also change on much quicker timescales, on the order of hundreds to thousands of milliseconds. This is known as short-term plasticity.
@@ -70,7 +68,7 @@ But these are long-term changes, and synaptic weights can also change on much qu
 :width: 500px
 :align: center
 
-Schematic diagram of a synapse.
+Schematic diagram of a chemical synapse.
 ```
 
 ## Short-term plasticity
@@ -79,14 +77,16 @@ Short-term plasticity describes how synaptic strength dynamically changes with t
 
 Short-term depression is caused by the lower levels of neurotransmitters available at the synapse, and in an extreme case, it's possible that the synapse will fail to send a signal at all. 
 
-Hence, short-term plasticity shows how a neuron's recent activity and the state of it's synapses influence it's weight dynamically. The fact that synapses will sometimes fail to send a signal may remind you of drop-out in machine learning, though in this case, individual connections are failing, not the entire unit. Yann Le Cun and colleagues explore this difference in a paper discussed below {cite:p}`Wan2013`.
+Hence, short-term plasticity shows how a neuron's recent activity and the state of it's synapses influence it's weight dynamically. 
+
+The fact that synapses will sometimes fail to send a signal may remind you of drop-out in machine learning, though in this case, individual connections are failing, not the entire unit. Yann LeCun and colleagues explored this difference in a paper discussed below {cite:p}`Wan2013`.
 
 ```{figure} figures/Synapses2Picture2.png
 :label: depressionsynapse
 :width: 500px
 :align: center
 
-Short-term depression in a synapse.
+Short-term facilitation and depression at a chemical synapse. 
 ```
 
 ## DropConnect
@@ -94,18 +94,20 @@ Short-term depression in a synapse.
 Just to be explicit:
 
 * Dropout - randomly silence **units** during training, which reduces over-fitting.
-* DropConnect - randomly silence **weights**
+* DropConnect - randomly silence (i.e. set to zero) **weights**.
 
-Just to give you a quick comparison between the two, the [graph below](#Synapses2Picture3) shows the text error on [MNIST](https://en.wikipedia.org/wiki/MNIST_database) as a function of the network size, with the following plots:
+Just to give you a quick comparison between the two, the [graph below](#Synapses2Picture3) shows the test error on [MNIST](https://en.wikipedia.org/wiki/MNIST_database) as a function of the network size, with the following lines:
 
-* No-Drop (black) - the error increases with size as the network increasingly overfit
-* Dropout (red) - the error decreases with size
+* No-Drop (black) - the error increases with size as the network increasingly overfits the training data. 
+* Dropout (red) - the error decreases with size.
 * DropConnect (blue) - the error is lower and more stable.
 
 ```{figure} figures/Synapses2Picture3.png
 :label: Synapses2Picture3
 :width: 500px
 :align: center
+
+Test error as a function of network size for network's trained with Dropout (red), DropConnect (blue) and neither (black). From {cite:p}`Wan2013`.  
 ```
 :::{seealso} For more!
 :class: dropdown 
