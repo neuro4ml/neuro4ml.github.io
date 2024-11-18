@@ -21,31 +21,28 @@ The text below has been transcribed by hand from the video above but has not yet
 
 In this section we're going to talk in a bit more detail about neuromorphic computing. That is, nonstandard computational architectures that mimic some aspect of the way the brain works. That doesn’t have to mean spiking, but a lot of recent approaches do use spiking activity in some form. There have been a lot of approaches to designing neuromorphic computing devices. One review paper included 2,700 references, 66 pages out of an 88 page paper. So there’s no way we can cover everything that has been tried. Instead, we're going to give an overview of some of the most common features, highlighting a few examples, and suggest you go take a look at the extensive literature if you want to know more!
 
-:::{note}
-In this section we'll go into more detail about neuromorphic computing by providing an overview and some examples
-:::
-
 ## Overview
 
 Let’s start with a rough outline of some of the parts that tend to be involved.
-
-At its core, there is some technology to emulate the function of neurons.
-
-That could be an analogue process, where new materials or circuits are designed that can mimic the dynamics of neurons. Or it could be a digital process based either on traditional CPUs, or on newer hardware fully or partially customised to handle simulating neuronal dynamics and spikes. It can also involve a combination of both approaches.
-
-This hardware has to have a way of processing a potentially very large number of incoming spikes, and a common approach is the memristor crossbar array that We’ll talk about later.
-
-There also needs to be a way for a neuron to communicate its spikes to other neurons. There’s a standard protocol for that – the address event representation – and a few different approaches to routing spiking events efficiently to their targets.
-
-Finally, there’s learning. Ideally, this should be done on the neuromorphic device itself for maximal efficiency, but that’s not always easy to arrange and so often training has to be done inefficiently off chip, with only the forward or inference pass done on the chip. As with all learning, there are supervised and unsupervised approaches and both have been tried with different types of neuromorphic device.
 
 ```{figure} figures/ComputingPicture1.png
 :label: overview-model
 :align: center
 :width: 100%
 
-Neuromorphic Computing Overview
+Neuromorphic computing overview.
 ```
+
+At its core, there is some technology to emulate the function of neurons.
+That could be an analogue process, where new materials or circuits are designed that can mimic the dynamics of neurons. Or it could be a digital process based either on traditional CPUs, or on newer hardware fully or partially customised to handle simulating neuronal dynamics and spikes. It can also involve a combination of both approaches.
+
+This hardware has to have a way of processing a potentially very large number of incoming spikes, and a common approach is the memristor crossbar array that we’ll talk about later.
+
+There also needs to be a way for a neuron to communicate its spikes to other neurons. There’s a standard protocol for that – the address event representation (AER) – and a few different approaches to routing spiking events efficiently to their targets.
+
+Finally, there’s learning. Ideally, this should be done on the neuromorphic device itself for maximal efficiency, but that’s not always easy to arrange and so often training has to be done inefficiently off chip, with only the forward or inference pass done on the chip. As with all learning, there are supervised and unsupervised approaches and both have been tried with different types of neuromorphic device.
+
+<!-- DAN READ THROUGH UP TO HERE -->
 
 ## Emulating neurons
 
@@ -59,7 +56,7 @@ A very traditional approach that goes back to the beginning of neuromorphic comp
 :align: center
 :width: 100%
 
-Transistor / Capacitor circuits designed to emulate synaptic dynamics {cite:p}`https://doi.org/10.1162/neco.2007.19.10.2581`.
+Transistor / capacitor circuits designed to emulate synaptic dynamics {cite:p}`https://doi.org/10.1162/neco.2007.19.10.2581`.
 ```
 
 There are also above threshold analogue approaches that are thousands to hundreds of thousands of times faster than biology, and so they can be used for accelerating simulations. On the downside, they tend to have higher currents and more complicated circuit designs.

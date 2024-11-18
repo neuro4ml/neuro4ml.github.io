@@ -108,7 +108,7 @@ project:
     BPTT: Backpropagation Through Time
     2AFC: Two-Alternative Forced Choice
     FPGA: Field Programmable Gate Array
-    AER: Address Event Representation)
+    AER: Address Event Representation
   math:
     '\argmax': '\operatorname{argmax}'
     '\ud': '\mathrm{d}'
