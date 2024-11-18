@@ -1,5 +1,7 @@
 ---
-authors: goodman
+authors:
+    - goodman
+    - bena
 ---
 
 # Neuromorphic sensing and applications

@@ -1,5 +1,7 @@
 ---
-authors: goodman
+authors:
+    - goodman
+    - bena
 ---
 
 # Computing

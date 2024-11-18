@@ -1,5 +1,7 @@
 ---
-authors: goodman
+authors:
+    - goodman
+    - bena
 ---
 
 # Introduction
@@ -11,23 +13,15 @@ authors: goodman
 :::
 ---
 
-```{danger} Work in progress
-The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
-```
-
 ## Introduction
 
-This week we’re going to be talking about neuromorphic computing, which is the use of specialized hardware that either directly mimics brain function or inspired by some aspect of the way the brain computes.
+This week we’re going to be talking about neuromorphic computing, which is the use of specialized hardware that either directly mimics brain function or is inspired by some aspect of the way the brain computes.
 
-A lot of the research for this week’s videos was done by Gabriel Béna who is currently doing a PhD with Dan.
-
-:::{note}
-In this section we'll introduce you to neuromorphic computing
-:::
+A lot of the research for this week’s videos was done by [Gabriel Béna](https://neural-reckoning.org/gabriel_bena.html) who is currently doing a PhD with Dan.
 
 ## Power consumption
 
-Let’s start by talking about one of the major reasons why neuromorphic computing is capturing a lot of attention at the moment - Electrical power consumption.
+Let’s start by talking about one of the major reasons why neuromorphic computing is capturing a lot of attention at the moment - electrical power consumption.
 
 In 2023, ICT is estimated to be using around 10% of the world’s electricity supply, leading to around 2-4% of global CO2 emissions.
 That’s growing at an average rate of around 2 to 3% annually, and so clearly at some point something is going to have to give.
@@ -38,7 +32,7 @@ Part of the growth is due to the increasing demands of machine learning applicat
 :align: center
 :width: 400px
 
-Image of NVIDIA DGX A100 with a power consumption of $6500 W$
+NVIDIA DGX A100 with a power consumption of 6500 W.
 ```
 
 The idea of neuromorphic computing is to take inspiration from the brain which we know is very power efficient.
@@ -49,7 +43,7 @@ The human brain uses at most around 20 W, probably a lot less because that inclu
 :align: center
 :width: 200px
 
-Image of the human brain with a power consumption of $<20 W$
+Human brain: power consumption of $<20$ W.
 ```
 
 Or consider the brain of the honey bee which uses around 10 microwatts, enough to let it do sophisticated navigation, pattern recognition and social communication.
@@ -59,7 +53,7 @@ Or consider the brain of the honey bee which uses around 10 microwatts, enough t
 :align: center
 :width: 100px
 
-Image of a bee with a power consumption of $10 \mu W$
+Bee brain has a power consumption of $10\;\mu$W.
 ```
 
 As an example of how neuromorphic hardware can reduce power consumption, you can see [here](#IBM-SyNAPSE-chip-pic) IBM’s SyNAPSE chip from 2008 that did a video processing task using only 70 milliwatts.
@@ -69,10 +63,10 @@ As an example of how neuromorphic hardware can reduce power consumption, you can
 :align: center
 :width: 400px
 
-Image of IBM’s SyNAPSE chip from 2008 with a power consumption of $70 m W$
+IBM’s SyNAPSE chip from 2008 with a power consumption of $70$ mW.
 ```
 
-## Limitations of Standard Computational Hardware
+## Limitations of standard computational hardware
 
 It’s not only power consumption we can improve on. The standard paradigm of computing is beginning to show its limitations, and neuromorphic computing is one of several ideas that have been proposed to address some of the issues.
 
@@ -83,7 +77,7 @@ One thing we’re already starting to see is the physical limits to the exponent
 :align: center
 :width: 500px
 
-Moore's law
+Moore's law.
 ```
 
 We’re also seeing that very often the bottleneck for accelerating code is memory bandwidth rather than compute. If you’ve done any GPU coding you’ll know that the whole game is about making sure that the massive number of cores get fed with enough data so they aren’t just waiting around. You can also think about mobile devices that don’t have the power budget to run full scale machine learning models. In that case, they become limited by the network bandwidth to communicate with a more powerful server.

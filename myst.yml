@@ -15,6 +15,10 @@ project:
       orcid: https://orcid.org/0000-0002-2428-4605
       url: https://neural-reckoning.org/marcus_ghosh.html
       twitter: marcusghosh
+    - name: Gabriel Béna
+      id: bena
+      orcid: https://orcid.org/0009-0009-2802-4702
+      url: https://neural-reckoning.org/gabriel_bena.html
   github: https://github.com/neuro4ml/neuro4ml.github.io
   exclude:
     - README.md
