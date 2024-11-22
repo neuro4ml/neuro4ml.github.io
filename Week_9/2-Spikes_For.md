@@ -2,7 +2,7 @@
 authors: goodman
 ---
 
-# What are Spikes For?
+# What are spikes For?
 
 [Download the slides here](slides/W9-V1-what-are-spikes-for.pptx)
 
@@ -11,19 +11,11 @@ authors: goodman
 :::
 ---
 
-```{danger} Work in progress
-The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
-```
-
 ## Introduction
 
-One of the most surprising things in neuroscience is that there is this extraordinary method that neurons use to communicate and compute, the discrete action potential, or spike, but we don't know why the brain does this. At a philosophical level, this might be a question without an answer: it just does because that's the path evolution took and it could have taken a different one. That might be true, but we don't know that for sure either.
+One of the most surprising things in neuroscience is that there is this extraordinary method that neurons use to communicate and compute, the discrete action potential, or spike, but we don't know why the brain does this. At a philosophical level, this might be a question without an answer: it just does because that's the path evolution took and it could have taken a different one. That might be true, but we don't know that for sure either. So let's look at some of the ideas in the debate about this.
 
-:::{note}
-In this section, we'll look at some of the ideas in the debate about this.
-:::
-
-## Power and Reliability
+## Power and reliability
 
 The first argument is that the main function of spikes is just that they are an energy efficient mechanism for reliably sending signals along a long wire.
 
@@ -55,11 +47,9 @@ Dan's point of view is that we know that the brain does use spikes, and so we ne
 :label: argument
 :alt: Core Argument
 :align: center
-
-Core Argument
 ```
 
-## Is it Even a Real Argument?
+## Is it even a real argument?
 
 Before we get further into the arguments, it's worth asking if the reason we haven't made progress on the issue is that there's no actual issue.
 
@@ -67,10 +57,9 @@ If we smooth out spike times as a sort of proxy of firing rate, we can see that 
 
 ```{figure} figures/smoothspike.png
 :label: smooth
-:alt: Smoothed Out Spike Times (Window Width 5%)
 :align: center
 
-Smoothed Out Spike Times (Window Width 5%)
+Time varying firing rate with window width 5%.
 ```
 
 [But if we use a narrower window](#win1), that becomes less obvious.
@@ -78,10 +67,9 @@ Smoothed Out Spike Times (Window Width 5%)
 
 ```{figure} figures/narrow.png
 :label: win1
-:alt: Smoothed Out Spike Times (Window Width 1%)
 :align: center
 
-Smoothed Out Spike Times (Window Width 1%)
+Time varying firing rate with window width 1%.
 ```
 
 [Until eventually](#win01) there's no distinction between firing rates and firing times.
@@ -89,15 +77,14 @@ Smoothed Out Spike Times (Window Width 1%)
 
 ```{figure} figures/verynarrow.png
 :label: win01
-:alt: Smoothed Out Spike Times (Window Width 0.1%)
 :align: center
 
-Smoothed Out Spike Times (Window Width 0.1%)
+Time varying firing rate with window width 0.1%.
 ```
 
 So does this mean that we can just ignore the distinction between spike times and firing rates? 
 
-**Not quite.**
+Not quite.
 
 * Firstly, while spikes can tell you everything you need to know about firing rate at any time scale, the reverse isn't true. Only the narrow smoothing windows tell you about the spike times.
 
@@ -117,10 +104,9 @@ The idea is to record some sensory information - [in this case](#whisk) the amou
 
 ```{figure} figures/whisker.png
 :label: whisk
-:alt: Using Whiskers as a Sensory Information Recording
 :align: center
 
-Using Whiskers as a Sensory Information Recording
+Mutual information between spike trains and whisker movements.
 ```
 
 You then do this using either the full set of spike times, or just the spike rates - or counts in [this figure](#stime). Of course, since the timing information tells you the rates or counts, the amount of information must be at least as large, but the finding here is that it's much larger. Knowing the spike times tells you almost twice as much as knowing the counts alone. And this is a finding that has been found many times in different sensory modalities and different species.
@@ -130,7 +116,7 @@ You then do this using either the full set of spike times, or just the spike rat
 :alt: Spike Rates (Counts) Results
 :align: center
 
-Spike Rates (Counts) Results
+Information contained in spike rates versus spike timing.
 ```
 
 At first this looks like a knock down argument in favour of spike timing, but it's not quite as clear cut as that:
@@ -154,7 +140,7 @@ But by contrast if you repeatedly show an animal the same stimulus you often get
 :align: center
 :width: 500px
 
-Spike Timing Results from Same Stimuli {cite:p}`https://doi.org/10.1523/JNEUROSCI.18-10-03870.1998`.
+Spike timing is not reproducible across trials {cite:p}`https://doi.org/10.1523/JNEUROSCI.18-10-03870.1998`.
 ```
 However, you wouldn't necessarily see obviously reproducible spike timing patterns. [Here](#ranko) are two spike timing codes that give rise to histograms that are indistinguishable at a glance from one with no meaningful spike times. On the top row you see the spikes ordered so that four of the neurons have a special relationship to each other in terms of their timing. On the left they all have the same time plus or minus a bit of noise. On the right that are in a fixed order relative to each other. However, if you randomly shuffle the order that you plot them or compute the histogram of spike times, you don't see anything resembling a spike timing code.
 
@@ -167,7 +153,7 @@ A rank order code is a bit tricky to work with and implies a lot of constraints 
 
 The next argument is that if coincidence were an important part of the neural code, we would expect to see high pairwise correlations between neurons' spike trains, which we don't see in recordings. It's true that we would expect to see correlations, but it's a surprising fact that a spike timing code doesn't need them to be high. In fact, input correlations that are so small as to be indistinguishable from noise can have a huge effect on downstream neural firing.
 
-[Cyrille Rossant and colleagues](https://doi.org/10.1523/JNEUROSCI.2482-11.2011) generated simulated input spike trains with pairwise correlations varying from 0 to 0.01, injected those spikes as input currents into cortical neurons, and then [measured the output neuron firing rate](#strain). As you can see, the neurons were incredibly sensitive to even these tiny differences in correlation. In the case of neuron C1 its firing rate increased from zero to almost 10 spikes per second.
+{cite:t}`https://doi.org/10.1523/JNEUROSCI.2482-11.2011` generated simulated input spike trains with pairwise correlations varying from 0 to 0.01, injected those spikes as input currents into cortical neurons, and then [measured the output neuron firing rate](#strain). As you can see, the neurons were incredibly sensitive to even these tiny differences in correlation. In the case of neuron C1 its firing rate increased from zero to almost 10 spikes per second.
 
 ```{figure} figures/spiketrain.png
 :label: strain
@@ -175,7 +161,7 @@ The next argument is that if coincidence were an important part of the neural co
 :align: center
 :width: 500px
 
-Output Neuron Firing Rate {cite:p}`https://doi.org/10.1523/JNEUROSCI.2482-11.2011`.
+Output firing rate is sensitive to tiny correlations in real neurnons {cite:p}`https://doi.org/10.1523/JNEUROSCI.2482-11.2011`.
 ```
 
 They also checked that the same thing can be [seen in a leaky integrate-and-fire neuron](#strainLIF).
@@ -186,7 +172,7 @@ They also checked that the same thing can be [seen in a leaky integrate-and-fire
 :align: center
 :width: 300px
 
-Output Neuron Firing Rate {cite:p}`https://doi.org/10.1523/JNEUROSCI.2482-11.2011`.
+Output firing rate is sensitive to tiny correlations in simulated neurons {cite:p}`https://doi.org/10.1523/JNEUROSCI.2482-11.2011`.
 ```
 
 So the fact that we don't see huge correlations in spike trains doesn't mean that timing information isn't critical to network functioning. In fact, we can go further than this. You can argue that regardless of whether or not the code is timing or rate based, you'd expect to see low correlations and individual spike train statistics consistent with them being generated by a Poisson process that has no meaningful timing information. 
@@ -215,5 +201,5 @@ There's more to these arguments than this little sketch of course, but you can b
 If we had to guess right now we'd say the most likely is that the brain primarily uses spiking to reduce resources, both energy and space, and that the optimal way to learn with minimal data will turn out to be neither spikes nor rates, but something we haven't imagined yet. Maybe one of you will discover it?
 
 :::{seealso} That's it!
-That's all for this week and well done on reaching the end of the course! We hope you enjoyed it and built an interest in neuroscience and how it can be used in Machine Learning.
+That's all for this week and well done on reaching the end of the course! We hope you enjoyed it and built an interest in neuroscience and how it might help us to understand intelligence more widely. ❤️
 :::
