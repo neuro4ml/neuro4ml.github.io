@@ -14,7 +14,7 @@ authors: ghosh
 
 ## Introduction
 
-Last week, we covered how ionic movements enable neurons to generate their resting membrane potential and spikes. 
+Last week, we covered how ionic movements enable neurons to generate their resting membrane potential and spikes. 
 
 :::{note}
 In this section we're going to cover how neurons signal to each other, starting from our [single neuron diagram](#fig1).
@@ -22,13 +22,13 @@ In this section we're going to cover how neurons signal to each other, starting 
 
 ## Saltatory conduction
 
-Inputs at the [neurons dendrites](#neuron-dendrites) cause sodium channels to open.
+Inputs at the [neurons dendrites](#neuron-dendrites) cause sodium channels to open.
 
-Following their [concentration gradient](#gradients), these [ions diffuse into the cell](#restingpotential), and spread along the dendrites to the soma and the axon hillock – an area rich with voltage-gated channels.
+Following their [concentration gradient](#gradients), these [ions diffuse into the cell](#restingpotential), and spread along the dendrites to the soma and the axon hillock - an area rich with voltage-gated channels.
 
-Low amounts of input won't raise the membrane potential enough to trigger the opening of these channels (remember the gate threshold from [last time](#spikes)), but large amounts of input may, in which case more sodium will flow into the neuron and then begin to diffuse down the axon. However, without any help, this signal would dissipate and be lost as it travels the length of the axon. 
+Low amounts of input won't raise the membrane potential enough to trigger the opening of these channels (remember the gate threshold from [last time](#spikes)), but large amounts of input may, in which case more sodium will flow into the neuron and then begin to diffuse down the axon. However, without any help, this signal would dissipate and be lost as it travels the length of the axon. 
 
-The solution to prevent this, is to insulate the axon using a fatty substance called '**myelin**'. However, even insulating the whole length may not be enough, so instead, there are blocks of myelin separated by gaps known as '**nodes of Ranvier**'. 
+The solution to prevent this, is to insulate the axon using a fatty substance called '**myelin**'. However, even insulating the whole length may not be enough, so instead, there are blocks of myelin separated by gaps known as '**nodes of Ranvier**'. 
 
 These nodes of Ranvier are rich in voltage-gated channels. So, effectively boost the signal as it travels along the axon and generate 'saltatory' or jumping conduction. 
 
@@ -40,7 +40,7 @@ These nodes of Ranvier are rich in voltage-gated channels. So, effectively boost
 Schematic diagram of a single neuron.
 ```
 
-So what happens once this signal reaches the neuron's axon terminals? 
+So what happens once this signal reaches the neuron's axon terminals? 
 
 (chemical-synapses)=
 ## Chemical synapses
@@ -68,7 +68,7 @@ When an [action potential](#action-potential) reaches the axon terminal, the inf
 (exitatory-inhibitory)=
 The neurotransmitters then diffuse across the cleft and bind to the post-synaptic receptors, triggering different effects. As shown in [](#binding), binding causes an ion channel to open and positive ions to flow into the post-synaptic neuron, raising its membrane potential. 
 
-This is known as an **excitatory synapse**, as a pre-synaptic action potential will make the post-synaptic neuron more likely to fire a spike. Conversely, **inhibitory synapses** reduce the post-synaptic neuron's membrane potential, making spiking / action potentials less likely. 
+This is known as an **excitatory synapse**, as a pre-synaptic action potential will make the post-synaptic neuron more likely to fire a spike. Conversely, **inhibitory synapses** reduce the post-synaptic neuron's membrane potential, making spiking / action potentials less likely. 
 
 This signal terminates when neurotransmitter molecules:
 * Diffuse away from the cleft. 
@@ -76,7 +76,7 @@ This signal terminates when neurotransmitter molecules:
 * Are taken back up into the pre-synaptic neuron.
 
 :::{aside}
-Many drugs used to treat depression work by inhibiting this type of reuptake channel. These are known as selective-serotonin reuptake inhibitors (SSRIs) and a common example is Prozac. 
+Many drugs used to treat depression work by inhibiting this type of reuptake channel. These are known as selective-serotonin reuptake inhibitors (SSRIs) and a common example is Prozac. 
 :::
 
 ```{figure} figures/Picture3.png
@@ -99,7 +99,7 @@ Individual neurons tend to contain and release multiple transmitters. For exampl
 
 ```{figure} figures/Picture4.png
 :label: neurotransmitters-image
-:alt: https://i0.wp.com/www.compoundchem.com/wp-content/uploads/2015/07/Chemical-Structures-of-Neurotransmitters-2015.png?ssl=1 
+:alt: https://i0.wp.com/www.compoundchem.com/wp-content/uploads/2015/07/Chemical-Structures-of-Neurotransmitters-2015.png?ssl=1 
 :align: center
 :width: 100%
 
@@ -114,7 +114,7 @@ However, in artificial neural networks, single units have both positive and nega
 
 So, is this a limitation of biology or an advantage?
 
-To explore this question, [Cornford et al. (2021)](https://openreview.net/forum?id=eU776ZYxEpz) built ANNs in which each unit was either excitatory or inhibitory. Shown below in pink and blue. 
+To explore this question, [Cornford et al. (2021)](https://openreview.net/forum?id=eU776ZYxEpz) built ANNs in which each unit was either excitatory or inhibitory. Shown below in pink and blue. 
 
 ```{figure} figures/Picture5.png
 :label: ANNs
@@ -124,7 +124,7 @@ To explore this question, [Cornford et al. (2021)](https://openreview.net/forum
 ANN model respecting Dale's principle. From[Cornford et al. 2021](https://openreview.net/forum?id=eU776ZYxEpz).
 ```
 
-It turns out that these networks are difficult to train with standard gradient descent, and end up performing worse than a standard ANN. You can see this on the [graph below](#Dale's-principle-graph), where the black curve shows the performance of a standard ANN and the green shows a simple implementation of Dale's principle. So, they introduced some corrections and were able to get networks which respect Dale's principle and **match** the performance of standard ANNs. This improved implementation of Dale's principle is shown in red. 
+It turns out that these networks are difficult to train with standard gradient descent, and end up performing worse than a standard ANN. You can see this on the [graph below](#Dale's-principle-graph), where the black curve shows the performance of a standard ANN and the green shows a simple implementation of Dale's principle. So, they introduced some corrections and were able to get networks which respect Dale's principle and **match** the performance of standard ANNs. This improved implementation of Dale's principle is shown in red. 
 
 ```{figure} figures/Picture6.png
 :label: Dale's-principle-graph

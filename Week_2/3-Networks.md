@@ -60,9 +60,9 @@ In a second pathway [(on the left of the image)](#cerebellum-pic), the climbing 
 
 As you can also see from the [image](#cerebellum-pic), there are other interesting connections in the circuit too, such as the direct connections from both input pathways (the mossy and climbing fibres) to the outputs (the deep cerebellar nuclei).
 
-So how can we think about or model this network's function? 
+So how can we think about or model this network's function? 
 
-Models have been proposed for over 50 years, but one simplified way to think about it is as a three-layer network with the two pathways we just discussed. Inputs arrive via the mossy fibers, which connects to both the first and third layers, the granule and nucleus cells. Then there are feedforward connections through network and the third layer generates output predictions. These outputs are then compared to input observations, and the difference between the two is fed back to the network as an error signal, via the climbing fiber pathway (shown in red in the [images below](#networks-model)).
+Models have been proposed for over 50 years, but one simplified way to think about it is as a three-layer network with the two pathways we just discussed. Inputs arrive via the mossy fibers, which connects to both the first and third layers, the granule and nucleus cells. Then there are feedforward connections through network and the third layer generates output predictions. These outputs are then compared to input observations, and the difference between the two is fed back to the network as an error signal, via the climbing fiber pathway (shown in red in the [images below](#networks-model)).
 
 ```{figure} figures/NetworksPicture3.jpg
 :label: networks-model
@@ -91,7 +91,7 @@ Here for example, are three neurons firing rates (in spikes per second) as a fun
 Neurons "tuned" to head direction {cite:p}`https://doi.org/10.1523/JNEUROSCI.10-02-00420.1990`.
 ```
 
-This and later work would show that, as a population, neurons evenly tile the space of heading directions, and the activity of these cells depends on both visual and vestibular (balance) inputs.
+This and later work would show that, as a population, neurons evenly tile the space of heading directions, and the activity of these cells depends on both visual and vestibular (balance) inputs.
 
 (ring-attractor)=
 ## Ring attractors
@@ -106,16 +106,16 @@ One team proposed an attractor model in 1995, which they drew as a series of rin
 A ring attractor model for heading direction ([Skaggs et al. 1995](https://pubmed.ncbi.nlm.nih.gov/11539168/)).
 ```
 
-There are lots of details, but the most salient one is that there are strong excitatory connections between neighbouring head direction cells, and strong inhibitory connections between distant cells. This means that there will be just one cluster of active cells at any time, and either visual or vestibular inputs to the head direction cells will cause the peak to shift around the ring. 
+There are lots of details, but the most salient one is that there are strong excitatory connections between neighbouring head direction cells, and strong inhibitory connections between distant cells. This means that there will be just one cluster of active cells at any time, and either visual or vestibular inputs to the head direction cells will cause the peak to shift around the ring. 
 
-Interestingly they thought of this as a somewhat abstract model, and wrote: 
+Interestingly they thought of this as a somewhat abstract model, and wrote: 
 
 > "It is helpful to think of the network as a set of circular layers; this does not reflect the anatomical organization of the corresponding cells in the brain"
 
 Though recently experiments in fruit-flies revealed a group of neurons arranged in a ring, with a single bump of activity which tracks the fruit-flies heading direction.
 
-[](https://doi.org/10.1038/nature14446) essentially have a fruit-fly walk on a rotating treadmill while the fly watches a screen with landmarks on – the blue ring in panel A on the [figure below](#fruit-flies-experiment).
-They're also recording the fly's brain activity, which is shown in the black and red boxes [below](#fruit-flies-experiment). The recording technique used will be explained later in the course, but for now it's enough to know that red indicates more neural activity. What you can hopefully see is that there is a single bump of activity, which rotates around the ring as the fly navigates around. The panels below, [D and E](#fruit-flies-experiment), show that this bump accurately tracks the flies heading direction.
+[](https://doi.org/10.1038/nature14446) essentially have a fruit-fly walk on a rotating treadmill while the fly watches a screen with landmarks on - the blue ring in panel A on the [figure below](#fruit-flies-experiment).
+They're also recording the fly's brain activity, which is shown in the black and red boxes [below](#fruit-flies-experiment). The recording technique used will be explained later in the course, but for now it's enough to know that red indicates more neural activity. What you can hopefully see is that there is a single bump of activity, which rotates around the ring as the fly navigates around. The panels below, [D and E](#fruit-flies-experiment), show that this bump accurately tracks the flies heading direction.
 
 ```{figure} figures/NetworksPicture6.png
 :label: fruit-flies-experiment

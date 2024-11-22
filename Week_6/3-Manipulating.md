@@ -76,7 +76,7 @@ Some of these light-gated proteins are genetically engineered, but some occur na
 
 For example:
 
-* Channelrhodopsin – shown on the [left of this figure](#reversible-pic). Is an ion channel which, when exposed to blue light, changes its structure and allows positive ions to flow into neurons, increasing their membrane potential and spiking activity. 
+* Channelrhodopsin - shown on the [left of this figure](#reversible-pic). Is an ion channel which, when exposed to blue light, changes its structure and allows positive ions to flow into neurons, increasing their membrane potential and spiking activity. 
 * In contrast, the proteins shown on the [right](#reversible-pic) [Halorhodopsin and Archaerhodopsin] respond to yellow light by either moving chloride ions into the neuron or moving hydrogen ions out, both of which will decrease the neurons membrane potential and spiking activity. 
 
 So, by expressing these channels in neurons and then triggering them with light we can study neurons roles by reversibly activating or silencing them. 
@@ -97,8 +97,8 @@ For example, in {cite:t}`https://doi.org/10.1371/journal.pcbi.1010250` the autho
 
 Their evolved network is [shown here](#single-lesions-pic1):
 
-* On the left are the networks 12 input nodes – which receive a compressed version of the video game. 
-* On the right are the networks 6 output nodes – which encode actions like move left, move right, and fire.
+* On the left are the networks 12 input nodes - which receive a compressed version of the video game. 
+* On the right are the networks 6 output nodes - which encode actions like move left, move right, and fire.
 * And then in between is a single hidden node and many connections whose weights are color-coded. 
 
 ```{figure} figures/manipulatingPicture2.png
@@ -110,9 +110,9 @@ A neural network evolved to play space invaders {cite:p}`https://doi.org/10.1371
 ```
 
 To manipulate their network they then silenced each node one-by-one and checked how well the network performed with each node silenced individually.
-[This figure](#single-lesions-pic2) shows their results: the y-axis shows the networks score – with higher being better. For comparison, the blue stripe shows the networks normal performance, and the red stripe shows it's performance if you shuffle its weights.
+[This figure](#single-lesions-pic2) shows their results: the y-axis shows the networks score - with higher being better. For comparison, the blue stripe shows the networks normal performance, and the red stripe shows it's performance if you shuffle its weights.
 
-On the [left of the figure](#single-lesions-pic2), each point on the x-axis corresponds to silencing a single node, and you can see that ablating different nodes leads to different scores – which implies that some nodes are more important for the task than others. And interestingly you can also see that ablating two of the nodes, increases the networks score; suggesting they hinder the network.
+On the [left of the figure](#single-lesions-pic2), each point on the x-axis corresponds to silencing a single node, and you can see that ablating different nodes leads to different scores - which implies that some nodes are more important for the task than others. And interestingly you can also see that ablating two of the nodes, increases the networks score; suggesting they hinder the network.
 
 On the [right of the figure](#single-lesions-pic2), the authors also silence every weight in turn and study the effect on performance, and interestingly their results suggest that many weights could be removed without much effect.
 

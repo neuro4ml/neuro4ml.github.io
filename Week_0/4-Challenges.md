@@ -56,9 +56,9 @@ The training was a little faster, but it actually capped out at a lower performa
 
 ## Generalisation and re-use
 
-One of the reasons for this is that humans have a lot of knowledge they can call on and use in new scenarios, and machine learning methods still lag behind in this – although progress is fast.
+One of the reasons for this is that humans have a lot of knowledge they can call on and use in new scenarios, and machine learning methods still lag behind in this - although progress is fast.
 
-To illustrate this, in 2016 the company Vicarious – later bought by Google – had an interesting analysis of the game Breakout.
+To illustrate this, in 2016 the company Vicarious - later bought by Google - had an interesting analysis of the game Breakout.
 
 You know the game where the ball bounces around, and you control the paddle that moves left and right and you have to destroy all the coloured bricks at the top by hitting them with a ball.
 

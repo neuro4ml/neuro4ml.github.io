@@ -52,7 +52,7 @@ A Brunsviga hand cranked mechanical calculator as used by Hodgkin and Huxley to 
 ```
 ````
 
-By hand – quite literally as they used a hand cranked mechanical calculator to solve the equations over several weeks – they found a series of functions that approximated these dynamics quite well.
+By hand - quite literally as they used a hand cranked mechanical calculator to solve the equations over several weeks - they found a series of functions that approximated these dynamics quite well.
 
 ```{math}
 :label: model2
@@ -95,7 +95,7 @@ Further reading:
 
 ## Spatial / Multicompartamental Neuron
 
-One thing we've totally ignored so far in all the models we've talked about is that neurons have a very complex spatial structure, with dendrites and axons and – as you can see in the [picture](#gif) – activity that travels around the cell.
+One thing we've totally ignored so far in all the models we've talked about is that neurons have a very complex spatial structure, with dendrites and axons and - as you can see in the [picture](#gif) - activity that travels around the cell.
 
 ```{figure} figures/neurongif.gif
 :label: gif

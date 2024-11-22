@@ -24,21 +24,21 @@ In this section, we'll give an outline of the general structure of this course, 
 
 Part 1 is about the structure of the brain, how it's composed of brain cells called neurons, connected via synapses, and divided into different regions. We'll also talk about how these cells communicate and compute with these signals, and the models we use to try to understand this.
 
-### Part 2 – Learning in brain and machine
+### Part 2 - Learning in brain and machine
 
 * Learning rules
-* Training “spiking” neural networks
+* Training "spiking" neural networks
 
 In part 2, we'll focus specifically on learning. What we know about how learning happens in the brain, some models of this, and how those models might relate to learning in machines.
 
-### Part 3 – Theoretical approaches
+### Part 3 - Theoretical approaches
 
 * Understanding neural networks
 * Various topics
 
 Part 3 of the course is about some of the theories that have been proposed about how the brain puts all these mechanisms together. We'll start from some methodological approaches to how you might go about understanding the brain. These also apply to understanding an artificial neural network. Then we'll look at some theories of how the brain might be solving some particular sorts of tasks.
 
-### Part 4 – Future developments
+### Part 4 - Future developments
 
 * Neuromorphic computing
 * Recent developments

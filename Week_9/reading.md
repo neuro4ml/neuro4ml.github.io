@@ -4,7 +4,7 @@
 * [Scala et al. (2023) "Phenotypic variation of transcriptomic cell types in mouse motor cortex"](https://doi.org/10.1038/s41586-020-2907-3)
 * [Jun et al. (2017) "Fully integrated silicon probes for high-density recording of neural activity"](https://doi.org/10.1038/nature24636)
 * [Steinmetz et al. (2021) "Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings"](https://doi.org/10.1126/science.abf4588)
-* [Lazebnik (2002) "Can a biologist fix a radio?—Or, what I learned while studying apoptosis"](https://doi.org/10.1016/S1535-6108(02)00133-2)
+* [Lazebnik (2002) "Can a biologist fix a radio? Or, what I learned while studying apoptosis"](https://doi.org/10.1016/S1535-6108(02)00133-2)
 * [Jonas & Kording (2017) "Could a Neuroscientist Understand a Microprocessor?"](https://doi.org/10.1371/journal.pcbi.1005268)
 
 ## What are spikes for?

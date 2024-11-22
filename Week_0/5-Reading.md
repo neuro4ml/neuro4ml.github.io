@@ -10,7 +10,7 @@
 * [McCulloch and Pitts (1943) "A logical calculus of the ideas immanent in nervous activity"](https://doi.org/10.1007/BF02478259)
 * [Von Neumann (1945) "First draft of a report on the EDVAC"](https://library.si.edu/digital-library/book/firstdraftofrepo00vonn)
 * [Rosenblatt (1958) "The perceptron: A probabilistic model for information storage and organization in the brain"](https://doi.org/10.1037/h0042519)
-* [Goodman et al. (2013) “Decoding neural responses to temporal cues for sound localization”](https://elifesciences.org/articles/01312)
+* [Goodman et al. (2013) "Decoding neural responses to temporal cues for sound localization"](https://elifesciences.org/articles/01312)
 * [Minsky and Papert (1969) "Perceptrons: An Introduction to Computational Geometry"](https://doi.org/10.7551/mitpress/11301.001.0001)
 * [Larsen et al. (2022) "Towards a more general understanding of the algorithmic utility of recurrent connections"](https://doi.org/10.1371%2Fjournal.pcbi.1010227)
 * [Rumelhart et al. (1986) "Learning representations by back-propagating errors"](https://doi.org/10.1038/323533a0)

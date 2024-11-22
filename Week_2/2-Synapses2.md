@@ -25,15 +25,15 @@ In this section, we're going to cover how synapses can adjust their strength and
 
 In general, we train artificial neural networks by adjusting their connection weights according to a learning rule, but what is the equivalent in biology?
 
-As early as 1949 [Donald Hebb](https://en.wikipedia.org/wiki/Donald_O._Hebb) proposed a relevantly simple learning rule: 
+As early as 1949 [Donald Hebb](https://en.wikipedia.org/wiki/Donald_O._Hebb) proposed a relevantly simple learning rule: 
 
-> "When an axon of cell A is near enough to excite a cell B and repeatedly or persistently takes part in firing it, some growth process or metabolic change takes place in one or both cells such that A's efficiency, as one of the cells firing B, is increased."
+> "When an axon of cell A is near enough to excite a cell B and repeatedly or persistently takes part in firing it, some growth process or metabolic change takes place in one or both cells such that A's efficiency, as one of the cells firing B, is increased."
 
-At the time this was just a theory, but experimental evidence confirmed it around 20 years later.
+At the time this was just a theory, but experimental evidence confirmed it around 20 years later.
 
 This is often summarised as _'Cells that fire together wire together'_, and conversely _'Cells that fire out of sync lose their link'._
 
-Though this misses the fact that cell A must spike first to contribute to B's firing, therefore the relative timing matters. 
+Though this misses the fact that cell A must spike first to contribute to B's firing, therefore the relative timing matters. 
 
 ## Spike timing-dependent plasticity
 
@@ -73,11 +73,11 @@ Schematic diagram of a chemical synapse.
 
 ## Short-term plasticity
 
-Short-term plasticity describes how synaptic strength dynamically changes with the level of presynaptic activity. Broadly, short-term facilitation is caused by the higher levels of calcium at the axon terminal after spiking, which increase the probability of neurotransmitter release. 
+Short-term plasticity describes how synaptic strength dynamically changes with the level of presynaptic activity. Broadly, short-term facilitation is caused by the higher levels of calcium at the axon terminal after spiking, which increase the probability of neurotransmitter release. 
 
-Short-term depression is caused by the lower levels of neurotransmitters available at the synapse, and in an extreme case, it's possible that the synapse will fail to send a signal at all. 
+Short-term depression is caused by the lower levels of neurotransmitters available at the synapse, and in an extreme case, it's possible that the synapse will fail to send a signal at all. 
 
-Hence, short-term plasticity shows how a neuron's recent activity and the state of it's synapses influence it's weight dynamically. 
+Hence, short-term plasticity shows how a neuron's recent activity and the state of it's synapses influence it's weight dynamically. 
 
 The fact that synapses will sometimes fail to send a signal may remind you of drop-out in machine learning, though in this case, individual connections are failing, not the entire unit. Yann LeCun and colleagues explored this difference in a paper discussed below {cite:p}`Wan2013`.
 

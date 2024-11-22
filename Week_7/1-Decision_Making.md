@@ -133,7 +133,7 @@ The log of a product is the sum of the logs.
     \log\textcolor{#a503fc}{r(X)}=\sum_{t}\log\frac{P(X_t|D=R)}{P(X_t|D=L)}
 ```
 
-And we'll write the individual terms as the “evidence at time $t$” $\epsilon(X_t)$.
+And we'll write the individual terms as the "evidence at time $t$" $\epsilon(X_t)$.
 
 ```{math}
      \log\textcolor{#a503fc}{r(X)}=\sum_{t}\epsilon(X_t)

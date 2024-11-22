@@ -176,5 +176,5 @@ Distinguishing between faces and motorcycles visual classification task {cite:p}
 OK, that's enough for these limited gradient approaches. As usual, this section has only scratched the surface, and it's still a very active area of research.
 
 :::{seealso} That's it!
-In the next section, we'll talk about how to train spiking neural networks with the surrogate gradient method
+In the next section, we'll talk about how to train spiking neural networks with the surrogate gradient method
 :::

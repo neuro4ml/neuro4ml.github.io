@@ -111,7 +111,7 @@ Expanding out $\mathbf{\dot{w}}$, we get this:
 \langle \bold{x} y - y^2 \bold{w} \rangle = 0
 ```
 
-Replacing $y$ with either $\bold{w}^\intercal \bold{x}$ or $\bold{x}^\intercal \bold{w}$ you get [this](#expanded-eq) – you'll see why we did it like this in a moment.
+Replacing $y$ with either $\bold{w}^\intercal \bold{x}$ or $\bold{x}^\intercal \bold{w}$ you get [this](#expanded-eq) - you'll see why we did it like this in a moment.
 
 (expanded-eq)=
 ```{math}

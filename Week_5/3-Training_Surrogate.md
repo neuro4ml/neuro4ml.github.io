@@ -223,9 +223,9 @@ The first is that despite making it feasible to train spiking neural networks at
 
 To get a feeling for this, let's say we have $N$ neurons, fully connected to each other, and we run the network for $T$ time steps.
 
-The algorithm will use $𝑂(𝑁^2)$ computation time per simulation time step.
+The algorithm will use $O(N^2)$ computation time per simulation time step.
 
-It will also take $𝑂(𝑁𝑇)$ storage space. This is the real killer because if you want to run these algorithms fast, you want to run them on a GPU, and this means you are very limited in terms of how much RAM you have available. You're essentially making a copy of the complete network state for every time step of the simulation, which racks up fast. For a time step of 1 millisecond, you're making 1000 copies of the network state per second of simulated time.
+It will also take $O(NT)$ storage space. This is the real killer because if you want to run these algorithms fast, you want to run them on a GPU, and this means you are very limited in terms of how much RAM you have available. You're essentially making a copy of the complete network state for every time step of the simulation, which racks up fast. For a time step of 1 millisecond, you're making 1000 copies of the network state per second of simulated time.
 
 ### Hard to initialise well
 
@@ -252,7 +252,7 @@ The idea was to start from [the standard leaky integrate-and-fire neuron equatio
 
 The results from this were really neat:
 
-* We get a big improvement in performance, especially for temporally complex datasets like the [Heidelberg digits dataset](https://zenkelab.org/resources/spiking-heidelberg-datasets-shd/) we saw before. We get this for a tiny increase in the number of parameters, because we've only added one new trainable parameter per neuron, which is $𝑂(𝑁)$, and not increased the number of synaptic weights, of which there are $𝑂(𝑁^2)$.
+* We get a big improvement in performance, especially for temporally complex datasets like the [Heidelberg digits dataset](https://zenkelab.org/resources/spiking-heidelberg-datasets-shd/) we saw before. We get this for a tiny increase in the number of parameters, because we've only added one new trainable parameter per neuron, which is $O(N)$, and not increased the number of synaptic weights, of which there are $O(N^2)$.
 
 * The method was more robust when tested out of the distribution of the training set.
 

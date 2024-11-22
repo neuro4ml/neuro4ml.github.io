@@ -32,7 +32,7 @@ Just as for artificial neural networks, spiking neural networks are universal fu
 This has been proven in various ways by different people over the years, but we're going to highlight a particularly nice and simple proof by Iulia Comșa at Google Research.
 
 :::{margin}
-She gave a great talk about this at a conference Dan co-organised called [SNUFA](https://snufa.net), which stands for “spiking neural networks as universal function approximators. If you like this course, you might find the research presented there interesting too, and it's all available to watch on [YouTube](https://youtu.be/rk9AJ0w1mrw?si=_VlRXOQInIaWWMnY&t=1175).
+She gave a great talk about this at a conference Dan co-organised called [SNUFA](https://snufa.net), which stands for "spiking neural networks as universal function approximators. If you like this course, you might find the research presented there interesting too, and it's all available to watch on [YouTube](https://youtu.be/rk9AJ0w1mrw?si=_VlRXOQInIaWWMnY&t=1175).
 :::
 
 Her paper {cite:p}`https://doi.org/10.48550/arXiv.1907.13223` starts by showing that you can implement the less than and greater than operators using spiking neurons. We'll do a similar thing in this week's exercise.
@@ -271,7 +271,7 @@ $$\hat{\theta} = \frac{\sum_i x_i \theta_i}{\sum_i x_i}$$
 
 :::{hint} For more
 :class: dropdown
-We'd recommend the [theoretical neuroscience textbook](https://mitpress.mit.edu/9780262041997/theoretical-neuroscience/) by Dayan and Abbott ([free pdf](https://boulderschool.yale.edu/sites/default/files/files/DayanAbbott.pdf)), or since that's out of print, a more recent book [“Bayesian models of perception and action”](https://mitpress.mit.edu/9780262047593/bayesian-models-of-perception-and-action/) by Wei Ji Ma and colleagues, available [free online](http://www.cns.nyu.edu/malab/bayesianbook.html).
+We'd recommend the [theoretical neuroscience textbook](https://mitpress.mit.edu/9780262041997/theoretical-neuroscience/) by Dayan and Abbott ([free pdf](https://boulderschool.yale.edu/sites/default/files/files/DayanAbbott.pdf)), or since that's out of print, a more recent book ["Bayesian models of perception and action"](https://mitpress.mit.edu/9780262047593/bayesian-models-of-perception-and-action/) by Wei Ji Ma and colleagues, available [free online](http://www.cns.nyu.edu/malab/bayesianbook.html).
 :::
 
 ## Single neuron and Population Sensitivity

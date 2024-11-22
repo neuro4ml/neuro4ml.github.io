@@ -27,8 +27,8 @@ High definition video at 30 fps generates about 178 megabytes per second of data
 \end{gather}
 ```
 
-That’s not too bad, but when we move to ultra high def with high dynamic range we’re now talking about 7 gigabytes per second.
-On low power devices, that’s very problematic!
+That's not too bad, but when we move to ultra high def with high dynamic range we're now talking about 7 gigabytes per second.
+On low power devices, that's very problematic!
 
 ```{math}
 \begin{gather}
@@ -38,7 +38,7 @@ On low power devices, that’s very problematic!
 \end{gather}
 ```
 
-Event cameras are one solution to this problem. They noted that most pixels don’t change very much in a scene from frame to frame. That’s also the basis of video compression algorithms. Event cameras take this to the level of sensing. They only transmit an event $(x,y,p)$ when the underlying pixel $(x,y)$ changes luminosity with sign $p$.
+Event cameras are one solution to this problem. They noted that most pixels don't change very much in a scene from frame to frame. That's also the basis of video compression algorithms. Event cameras take this to the level of sensing. They only transmit an event $(x,y,p)$ when the underlying pixel $(x,y)$ changes luminosity with sign $p$.
 
 These images are from the dynamic vision sensor gesture dataset, and give you an idea of what the output of these cameras looks like.
 
@@ -49,7 +49,7 @@ These images are from the dynamic vision sensor gesture dataset, and give you an
 ![](figures/sensingPicture3.gif)
 
 In addition to hugely reducing the amount of data transfer needed, it also has another nice effect. Instead of running at 60 frames per second we can run at the equivalent of thousands of frames per second with a much larger dynamic range.
-The bad side is that the algorithm design is much harder, as we’ve seen throughout this course.
+The bad side is that the algorithm design is much harder, as we've seen throughout this course.
 
 ## Application: image deblurring by Prophesée
 
@@ -65,7 +65,7 @@ They then use this to remove blur from the pixels that change fastest, and get a
 
 ## Other neuromorphic sensing devices
 
-Vision isn’t the only sense that has a corresponding neuromorphic version.
+Vision isn't the only sense that has a corresponding neuromorphic version.
 There are auditory sensors, for example you can see [here](#silicon-cochela) some of the spikes produced by this system.
 
 :::{figure} figures/SensingPicture4.png
@@ -74,7 +74,7 @@ There are auditory sensors, for example you can see [here](#silicon-cochela) som
 :width: 400px
 :::
 
-And there are also olfactory sensors – the  sense of smell – and tactile sensors – the sense of touch.
+And there are also olfactory sensors - the  sense of smell - and tactile sensors - the sense of touch.
 
 ## Robotics
 
@@ -111,5 +111,5 @@ And finally, having trained it in a simulated environment, they tested it in thi
 :::
 
 ```{seealso} That's it!
-In these sections we’ve only touched the surface of the field of neuromorphic devices, but we hope that gives you some idea of the sort of the research that is being done in this field.
+In these sections we've only touched the surface of the field of neuromorphic devices, but we hope that gives you some idea of the sort of the research that is being done in this field.
 ```

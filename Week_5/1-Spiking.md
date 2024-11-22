@@ -197,5 +197,5 @@ A more generally applicable approach is a method called surrogate gradients. We'
     * But on the upside, these rules are more biologically plausible. 😊
 
 :::{seealso} That's it!
-In the next section, we'll dive into some of the details of these different solutions.
+In the next section, we'll dive into some of the details of these different solutions.
 :::

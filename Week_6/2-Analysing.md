@@ -24,7 +24,7 @@ In this section we're going to think about how we can interpret or analyse neura
 Regardless of what method we use to collect our data we're going to end up with a matrix like [this](#graph) where:
 * One axis is time.
 * The other is neurons.
-* Each cell denotes the activity of one neuron at one time point. Activity here could be binary – in the case of spikes, or continuous in the case of calcium imaging data or spikes binned into spike rates (i.e., number of spikes per time window).
+* Each cell denotes the activity of one neuron at one time point. Activity here could be binary - in the case of spikes, or continuous in the case of calcium imaging data or spikes binned into spike rates (i.e., number of spikes per time window).
 
 ```{figure} figures/analysingPicture1.png
 :label: graph
@@ -78,7 +78,7 @@ This brings us onto our second approach which is **neural decoding**.
 
 ## Neural decoding
 
-The aim of neural decoding is to use neural activity to estimate something about the environment or subject. For example, if we think about the rat, we could take its neural activity and try to estimate its velocity or position in the environment. To do that we could start from our matrix (of neurons by time), bin the spikes into bins to get continuous firing rates – which are easier to work with, and then use data from multiple bins to predict our variable of interest at a specific time.
+The aim of neural decoding is to use neural activity to estimate something about the environment or subject. For example, if we think about the rat, we could take its neural activity and try to estimate its velocity or position in the environment. To do that we could start from our matrix (of neurons by time), bin the spikes into bins to get continuous firing rates - which are easier to work with, and then use data from multiple bins to predict our variable of interest at a specific time.
 
 ```{figure} figures/analysingPicture4.jpg
 :align: center
@@ -107,11 +107,11 @@ These methods try to identify groups of neurons with correlated patterns of acti
 
 One approach to this would be to use a **clustering algorithm** to group the neurons into clusters with similar activity patterns. Another is the method [shown here](#tensor-component), which is called **tensor component analysis**.
 
-Here, we take our 2d matrix of neurons recorded over time and trials, and reshape it to a 3d tensor of neurons by time by trials, then describe this tensor using a set of ensembles – each of which is described by three vectors [(shown in red, green and blue)](#tensor-component).
+Here, we take our 2d matrix of neurons recorded over time and trials, and reshape it to a 3d tensor of neurons by time by trials, then describe this tensor using a set of ensembles - each of which is described by three vectors [(shown in red, green and blue)](#tensor-component).
 
-* A neuron factor – which notes how strongly associated each neuron is with that ensemble.
-* A temporal factor – which notes how that ensembles activity changes over the course of a trial.
-* A trial factor – which shows how the activity of the ensemble changes over trials.
+* A neuron factor - which notes how strongly associated each neuron is with that ensemble.
+* A temporal factor - which notes how that ensembles activity changes over the course of a trial.
+* A trial factor - which shows how the activity of the ensemble changes over trials.
 
 ```{figure} figures/analysingPicture5.png
 :label: tensor-component
@@ -123,14 +123,14 @@ Tensor component analysis {cite:p}`https://doi.org/10.1016/j.neuron.2018.05.015`
 
 This may seem a bit abstract, so let's see what it yields when applied to real data.
 
-[This experiment](#ensembles-experiment) is still focussed on spatial navigation but we've switched to mice, and what we call a plus maze – which you can see in [panel A](#ensembles-experiment). Essentially the mouse starts in either the east or west arm, has to navigate to either the north or the south, and then if it's correct it receives a reward.
+[This experiment](#ensembles-experiment) is still focussed on spatial navigation but we've switched to mice, and what we call a plus maze - which you can see in [panel A](#ensembles-experiment). Essentially the mouse starts in either the east or west arm, has to navigate to either the north or the south, and then if it's correct it receives a reward.
 
 So, what does applying tensor component analysis to the neural data recorded during this experiment reveal?
 
 [Here](#ensembles-experiment) each row shows one of 8 ensembles, and then each column shows that ensembles neuron, temporal and across-trial factors. Working through these:
 
-* In the neuron factors column – the x-axis shows all of the 280 recorded neurons, and then each y-axis shows how strongly associated each neuron is with each factor. So, you can see that different neurons are associated with different ensembles.
-* In the temporal factors column – the x-axis shows time across each trial, and each y-axis shows the activity of each ensemble. So, you can see that different ensembles are active at different times during the trial.
+* In the neuron factors column - the x-axis shows all of the 280 recorded neurons, and then each y-axis shows how strongly associated each neuron is with each factor. So, you can see that different neurons are associated with different ensembles.
+* In the temporal factors column - the x-axis shows time across each trial, and each y-axis shows the activity of each ensemble. So, you can see that different ensembles are active at different times during the trial.
 * Finally, in the across trials column each dot shows a single trial, the x-axis shows the order of the trials, and then each y-axis shows how active each ensemble was on a given trial. And the dots are coloured by the different trial properties [shown in B](#ensembles-experiment).
 
 For example - if we focus on [ensemble 2](#ensembles-experiment):

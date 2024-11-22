@@ -52,7 +52,7 @@ The main result they showed was that the class of functions computable by these 
 :::{seealso} The digital computer
 As a brief interlude, interestingly McCulloch and Pitts' work, and the biology of the brain, was a direct inspiration to John von Neumann who created the architecture of the modern digital computer.
 
-You can see [here](#digitalcomputer) he states that the CPU and RAM “correspond to the associative neurons in the human nervous system” {cite:p}`https://doi.org/10.5479/sil.538961.39088011475779`.
+You can see [here](#digitalcomputer) he states that the CPU and RAM "correspond to the associative neurons in the human nervous system" {cite:p}`https://doi.org/10.5479/sil.538961.39088011475779`.
 
 ```{figure} figures/digitalcomp.png
 :label: digitalcomputer
@@ -192,7 +192,7 @@ But in a fascinating development from 2016 onwards, Timothy Lillicrap and collea
 
 It turns out that the feedforward network learns to align itself with the feedback network so that in the end the feedback network is carrying the correct error signals for the learned - or aligned - feedforward network.
 
-This ‘feedback alignment' turns out not to scale to very deep networks, but the story isn't over yet and there's still a lot of interesting research going on in this space.
+This 'feedback alignment' turns out not to scale to very deep networks, but the story isn't over yet and there's still a lot of interesting research going on in this space.
 
 :::{seealso}
 [Introduction to neural networks and backpropagation by 3Blue1Brown](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi), an excellent, easy to follow YouTube series.
@@ -270,7 +270,7 @@ Before closing out this discussion of the visual system, we want to briefly take
 
 {cite:t}`https://doi.org/10.1073/pnas.1403112111` found that training a CNN to perform well at a task actually gave internal representations that were a close match to neural data recorded in the visual system.
 {cite:t}`https://doi.org/10.1016/j.neuron.2018.03.044` found the same thing in the auditory cortex.
-This led {cite:t}`https://doi.org/10.1101/407007` to propose a “brain score” and [leaderboard](https://www.brain-score.org/) to track which models gave the closest match to neural data.
+This led {cite:t}`https://doi.org/10.1101/407007` to propose a "brain score" and [leaderboard](https://www.brain-score.org/) to track which models gave the closest match to neural data.
 
 But the story isn't over, and there are lots of people out there who are not convinced by this:
 
@@ -281,13 +281,13 @@ So, the jury is still out on how good deep neural networks are as models of the 
 
 ## Reinforcement learning
 
-The last thing we're going to talk about in this video is reinforcement learning. The phrase actually dates back to Pavlov in 1927 – yes the dog guy. The study of this sort of learning though actually goes back to {cite:t}`https://doi.org/10.1037/h0092987`.
+The last thing we're going to talk about in this video is reinforcement learning. The phrase actually dates back to Pavlov in 1927 - yes the dog guy. The study of this sort of learning though actually goes back to {cite:t}`https://doi.org/10.1037/h0092987`.
 
 (funny)=
 :::{aside}
 Thorndike was pretty intent on proving that animals were stupid.
 
-> In the first place, most of the books do not give us a psychology, but rather a eulogy, of animals. They have all been about animal intelligence, never about animal stupidity… Dogs get lost hundreds of times and no one ever notices it or sends an account of it to a scientific magazine. But let one find his way from Brooklyn to Yonkers and the fact immediately becomes a circulating anecdote.
+> In the first place, most of the books do not give us a psychology, but rather a eulogy, of animals. They have all been about animal intelligence, never about animal stupidity... Dogs get lost hundreds of times and no one ever notices it or sends an account of it to a scientific magazine. But let one find his way from Brooklyn to Yonkers and the fact immediately becomes a circulating anecdote.
 > 
 > -- {cite:t}`https://doi.org/10.1037/h0092987`
 :::
@@ -303,7 +303,7 @@ Reinforcement learning experimental setup from {cite:t}`https://doi.org/10.1037/
 ```
 In his conclusion, you can even see some hints of what in modern reinforcement learning terms we'd call optimising for value instead of optimising for reward.
 
-> our view abolishes and declares that the progress is not from little and simple to big and complicated, but from direct connections to indirect connections in which a stock of isolated elements plays a part, is from ‘pure experience' or undifferentiated feelings, to discrimination, on the one hand, to generalizations, abstractions, on the other
+> our view abolishes and declares that the progress is not from little and simple to big and complicated, but from direct connections to indirect connections in which a stock of isolated elements plays a part, is from 'pure experience' or undifferentiated feelings, to discrimination, on the one hand, to generalizations, abstractions, on the other
 >
 > -- {cite:t}`https://doi.org/10.1037/h0092987`
 
@@ -332,9 +332,9 @@ There's a lot more!
 
 :::{seealso}
 Here are some good papers to read if you're interested in learning more about the history and what's going on at the moment in this space:
-* [Hassabis et al. (2017) “Neuroscience-Inspired Artificial Intelligence”](https://doi.org/10.1016/j.neuron.2017.06.011)
-* [Zador et al. (2023) “Catalyzing next-generation Artificial Intelligence through NeuroAI”](https://doi.org/10.1038/s41467-023-37180-x)
-* [Doerig et al. (2023) “The neuroconnectionist research programme”](https://doi.org/10.1038/s41583-023-00705-w)
+* [Hassabis et al. (2017) "Neuroscience-Inspired Artificial Intelligence"](https://doi.org/10.1016/j.neuron.2017.06.011)
+* [Zador et al. (2023) "Catalyzing next-generation Artificial Intelligence through NeuroAI"](https://doi.org/10.1038/s41467-023-37180-x)
+* [Doerig et al. (2023) "The neuroconnectionist research programme"](https://doi.org/10.1038/s41583-023-00705-w)
 
 And there's a [great newsletter](https://www.neuroai.science/) from [Patrick Mineault](https://xcorr.net/), with all the latest developments in NeuroAI.
 

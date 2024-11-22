@@ -208,7 +208,7 @@ So STDP is pretty cool and can learn some fun stuff, but there are some problems
 
 ### Saturation
 
-We saw in the section on rate-based models that without some careful control, weights tend to go to the extremes and earlier in this section you could see the same thing happening with STDP – the weights all push towards the maximum or minimum allowed values.
+We saw in the section on rate-based models that without some careful control, weights tend to go to the extremes and earlier in this section you could see the same thing happening with STDP - the weights all push towards the maximum or minimum allowed values.
 
 ```{figure} figures/stdpPicture15.png
 :align: center
