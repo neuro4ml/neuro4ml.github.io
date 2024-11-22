@@ -13,24 +13,16 @@ authors:
 :::
 ---
 
-```{danger} Work in progress
-The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
-```
-
-:::{note}
-In this section we’re going to just do a very quick introduction to some of the neuromorphic sensing devices and how they enable unique low power applications.
-:::
-
 ## Why do we need neuromorphic sensing?
 
-So let’s start by asking why would we even need specific neuromorphic sensing devices?
-Couldn’t we just take the output of a standard camera for example, convert that to spikes and then feed it into a neuromorphic computing device? Well yes, but if we start thinking about the amount of data transfer involved, we can start to see a problem.
+Let's start by asking why would we even need specific neuromorphic sensing devices?
+Couldn't we just take the output of a standard camera for example, convert that to spikes and then feed it into a neuromorphic computing device? Well yes, but if we start thinking about the amount of data transfer involved, we can start to see a problem.
 High definition video at 30 fps generates about 178 megabytes per second of data.
 
 ```{math}
 \begin{gather}
 &&\text{\textcolor{#0f73bf}{HD Video:}}\\
-&&\text{30fps x (1920 x 1080) pixels x 8 bits/channel x 3 channels}\\
+&&\text{30 fps} \;\times\; (1920 \times 1080) \text{ pixels } \;\times\; 8 \text{ bits/channel } \times 3 \text{ channels}\\
 &&\text{= \textcolor{#d61a1a}{178 MB/sec}}
 \end{gather}
 ```
@@ -40,37 +32,21 @@ On low power devices, that’s very problematic!
 
 ```{math}
 \begin{gather}
-\text{\textcolor{#0f73bf}{8k UHD with HDR:}}\\
-\text{60fps x (7680 x 4320) pixels x 10 bits/channel x 3 channels}\\
-\text{= \textcolor{#d61a1a}{7 GB/sec}}
+&&\text{\textcolor{#0f73bf}{8k UHD with HDR:}}\\
+&&\text{60 fps} \;\times\; (7680 \times 4320) \text{ pixels } \;\times\; 10 \text{ bits/channel } \times 3 \text{ channels}\\
+&&\text{= \textcolor{#d61a1a}{7 GB/sec}}
 \end{gather}
 ```
 
-Event cameras are one solution to this problem. They noted that most pixels don’t change very much in a scene from frame to frame. That’s also the basis of video compression algorithms. Event cameras take this to the level of sensing. They only transmit an event when the underlying pixel changes.
+Event cameras are one solution to this problem. They noted that most pixels don’t change very much in a scene from frame to frame. That’s also the basis of video compression algorithms. Event cameras take this to the level of sensing. They only transmit an event $(x,y,p)$ when the underlying pixel $(x,y)$ changes luminosity with sign $p$.
 
-```{math}
-\begin{gather}
-\text{\textbf{Event cameras} generate an event } (x,y,p) \\
-\text{if pixel} (x,y) \text{ changes luminosity with sign } p 
-\end{gather}
-```
+These images are from the dynamic vision sensor gesture dataset, and give you an idea of what the output of these cameras looks like.
 
-[These images](#dvsgd) are from the dynamic vision sensor gesture dataset, and give you an idea of what the output of these cameras looks like.
+![](figures/sensingPicture1.gif)
 
-:::{figure}
-:label: dvsgd
-:align: center
-:width: 250px
+![](figures/sensingPicture2.gif)
 
-(dvsgd-arm-roll)=
-![Arm Roll](figures/sensingPicture1.gif)
-
-(dvsgd-hand-clap)=
-![Hand Clap](figures/sensingPicture2.gif)
-
-(dvsgd-left-hand-clockwise)=
-![Left Hand Clockwise](figures/sensingPicture3.gif)
-:::
+![](figures/sensingPicture3.gif)
 
 In addition to hugely reducing the amount of data transfer needed, it also has another nice effect. Instead of running at 60 frames per second we can run at the equivalent of thousands of frames per second with a much larger dynamic range.
 The bad side is that the algorithm design is much harder, as we’ve seen throughout this course.

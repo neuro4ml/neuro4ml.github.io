@@ -13,12 +13,12 @@ authors: goodman
 
 ## Introduction
 
-This section is going to be much shorter than the last one. We don’t want to go deep into models that are more biophysically realistic, but we do want to mention them.
+This section is going to be much shorter than the last one. We don't want to go deep into models that are more biophysically realistic, but we do want to mention them.
 
 (hodkin-huxley-label)=
 ## Hodgkin-Huxley type neuron
 
-We’ll start with the famous Hodgkin-Huxley neuron. You can see an action potential plotted with this model [here](#hux).
+We'll start with the famous Hodgkin-Huxley neuron. You can see an action potential plotted with this model [here](#hux).
 
 ```{figure} #hodgkin-huxley-fig-label
 :label: hux
@@ -81,7 +81,7 @@ a_{m}(v) = \frac{(a_{m}v + b_{m})}{1 - e^{c_{m}v+d_{m}}}
 
 Ultimately, this comes down to a nonlinear differential equation with four dynamic variables and a lot of choices of functions and constants to fit to data.
 
-It’s also a bit of a nasty one to simulate, either requiring very small time steps or a specific numerical integration method.
+It's also a bit of a nasty one to simulate, either requiring very small time steps or a specific numerical integration method.
 
 :::{seealso} For more
 :class: dropdown
@@ -95,7 +95,7 @@ Further reading:
 
 ## Spatial / Multicompartamental Neuron
 
-One thing we’ve totally ignored so far in all the models we’ve talked about is that neurons have a very complex spatial structure, with dendrites and axons and – as you can see in the [picture](#gif) – activity that travels around the cell.
+One thing we've totally ignored so far in all the models we've talked about is that neurons have a very complex spatial structure, with dendrites and axons and – as you can see in the [picture](#gif) – activity that travels around the cell.
 
 ```{figure} figures/neurongif.gif
 :label: gif
@@ -131,13 +131,13 @@ where:
 
 So, does any of this matter in terms of how the network as a whole functions or is this just implementation details?
 
-We don’t know, but it has been argued that it may be important and it’s an active area of research, for example see [](https://doi.org/10.48550/arXiv.2306.08007).
+We don't know, but it has been argued that it may be important and it's an active area of research, for example see [](https://doi.org/10.48550/arXiv.2306.08007).
 
-The problem is that it’s too computationally demanding to be used in a machine learning setup, or indeed in a large network without huge computational resources.
+The problem is that it's too computationally demanding to be used in a machine learning setup, or indeed in a large network without huge computational resources.
 
 ## Dendrify
 
-That’s where [Dendrify](https://dendrify.readthedocs.io/en/latest/) comes in. It’s a relatively new software package to automatically simplify these very complex models into something that can be easily simulated while still capturing a lot of the relevant dynamics, like [these examples here](#dendrifyslide). If you’re interested in exploring what dendritic structure could add to network level computations, this package is probably worth a look.
+That's where [Dendrify](https://dendrify.readthedocs.io/en/latest/) comes in. It's a relatively new software package to automatically simplify these very complex models into something that can be easily simulated while still capturing a lot of the relevant dynamics, like [these examples here](#dendrifyslide). If you're interested in exploring what dendritic structure could add to network level computations, this package is probably worth a look.
 
 ```{figure} figures/dendrify.png
 :label: dendrifyslide

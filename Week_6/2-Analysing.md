@@ -21,7 +21,7 @@ In this section we're going to think about how we can interpret or analyse neura
 
 ## Data
 
-Regardless of what method we use to collect our data we’re going to end up with a matrix like [this](#graph) where:
+Regardless of what method we use to collect our data we're going to end up with a matrix like [this](#graph) where:
 * One axis is time.
 * The other is neurons.
 * Each cell denotes the activity of one neuron at one time point. Activity here could be binary – in the case of spikes, or continuous in the case of calcium imaging data or spikes binned into spike rates (i.e., number of spikes per time window).
@@ -34,7 +34,7 @@ Regardless of what method we use to collect our data we’re going to end up wit
 Neural data can be represented as a matrix of neurons x time, where each cell denotes the activity of neuron *i* at time *t*. 
 ```
 
-One thing to note is that rather than recording neural activity continuously, experimentalists will often conduct multiple trials with a fixed length. So time may be discontinuous. For example, an experiment could be composed of trials where a subject is shown images which they’re asked to classify, with breaks in-between.  
+One thing to note is that rather than recording neural activity continuously, experimentalists will often conduct multiple trials with a fixed length. So time may be discontinuous. For example, an experiment could be composed of trials where a subject is shown images which they're asked to classify, with breaks in-between.  
 
 With this sort of data there are lots of different questions we could ask like: 
 
@@ -48,10 +48,10 @@ Once we have a question or questions in mind we can then decide on an appropriat
 
 ## Analysis methods
 
-There are lots of different approaches to analyzing neural data, so I’m just going to highlight three.
+There are lots of different approaches to analyzing neural data, so I'm just going to highlight three.
 A simple approach is to calculate **summary statistics**.
 
-For example, in a classification task we could compute how strongly each neuron responds to each class, and then see how specific it’s response is.
+For example, in a classification task we could compute how strongly each neuron responds to each class, and then see how specific it's response is.
 Or if we were varying a stimulus parameter continuously, like the brightness of a screen, we could see how tuned to this parameter each neuron is (i.e., how activity changes as a function of this parameter).
 
 So what does this analysis look like? 
@@ -60,7 +60,7 @@ So what does this analysis look like?
 
 In {cite:t}`https://doi.org/10.1038/nature05601` the authors let a rat freely move around a square area while recording the activity of neurons in part of the brain known as the hippocampus.
 
-In the [left panel](#summary-stats-pic), the black line shows the animal’s path, and the red dots show the locations in space where one neuron spiked. Then the [right panel](#summary-stats-pic), shows a heatmap of the neuron's firing rate, with red being high. So, this heatmap is equivalent to a 2d tuning curve, and we can see that this neuron is tuned to a specific location in this environment.
+In the [left panel](#summary-stats-pic), the black line shows the animal's path, and the red dots show the locations in space where one neuron spiked. Then the [right panel](#summary-stats-pic), shows a heatmap of the neuron's firing rate, with red being high. So, this heatmap is equivalent to a 2d tuning curve, and we can see that this neuron is tuned to a specific location in this environment.
 
 Neurons with responses like these are known as **place cells**, they were first discovered in 1971 {cite:p}`https://doi.org/10.1016/0006-8993(71)90358-1`, but are still an active area of research.
 
@@ -72,7 +72,7 @@ Neurons with responses like these are known as **place cells**, they were first 
 Place cells spike at specific locations within an environment {cite:p}`https://doi.org/10.1038/nature05601`.
 ```
 
-However, many neuron's aren’t so clearly tuned to specific environmental features and rather than thinking of single neurons as encoding variables it may be better to try to understand what information populations of neurons encode.
+However, many neuron's aren't so clearly tuned to specific environmental features and rather than thinking of single neurons as encoding variables it may be better to try to understand what information populations of neurons encode.
 
 This brings us onto our second approach which is **neural decoding**.
 
@@ -87,7 +87,7 @@ The aim of neural decoding is to use neural activity to estimate something about
 Decoding attempts to relate neural activity to other variables. For example, the animal's velocity {cite:p}`https://doi.org/10.1523/ENEURO.0506-19.2020`. 
 ```
 
-As this is essentially a regression problem, there are many approaches we could use to do this like using filters or neural networks, and {cite:t}`https://doi.org/10.1523/ENEURO.0506-19.2020` compares these methods in detail. For example, in [this image](#hippocampus-graph), each point on the x-axis represents a different decoding approach, and then the y-axis shows how accurately each method can decode the rat’s location and you can see that some methods can do this quite accurately, even though the dataset only has 50 neurons.
+As this is essentially a regression problem, there are many approaches we could use to do this like using filters or neural networks, and {cite:t}`https://doi.org/10.1523/ENEURO.0506-19.2020` compares these methods in detail. For example, in [this image](#hippocampus-graph), each point on the x-axis represents a different decoding approach, and then the y-axis shows how accurately each method can decode the rat's location and you can see that some methods can do this quite accurately, even though the dataset only has 50 neurons.
 
 ```{figure} figures/analysingPicture3.jpg
 :label: hippocampus-graph
@@ -97,7 +97,7 @@ As this is essentially a regression problem, there are many approaches we could 
 Decoding accuracy (y-axis) across a range of different decording approaches (x-axis) {cite:p}`https://doi.org/10.1523/ENEURO.0506-19.2020`.
 ```
 
-But if we tried to decode location from another population of neurons somewhere else in the brain, like visual cortex, our results would be much worse, and so we can use decoding accuracy to estimate what information is present in different brain areas. However, decoding relies on having a variable or variables of interest to estimate, and sometimes we may not have that: for example, if we’re just recording spontaneous brain activity.
+But if we tried to decode location from another population of neurons somewhere else in the brain, like visual cortex, our results would be much worse, and so we can use decoding accuracy to estimate what information is present in different brain areas. However, decoding relies on having a variable or variables of interest to estimate, and sometimes we may not have that: for example, if we're just recording spontaneous brain activity.
 
 In that case, one approach would be what we're going to call **ensemble methods**.
 
@@ -123,7 +123,7 @@ Tensor component analysis {cite:p}`https://doi.org/10.1016/j.neuron.2018.05.015`
 
 This may seem a bit abstract, so let's see what it yields when applied to real data.
 
-[This experiment](#ensembles-experiment) is still focussed on spatial navigation but we’ve switched to mice, and what we call a plus maze – which you can see in [panel A](#ensembles-experiment). Essentially the mouse starts in either the east or west arm, has to navigate to either the north or the south, and then if it’s correct it receives a reward.
+[This experiment](#ensembles-experiment) is still focussed on spatial navigation but we've switched to mice, and what we call a plus maze – which you can see in [panel A](#ensembles-experiment). Essentially the mouse starts in either the east or west arm, has to navigate to either the north or the south, and then if it's correct it receives a reward.
 
 So, what does applying tensor component analysis to the neural data recorded during this experiment reveal?
 
@@ -135,8 +135,8 @@ So, what does applying tensor component analysis to the neural data recorded dur
 
 For example - if we focus on [ensemble 2](#ensembles-experiment):
 
-* It’s temporal factor shows us that these neurons are mostly active at the start of a trial, and
-* It’s trial factor shows that these neurons are more active on trials when the mouse starts in the east than the west arm of the maze (compare the [yellow and purple dots](#ensembles-experiment)).
+* It's temporal factor shows us that these neurons are mostly active at the start of a trial, and
+* It's trial factor shows that these neurons are more active on trials when the mouse starts in the east than the west arm of the maze (compare the [yellow and purple dots](#ensembles-experiment)).
 
 Now try to interpret the other ensembles yourself.
 
@@ -153,5 +153,5 @@ Tensor component analysis applied to a mouse navigation experiment {cite:p}`http
 Hopefully, this section has taught you a bit about how we can analyse neural activity data using summary statistics, decoding methods and ensemble methods. But there are many other methods too, so we would encourage you to read around.
 
 :::{seealso} That's it!
-In the next section, we’ll cover how to manipulate neural activity.
+In the next section, we'll cover how to manipulate neural activity.
 :::

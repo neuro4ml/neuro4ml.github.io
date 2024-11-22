@@ -56,4 +56,4 @@ There is no required reading for this course, only optional. We will be curating
 
 Please cite us via our [Zenodo record](https://zenodo.org/records/10366802):
 
-    Goodman, Dan F. M., and Marcus Ghosh. ‘Neuroscience for Machine Learners’. 12 December 2023. https://doi.org/10.5281/zenodo.10366802.
+    Goodman, Dan F. M., and Marcus Ghosh. ‘Neuroscience for Machine Learners'. 12 December 2023. https://doi.org/10.5281/zenodo.10366802.

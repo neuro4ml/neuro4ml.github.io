@@ -91,7 +91,7 @@ So next, they simulate the microprocessor, and observe the activity patterns of 
 :alt: Microprocessor Activity Patterns
 :align: center
 
-(Left) transistors' spiking (rising edge) behavior over a short time window during behavior DK. (Middle) Mean transistor response as a function of output pixel luminance: Some transistors exhibit simple unimodal tuning curves, others more complex tuning curves. (Right) Plotted all the activities for each of the three behavioral states. Each transistor’s activity is normalized to zero-mean and unit variance and plotted as a function of time. {cite:p}`https://doi.org/10.1371/journal.pcbi.1005268`.
+(Left) transistors' spiking (rising edge) behavior over a short time window during behavior DK. (Middle) Mean transistor response as a function of output pixel luminance: Some transistors exhibit simple unimodal tuning curves, others more complex tuning curves. (Right) Plotted all the activities for each of the three behavioral states. Each transistor's activity is normalized to zero-mean and unit variance and plotted as a function of time. {cite:p}`https://doi.org/10.1371/journal.pcbi.1005268`.
 ```
 
 [The figure on the left](#microplots) shows the off-to-on transitions of 10 transistors over time (which look surprisingly like spikes in a raster plot).
@@ -151,5 +151,5 @@ But really how to understand complex networks is an open issue in neuroscience.
 So does neuroscience work? [This paper](https://doi.org/10.1371/journal.pcbi.1005268) suggests that, our current approaches may not. So we need better methods and we need ground truth systems in which we can validate these.
 
 :::{seealso} That's it!
-In the next section, we’ll continue thinking about better approaches to our problem
+In the next section, we'll continue thinking about better approaches to our problem
 :::

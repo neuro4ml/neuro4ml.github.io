@@ -12,21 +12,21 @@ authors: goodman
 ---
 
 :::{note}
-In this section, we’ll focus on how to train spiking neural networks. But first though, in this video, we’ll see why this is difficult to do.
+In this section, we'll focus on how to train spiking neural networks. But first though, in this video, we'll see why this is difficult to do.
 :::
 
 ## What we want to do
 
-What we’d like to do is to use the methods developed for artificial neural networks, because we know they work really well.
+What we'd like to do is to use the methods developed for artificial neural networks, because we know they work really well.
 
 :::{seealso} For more
 :class: dropdown
-This isn’t going to be a complete or comprehensive guide, so if you haven’t encountered this before, stop now and read an introduction.
+This isn't going to be a complete or comprehensive guide, so if you haven't encountered this before, stop now and read an introduction.
 
 [Introduction to neural networks and backpropagation by 3Blue1Brown (excellent, easy to follow YouTube series)](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
 :::
 
-So let’s quickly recap how that goes. 
+So let's quickly recap how that goes. 
 
 First we write the neural network as a [function of inputs and parameters](#NN).
 
@@ -82,21 +82,21 @@ Then the chain rule says $J^{g\circ f}=J^g J^f$.
 So we can efficiently compute the gradient just by matrix and vector multiplications.
 :::
 
-So, can we just do this for a spiking neural network? It’s not quite so easy. Let’s see why.
+So, can we just do this for a spiking neural network? It's not quite so easy. Let's see why.
 
 (why-we-cant-differentiate-spikes)=
 ## Why we can't do it
 
-To see what goes wrong here, let’s start with a recap of the [leaky integrate-and-fire neuron](#LIF-section) we’ve seen before.
+To see what goes wrong here, let's start with a recap of the [leaky integrate-and-fire neuron](#LIF-section) we've seen before.
 
 ```{embed} #LIF-neuron-definition
 ```
 
 Over time it evolves according to a differential equation, with instantaneous effects when a spike arrives. Whenever the membrane potential $v$ crosses the threshold $v>1$ you fire a spike and instantly reset to $0$.
 
-We’re going to rewrite these equations, temporarily ignoring the synaptic connections for simplicity. You get the same problem and solution with synapses but it makes the notation more complicated.
+We're going to rewrite these equations, temporarily ignoring the synaptic connections for simplicity. You get the same problem and solution with synapses but it makes the notation more complicated.
 
-The threshold we’ll write as $S(t)$ being the Heaviside function of $v(t)-1$. So this will be equal to $1$ if the neuron has spiked, otherwise $0$.
+The threshold we'll write as $S(t)$ being the Heaviside function of $v(t)-1$. So this will be equal to $1$ if the neuron has spiked, otherwise $0$.
 
 (threshold-with-heaviside)=
 ```{math}
@@ -182,7 +182,7 @@ A clever trick is to take the non-differentiable Heaviside function and [smooth 
 
 A more generally applicable approach is a method called surrogate gradients. We'll talk more about this in a later section. The key idea is we do the same smoothing, but only when we're computing gradients, not for the the forward pass.
 
-* It's a bit surprising, but this works. We provide gradients to a different function from the one we’re optimising, but it gives us good solutions. We have some ideas of why this works but it's not a fully rigorous explanation.
+* It's a bit surprising, but this works. We provide gradients to a different function from the one we're optimising, but it gives us good solutions. We have some ideas of why this works but it's not a fully rigorous explanation.
     
     * This method is still quite computationally expensive, but it is feasible to use it for networks of a few thousand neurons at least. 😑
     
@@ -197,5 +197,5 @@ A more generally applicable approach is a method called surrogate gradients. We'
     * But on the upside, these rules are more biologically plausible. 😊
 
 :::{seealso} That's it!
-In the next section, we’ll dive into some of the details of these different solutions.
+In the next section, we'll dive into some of the details of these different solutions.
 :::

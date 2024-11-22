@@ -12,12 +12,12 @@ authors: goodman
 ---
 
 :::{note}
-In this section we’ll look at some of the many methods for training spiking neural networks with either no attempt to use gradients, or only using gradients in a limited or constrained way.
+In this section we'll look at some of the many methods for training spiking neural networks with either no attempt to use gradients, or only using gradients in a limited or constrained way.
 :::
 
 ## Reservoir computing
 
-Let’s start with reservoir computing, also known as "liquid state machines" and "echo state networks" in different contexts.
+Let's start with reservoir computing, also known as "liquid state machines" and "echo state networks" in different contexts.
 
 In [this setup](#rescomp) we start with some time varying input sequence connected to a randomly recurrently connected group of neurons.
 
@@ -35,7 +35,7 @@ You initialise the recurrent neurons with weights which put the network dynamics
 
 And this works! 
 
-You can prove that this setup allows you to approximate any time-varying function, with enough neurons. [Here’s an example](#examptarget) of a target trajectory and a reconstruction using reservoir computing.
+You can prove that this setup allows you to approximate any time-varying function, with enough neurons. [Here's an example](#examptarget) of a target trajectory and a reconstruction using reservoir computing.
 
 ```{figure} figures/targettraj.png
 :label: examptarget
@@ -59,7 +59,7 @@ See the following:
 
 ## Evolutionary algorithms
 
-Another approach is to use global optimisation algorithms that don’t require derivatives.
+Another approach is to use global optimisation algorithms that don't require derivatives.
 
 A particularly successful approach pioneered by Katie Schuman {cite:p}`https://doi.org/10.1145/3381755.3381758` is to use evolutionary algorithms. In these algorithms you generate a population of networks, evaluate them, and then create new networks by mixing up the most successful networks, repeating until you get good performance.
 
@@ -71,7 +71,7 @@ A particularly successful approach pioneered by Katie Schuman {cite:p}`https://d
 Training SNNs with evolutionary algorithms {cite:p}`https://doi.org/10.1145/3381755.3381758`.
 ```
 
-[Here’s an example](#breastcancer) network evolved with this method to classify breast cancer images.
+[Here's an example](#breastcancer) network evolved with this method to classify breast cancer images.
 
 ```{figure} figures/cancernetwork.png
 :label: breastcancer
@@ -84,7 +84,7 @@ Example network evolved to classify breast cancer images {cite:p}`https://doi.or
 
 The advantage of this method is that it can find surprising architectures like this one that you might never otherwise have found. But, it does tend to be computationally demanding and limited to fairly small networks like this.
 
-It’s also been used to train neuromorphic hardware that we’ll talk about later in this course, for example a controller for this [little robot](#robot).
+It's also been used to train neuromorphic hardware that we'll talk about later in this course, for example a controller for this [little robot](#robot).
 
 ```{figure} figures/littlerobot.png
 :label: robot
@@ -106,7 +106,7 @@ You can see [an example](#robotnetwork) of the sort of network it finds. Another
 Robot controller network {cite:p}`https://doi.org/10.1109/IRIS.2017.8250111`.
 ```
 
-And [here’s an example](#robottraj) of a trajectory showing that this robot was able to learn to drive around, avoid obstacles, etc.
+And [here's an example](#robottraj) of a trajectory showing that this robot was able to learn to drive around, avoid obstacles, etc.
 
 ```{figure} figures/littlerobottraj.png
 :label: robottraj
@@ -121,7 +121,7 @@ Robot trajectory {cite:p}`https://doi.org/10.1109/IRIS.2017.8250111`.
 
 Rather than trying to work with spiking neural networks directly, we can start by doing something we know how to do, like training an artificial neural network, and then convert the result into a spiking neural network.
 
-There’s a huge literature on this but I’m just going to mention two approaches from {cite:t}`https://doi.org/10.48550/arXiv.1510.08829`.
+There's a huge literature on this but I'm just going to mention two approaches from {cite:t}`https://doi.org/10.48550/arXiv.1510.08829`.
 
 ### Soft-LIF
 
@@ -140,15 +140,15 @@ Eliasmith and colleagues later took this sort of approach much further, creating
 
 2. And then linearly decoding this, which they show allows you to approximate almost any function.
 
-They implemented this in a comprehensive software package [Nengo](https://www.nengo.ai/) so it’s easy to try it out if you’re interested.
+They implemented this in a comprehensive software package [Nengo](https://www.nengo.ai/) so it's easy to try it out if you're interested.
 
-Once you have these building blocks, it’s easy to then convert an ANN that is composed of these building blocks into their framework and implement it with spiking neurons.
+Once you have these building blocks, it's easy to then convert an ANN that is composed of these building blocks into their framework and implement it with spiking neurons.
 
 ## Restricting to a single spike
 
-The last method we’ll look at in this section is making the network differentiable by limiting each neuron to only be able to fire a single spike.
+The last method we'll look at in this section is making the network differentiable by limiting each neuron to only be able to fire a single spike.
 
-This might seem like a crazy limitation, but there’s actually a good reason to try this coming from [Simon Thorpe and colleagues](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=297cd07d12ad74c10fee794fa947f02d561158ab).
+This might seem like a crazy limitation, but there's actually a good reason to try this coming from [Simon Thorpe and colleagues](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=297cd07d12ad74c10fee794fa947f02d561158ab).
 
 They noted that primate brains are able to classify and respond to quite complicated visual stimuli, like distinguishing between food and not-food, with as little as a 100ms delay.
 
@@ -173,8 +173,8 @@ They found that this gave excellent performance at the same types of visual clas
 Distinguishing between faces and motorcycles visual classification task {cite:p}`https://doi.org/10.1142/S0129065720500276`.
 ```
 
-OK, that’s enough for these limited gradient approaches. As usual, this section has only scratched the surface, and it’s still a very active area of research.
+OK, that's enough for these limited gradient approaches. As usual, this section has only scratched the surface, and it's still a very active area of research.
 
 :::{seealso} That's it!
-In the next section, we’ll talk about how to train spiking neural networks with the surrogate gradient method
+In the next section, we'll talk about how to train spiking neural networks with the surrogate gradient method
 :::

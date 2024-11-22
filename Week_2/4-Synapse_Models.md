@@ -240,20 +240,20 @@ We can control the rate of these processes with facilitation and depression time
 
 When a spike arrives, we first increase $u$, the probability of vesicle release. Note that we do this first because otherwise the first spike would release 0 vesicles.
 
-Next, we release an amount of vesicles proportional to $u \cdot x$, because there are $x$ available and we release with probability $u$. In this model we’ve had this directly modify the membrane potential $v$, but <!--as in previous slides--> it could modify other variables. 
+Next, we release an amount of vesicles proportional to $u \cdot x$, because there are $x$ available and we release with probability $u$. In this model we've had this directly modify the membrane potential $v$, but <!--as in previous slides--> it could modify other variables. 
 
-Finally, since we’ve released $u \cdot x$ vesicles, we now have to remove those from the available pool by subtracting that from $x$.
+Finally, since we've released $u \cdot x$ vesicles, we now have to remove those from the available pool by subtracting that from $x$.
 
-Here’s what those variables look like in these two cases:
+Here's what those variables look like in these two cases:
 
 ![](#depression-facilitation-graphs)
 
 So what does this do in terms of function? 
 
-As usual, we don’t have a complete answer to that. One thing for sure is that it gives synapses a longer memory than they would otherwise have, which is likely to be useful in many cases.
+As usual, we don't have a complete answer to that. One thing for sure is that it gives synapses a longer memory than they would otherwise have, which is likely to be useful in many cases.
 
 It can also allow the neuron to have richer spike frequency dynamics, allowing them to act as low, high or band pass filters, and do gain control.
-There’s a bunch of other ideas people have suggested, and there are links in the reading list for where you can read more about this and other models of short term plasticity.
+There's a bunch of other ideas people have suggested, and there are links in the reading list for where you can read more about this and other models of short term plasticity.
 
 ## Channel types: excitation and inhibition
 
@@ -264,7 +264,7 @@ As previously mentioned, synapses can be either [excitatory or inhibitory](#exit
 
 However, when synapses are modelled with detail ion channel dynamics and spatial structure, things can get more interesting. Shunting inhibition is a good example. 
 
-In shunting inhibition, a spike causes a local increase in conductance but with a reversal potential near to the resting potential. This means that on its own in the absence of other inputs, you wouldn't observe any effect on the membrane potential. However, it will reduce the effect of an excitatory synapse on the [dendrite](#neuron) while having no effect on an excitatory synapse on the [soma](#neuron) or on a different dendritic branch. This means that it can have a selective, divisive effect on excitatory inputs, something you wouldn’t easily be able to achieve otherwise.
+In shunting inhibition, a spike causes a local increase in conductance but with a reversal potential near to the resting potential. This means that on its own in the absence of other inputs, you wouldn't observe any effect on the membrane potential. However, it will reduce the effect of an excitatory synapse on the [dendrite](#neuron) while having no effect on an excitatory synapse on the [soma](#neuron) or on a different dendritic branch. This means that it can have a selective, divisive effect on excitatory inputs, something you wouldn't easily be able to achieve otherwise.
 
 ```{figure} figures/synapse-modelsPicture11.png
 :label: excite
@@ -272,7 +272,7 @@ In shunting inhibition, a spike causes a local increase in conductance but with 
 :align: center
 ```
 
-Another interesting channel type is NMDA, which can’t be modelled linearly. The effect of NMDA requires the receiving neuron’s membrane potential to have recently been high. This may be important in learning.
+Another interesting channel type is NMDA, which can't be modelled linearly. The effect of NMDA requires the receiving neuron's membrane potential to have recently been high. This may be important in learning.
 
 ## Long-term plasticity
 
@@ -333,7 +333,7 @@ I_\text{gap} &= w(v_\text{pre} - v_\text{post})
 :align: center
 ```
 
-Gap junctions occur in many species, but a particularly interesting example is the tiny worm caenorhabditis elegans (usually written _C. elegans_). Neuroscientists love it because it always has precisely 302 neurons with the same pattern of connections. It’s unusual though because they are mostly non-spiking, using gap junctions to communicate instead.
+Gap junctions occur in many species, but a particularly interesting example is the tiny worm caenorhabditis elegans (usually written _C. elegans_). Neuroscientists love it because it always has precisely 302 neurons with the same pattern of connections. It's unusual though because they are mostly non-spiking, using gap junctions to communicate instead.
 
 ```{figure} figures/synapse-modelsPicture14.png
 :label: p14

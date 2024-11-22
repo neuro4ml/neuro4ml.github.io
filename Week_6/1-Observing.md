@@ -106,7 +106,7 @@ The end result of this is shown [here](#calcium-imaging-pic) in a larval zebrafi
 Larval zebrafish brain activity, measured via calcium imaging and shown at 20x real time {cite:p}`https://doi.org/10.1038/nmeth.2434`.
 :::
 
-While you can use this technique in any animal model, it works particularly well in larval zebrafish as they’re small, and transparent - which, we're not - so how can we image neural activity in humans?  
+While you can use this technique in any animal model, it works particularly well in larval zebrafish as they're small, and transparent - which, we're not - so how can we image neural activity in humans?  
 
 ## fMRI
 
@@ -114,7 +114,7 @@ In humans, one of the most commonly used methods is functional magnetic resonanc
 
 fMRI is widely used as it is: 
 
-* Non-invasive – i.e. we don’t need to implant electrodes or inject dyes into subjects.
+* Non-invasive – i.e. we don't need to implant electrodes or inject dyes into subjects.
 * It provides whole-brain information.
 * It has reasonable spatial and temporal resolution on the order of millimeters and seconds.  
 
@@ -133,7 +133,7 @@ Okay, stepping back a bit, lets approximately map these techniques onto our axis
 
 * High-density probes like Neuropixels have high temporal resolution and can record from hundreds to thousands of neurons.
 * Whole-brain calcium imaging has medium temporal resolution, but can record from thousands to tens-of-thousands of neurons.
-* fMRI has slow temporal resolution. Though it's hard to place in terms of number of neurons as it records a whole-brain signal, but can’t resolve individual neurons.
+* fMRI has slow temporal resolution. Though it's hard to place in terms of number of neurons as it records a whole-brain signal, but can't resolve individual neurons.
 
 ```{figure} figures/observingPicture5.png
 :align: center

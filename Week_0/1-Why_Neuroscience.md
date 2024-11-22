@@ -18,7 +18,7 @@ Welcome to **Neuroscience for Machine Learners!**
 
 As the name suggests, this course is intended for people with a background in machine learning who want to learn a bit about neuroscience. It runs in person at Imperial College London, as well as being freely available online.
 
-So let’s start by talking about why you should be interested in neuroscience.
+So let's start by talking about why you should be interested in neuroscience.
 
 ## Neuroscience ❤️ Machine Learning
 

@@ -15,9 +15,9 @@ authors: ghosh
 
 In the last two sections we've looked at how we can record and analyze neural activity.
 
-But, to some extent these methods simply correlate neural activity with different variables, and we can’t really be sure that our findings are casually relevant.
+But, to some extent these methods simply correlate neural activity with different variables, and we can't really be sure that our findings are casually relevant.
 
-In other words, once we’ve found neurons that respond to a stimulus or precede a behavior, we would like to know if disrupting those neurons would have any effect on the animal’s ability to respond to that stimulus or implement that behavior.
+In other words, once we've found neurons that respond to a stimulus or precede a behavior, we would like to know if disrupting those neurons would have any effect on the animal's ability to respond to that stimulus or implement that behavior.
 
 We can do this by manipulating neural activity, and these manipulations can be either irreversible or reversible.
 
@@ -46,9 +46,9 @@ In this paper, the authors:
 Rats with motor cortex lesions cross a series of steps similarly to controls {cite:p}`https://doi.org/10.3389/fnins.2023.971980`. 
 :::
 
-One conclusion from this result could be that motor cortex isn’t needed for a simple task like this. So, the authors then increased the difficulty of the task by making more and more of the steps unstable.
+One conclusion from this result could be that motor cortex isn't needed for a simple task like this. So, the authors then increased the difficulty of the task by making more and more of the steps unstable.
 
-Surprisingly, again they didn’t see any difference between the two groups. Until they looked at their data very carefully.
+Surprisingly, again they didn't see any difference between the two groups. Until they looked at their data very carefully.
 
 What they found was that when the animals first encountered the unstable steps, they responded in one of the three ways shown in [this video](#rat-vid2):
 
@@ -66,7 +66,7 @@ Though, in the context of [this video](#rat-vid2), I think this paper nicely ill
 Rats with motor cortex lesions respond differently to unstable steps / unpredictable situations {cite:p}`https://doi.org/10.3389/fnins.2023.971980`.
 :::
 
-However, we don’t always have to use irreversible manipulations, as there are reversible methods too.
+However, we don't always have to use irreversible manipulations, as there are reversible methods too.
 
 ## Reversible
 
@@ -110,7 +110,7 @@ A neural network evolved to play space invaders {cite:p}`https://doi.org/10.1371
 ```
 
 To manipulate their network they then silenced each node one-by-one and checked how well the network performed with each node silenced individually.
-[This figure](#single-lesions-pic2) shows their results: the y-axis shows the networks score – with higher being better. For comparison, the blue stripe shows the networks normal performance, and the red stripe shows it’s performance if you shuffle its weights.
+[This figure](#single-lesions-pic2) shows their results: the y-axis shows the networks score – with higher being better. For comparison, the blue stripe shows the networks normal performance, and the red stripe shows it's performance if you shuffle its weights.
 
 On the [left of the figure](#single-lesions-pic2), each point on the x-axis corresponds to silencing a single node, and you can see that ablating different nodes leads to different scores – which implies that some nodes are more important for the task than others. And interestingly you can also see that ablating two of the nodes, increases the networks score; suggesting they hinder the network.
 
@@ -135,7 +135,7 @@ To overcome this issue, the authors compare their results to a multi-element app
 
 In this multi-element approach, you sample combinations of lesions. For example, you silence node 1 and check the networks score, then silence node 1 and 2 together, 1, 2, 3 together etc. Then you calculate each nodes importance by comparing the networks score with and without the node in different combinations.
 
-The results are shown as before in [panel B](#multi-lesions), and [in panel C](#multi-lesions) on the right you can see that the single and multi-node ablations assigns different importance to different nodes. This and other results lead the authors to conclude that even small ANNs can be challenging to interpret. And so we should perhaps be cautious when interpreting manipulation results from larger and more complex systems. If you’d like to learn more about this approach and these results, we highly recommend the paper {cite:p}`https://doi.org/10.1371/journal.pcbi.1010250`.
+The results are shown as before in [panel B](#multi-lesions), and [in panel C](#multi-lesions) on the right you can see that the single and multi-node ablations assigns different importance to different nodes. This and other results lead the authors to conclude that even small ANNs can be challenging to interpret. And so we should perhaps be cautious when interpreting manipulation results from larger and more complex systems. If you'd like to learn more about this approach and these results, we highly recommend the paper {cite:p}`https://doi.org/10.1371/journal.pcbi.1010250`.
 
 ```{figure} figures/manipulatingPicture4.png
 :label: multi-lesions
@@ -146,5 +146,5 @@ Silencing individual (A) or multiple (B) components of a trained neural network 
 ```
 
 :::{seealso} That's it!
-Hopefully that’s given you an overview of how we can manipulate neural activity. In the next section we're going to outline this week’s exercise, which will challenge you to observe and manipulate an ANN yourself.
+Hopefully that's given you an overview of how we can manipulate neural activity. In the next section we're going to outline this week's exercise, which will challenge you to observe and manipulate an ANN yourself.
 :::

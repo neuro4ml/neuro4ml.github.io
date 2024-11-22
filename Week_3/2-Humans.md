@@ -17,7 +17,7 @@ In the last section we discussed connectomes - full diagrams describing how ever
 
 :::{note}
 
-We don't have a connectome for the human brain so instead, in this section, we’ll look at a more macro level.
+We don't have a connectome for the human brain so instead, in this section, we'll look at a more macro level.
 :::
 
 ## Glial cells

@@ -27,7 +27,7 @@ In general, we train artificial neural networks by adjusting their connection we
 
 As early as 1949 [Donald Hebb](https://en.wikipedia.org/wiki/Donald_O._Hebb) proposed a relevantly simple learning rule: 
 
-> "When an axon of cell A is near enough to excite a cell B and repeatedly or persistently takes part in firing it, some growth process or metabolic change takes place in one or both cells such that A’s efficiency, as one of the cells firing B, is increased."
+> "When an axon of cell A is near enough to excite a cell B and repeatedly or persistently takes part in firing it, some growth process or metabolic change takes place in one or both cells such that A's efficiency, as one of the cells firing B, is increased."
 
 At the time this was just a theory, but experimental evidence confirmed it around 20 years later.
 
