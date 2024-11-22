@@ -13,15 +13,15 @@ authors: ghosh
 
 ```{danger} Work in progress
 The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
+
+-- Reviewed for style consistency by Dan.
 ```
 
 ## Introduction
 
 This week we're going to cover what we consider to be open issues in neuroscience.
 
-:::{note}
 In this section, we're  going to discuss the question does neuroscience work and how could we know?
-:::
 
 ## More data
 
@@ -39,7 +39,7 @@ See the papers for examples of this:
 
 To some extent an implicit assumption behind these efforts, is that with more data will come more understanding, and that given enough data we would understand the brain.
 
-**But is that true?**
+But is that true?
 
 ### Could a neuroscientist understand a microprocessor?
 
@@ -54,7 +54,7 @@ In {cite:t}`https://doi.org/10.1371/journal.pcbi.1005268`, the authors take an [
 :alt: Microprocessor Design
 :align: center
 
-Microprocessor Design {cite:p}`https://doi.org/10.1371/journal.pcbi.1005268`.
+Microprocessor design from {cite:t}`https://doi.org/10.1371/journal.pcbi.1005268`.
 ```
 
 Critically, we know how the microprocessor works - so we can test how well these methods do at recovering that information.
@@ -148,8 +148,4 @@ Another suggestion is that better methods could help. For example, in week 6 we 
 
 But really how to understand complex networks is an open issue in neuroscience.
 
-So does neuroscience work? [This paper](https://doi.org/10.1371/journal.pcbi.1005268) suggests that, our current approaches may not. So we need better methods and we need ground truth systems in which we can validate these.
-
-:::{seealso} That's it!
-In the next section, we'll continue thinking about better approaches to our problem
-:::
+So does neuroscience work? {cite:t}`https://doi.org/10.1371/journal.pcbi.1005268` suggests that, our current approaches may not. So we need better methods and we need ground truth systems in which we can validate these.
