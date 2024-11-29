@@ -11,30 +11,21 @@ authors: ghosh
 :::
 ---
 
-```{danger} Work in progress
-The text below has been transcribed by hand from the video above but has not yet been reviewed. Please use the videos and slides as the primary material and the text as support until I have a chance to proofread everything. When I have done this, I will remove this message.
-
--- Reviewed for style consistency by Dan.
-```
-
 ## Introduction
 
 This week we're going to cover what we consider to be open issues in neuroscience.
 
-In this section, we're  going to discuss the question does neuroscience work and how could we know?
+In this section, we're  going to discuss the question "does neuroscience work and how could we know?".
 
 ## More data
 
 Through most of the course, we've shown you how neuroscientists are collecting increasingly large datasets - of neuron morphology and activity, and we've discussed what we can learn from these datasets.
 
-:::{seealso} For more
+:::{seealso} For example:
 :class: dropdown
-See the papers for examples of this:
-
 * [Scala et al. (2023) "Phenotypic variation of transcriptomic cell types in mouse motor cortex"](https://doi.org/10.1038/s41586-020-2907-3)
 * [Jun et al. (2017) "Fully integrated silicon probes for high-density recording of neural activity"](https://doi.org/10.1038/nature24636)
 * [Steinmetz et al. (2021) "Neuropixels 2.0: A miniaturized high-density probe for stable, long-term brain recordings"](https://doi.org/10.1126/science.abf4588)
-
 :::
 
 To some extent an implicit assumption behind these efforts, is that with more data will come more understanding, and that given enough data we would understand the brain.
@@ -43,25 +34,25 @@ But is that true?
 
 ### Could a neuroscientist understand a microprocessor?
 
-This is the question tackled by this [paper entitled "Could a neuroscientist understand a microprocessor?"](https://doi.org/10.1371/journal.pcbi.1005268)
+This is the question tackled by this paper entitled ["Could a neuroscientist understand a microprocessor?"](https://doi.org/10.1371/journal.pcbi.1005268)
 
-Which was inspired by [an earlier paper, called "could a biologist fix a radio"](https://doi.org/10.1016/S1535-6108(02)00133-2). 
+Which was inspired by an earlier paper, called ["Can a biologist fix a radio?"](https://doi.org/10.1016/S1535-6108(02)00133-2). 
 
-In {cite:t}`https://doi.org/10.1371/journal.pcbi.1005268`, the authors take an [old microprocessor](#micropro) which runs three video games, and try to understand how it works by applying methods from neuroscience.
+In {cite:t}`https://doi.org/10.1371/journal.pcbi.1005268`, the authors take an old [microprocessor](#micropro) which runs three video games, and try to understand how it works by applying methods from neuroscience.
 
 ```{figure} figures/micro.png
 :label: micropro
 :alt: Microprocessor Design
 :align: center
 
-Microprocessor design from {cite:t}`https://doi.org/10.1371/journal.pcbi.1005268`.
+For an artificial system like a microprocessor, we understand how it's hardware enables it's function. From {cite:t}`https://doi.org/10.1371/journal.pcbi.1005268`.
 ```
 
 Critically, we know how the microprocessor works - so we can test how well these methods do at recovering that information.
 
 While this may seem like an odd idea, the microprocessor is in some ways not that different from the brain. For example:
 
-* It's transistors and their connections resemble neurons
+* It's transistors and their connections resemble neurons.
 * And, the time-varying activity of theses transistors transforms it's inputs to outputs.
 
 Also, while there are many differences - like the fact the transistors are deterministic and easy to observe and manipulate, these differences should actually make the microprocessor easier to interpret than biological data.
@@ -81,7 +72,7 @@ While they find some interesting results, it's difficult to see how you could go
 :alt: Microprocessor Connectome
 :align: center
 
-(A) MOS 6502 silicon die was examined under a visible light microscope (B) to build up an image mosaic (C) of the chip surface. Computer vision algorithms were used to identify metal and silicon regions (E) to detect transistors (F), (G) ultimately producing a complete accurate netlist of the processor (D). {cite:p}`https://doi.org/10.1371/journal.pcbi.1005268`.
+By combining light microscopy and computer vision algorithms, one can obtain the microprocessor's transistor-transistor connection map (or connectome). From {cite:p}`https://doi.org/10.1371/journal.pcbi.1005268`.
 ```
 
 So next, they simulate the microprocessor, and observe the activity patterns of it's transistors - much like a neuroscientist might record and analyze neural activity.
@@ -91,7 +82,7 @@ So next, they simulate the microprocessor, and observe the activity patterns of 
 :alt: Microprocessor Activity Patterns
 :align: center
 
-(Left) transistors' spiking (rising edge) behavior over a short time window during behavior DK. (Middle) Mean transistor response as a function of output pixel luminance: Some transistors exhibit simple unimodal tuning curves, others more complex tuning curves. (Right) Plotted all the activities for each of the three behavioral states. Each transistor's activity is normalized to zero-mean and unit variance and plotted as a function of time. {cite:p}`https://doi.org/10.1371/journal.pcbi.1005268`.
+The microprocessor's transistors transition between on and off states over time. When plotted (left) these resemble the spike train's of biological neurons. From these data, one can calculate each transistor's "tuning" to different features. For example, output pixel luminance (middle). Or, compare transistor activity across time and tasks (right). From {cite:p}`https://doi.org/10.1371/journal.pcbi.1005268`.
 ```
 
 [The figure on the left](#microplots) shows the off-to-on transitions of 10 transistors over time (which look surprisingly like spikes in a raster plot).
@@ -100,7 +91,7 @@ With these data, the authors then try to analyse the tuning properties of indivi
 
 * Luminance on the x-axis
 * The transistors' mean response on the y-axis
-* Different colored lines representing 5 different transistors.
+* Different coloured lines representing 5 different transistors.
 
 Like neurons in the brain, some transistors seem to have simple tuning and are correlated with single luminance values. While others, seem to have more complex tuning.
 
@@ -108,7 +99,7 @@ So does this help us to understand how the microprocessor works?
 
 Not really, as in truth, none of these transistors directly controls pixel luminance.
 
-So maybe, instead of analyzing individual transistors we should try to identify functional ensembles - groups of transistors with correlated temporal dynamics?
+So maybe, instead of analysing individual transistors we should try to identify functional ensembles - groups of transistors with correlated temporal dynamics?
 
 To do that the authors, record the activity of all 3,510 transistors simultaneously over time - during the three different video games. The data is shown in [the rightmost plot](#microplots), with time on the x-axis and transistors on the y-axis per game, and again you can see that it resembles large-scale neural data.
 
@@ -125,7 +116,7 @@ To do that the authors [silence each transistor in turn](#microsingel), and chec
 :alt: Lesioning every single transistor to identify function.
 :align: center
 
-They identify transistors whose elimination disrupts behavior analogous to lethal alleles or lesioned brain areas. These are transistors whose elimination results in the processor failing to render the game. (A) Transistors which impact only one behavior, colored by behavior. (B) Breakdown of the impact of transistor lesion by behavioral state. The elimination of 1565 transistors have no impact, and 1560 inhibit all behaviors. {cite:p}`https://doi.org/10.1371/journal.pcbi.1005268`.
+By silencing (lesioning) each transistor in turn it is possible to identify transistors which are critical for a specific behaviour (here booting one of three video games). From {cite:p}`https://doi.org/10.1371/journal.pcbi.1005268`.
 ```
 
 As [the left of the figure](#microsingel) shows:
@@ -148,4 +139,4 @@ Another suggestion is that better methods could help. For example, in week 6 we 
 
 But really how to understand complex networks is an open issue in neuroscience.
 
-So does neuroscience work? {cite:t}`https://doi.org/10.1371/journal.pcbi.1005268` suggests that, our current approaches may not. So we need better methods and we need ground truth systems in which we can validate these.
+So does neuroscience work? {cite:t}`https://doi.org/10.1371/journal.pcbi.1005268` suggests that our current approaches may not. So we need better methods and we need ground truth systems in which we can validate these.
