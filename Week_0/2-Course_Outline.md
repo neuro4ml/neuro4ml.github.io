@@ -69,32 +69,8 @@ N4ML Weekly Structure
 
 ## Assessment
 
-Finally, for those studying at Imperial this course will be assessed.
-There are 3 assessment points:
-
-* **Coursework 1 - 40%**
-
-* **Coursework 2 - 40%**
-    * Groups of two
-    * Coding-based
-    * Python notebooks, e.g. Google Colab
-    * Can claim costs of Google Colab Pro
-    * Peer assessment
-
-* **End of term quiz - 20%**
-    * Multiple choice
-
-Firstly, there are two pieces of coursework, each worth 40% of the final grade.
-These will be done in groups of two and will be coding-based. We would encourage you to use Python notebooks. 
-
-The easiest way to do so is to use Google Colab which we will set up for you with zero installation required, and you can claim back the cost of a Google Colab Pro account for the term if you would like (although the free version is fine for this course).
-
-Assessment will partly be done by peers, that is everyone will read and assess each others' notebooks. The reasoning behind this is to encourage clear presentation of your work, and to let you learn from the different approaches taken by different groups.
-
-We will make a detailed guide available when you are given the first coursework assignment.
-
-The third assessment point is an online multiple choice quiz at the end of the term, worth 20%.
+Finally, for those studying at Imperial this course will be assessed. Details of the assessment is on Canvas.
 
 :::{attention}
-If you have any further questions, please ask on Teams if you're at Imperial, or on Discord if you're following online.
+If you have any further questions, please ask in class if you're at Imperial, or on Discord if you're following online.
 :::
